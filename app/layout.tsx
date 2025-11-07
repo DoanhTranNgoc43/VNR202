@@ -10,10 +10,14 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Trầm tích văn hoá Việt Nam · Hội nhập kinh tế quốc tế',
+  title: 'Văn hoá Việt Nam',
   description:
     'Phân tích các trầm tích, yếu kém, khuyết tật văn hoá và giải pháp để Việt Nam hội nhập kinh tế quốc tế chủ động, hiệu quả.',
   generator: 'v0.app',
+  icons: {
+    icon: '/VietNam.png',
+   
+  },
 }
 
 export default function RootLayout({
