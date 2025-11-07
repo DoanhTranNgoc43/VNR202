@@ -58,8 +58,8 @@ export default function TeamPage() {
                 >
                   <div className="p-6">
                     <div className="flex flex-col items-center text-center">
-                      {/* Avatar với ảnh */}
-                      <div className="relative mb-4">
+                      {/* Avatar với ảnh + phóng to khi hover */}
+                      <div className="relative mb-4 group">
                         <div className="relative w-32 h-32 rounded-full p-1 bg-gradient-to-br from-red-600 via-red-500 to-yellow-400 shadow-xl">
                           <div className="w-full h-full rounded-full overflow-hidden bg-slate-800">
                             <Image
@@ -69,7 +69,6 @@ export default function TeamPage() {
                               height={128}
                               className="w-full h-full object-cover"
                               onError={(e) => {
-                                // Fallback to placeholder nếu ảnh không tồn tại
                                 const target = e.target as HTMLImageElement
                                 target.src = "/placeholder-user.jpg"
                               }}
@@ -79,6 +78,27 @@ export default function TeamPage() {
                         {/* Badge với gradient border */}
                         <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-gradient-to-br from-red-600 to-yellow-400 flex items-center justify-center border-2 border-white dark:border-slate-800 shadow-lg">
                           <span className="w-2 h-2 rounded-full bg-white"></span>
+                        </div>
+
+                        {/* Overlay phóng to avatar */}
+                        <div className="pointer-events-none fixed inset-0 z-[70] hidden group-hover:flex items-center justify-center">
+                          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+                          <div className="relative rounded-2xl overflow-hidden border-2 border-white/30 shadow-2xl w-[80vw] max-w-[520px] aspect-square">
+                            <Image
+                              src={member.image}
+                              alt={member.name}
+                              fill
+                              sizes="520px"
+                              className="object-cover"
+                              onError={(e) => {
+                                const target = e.target as HTMLImageElement
+                                target.src = "/placeholder-user.jpg"
+                              }}
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white text-center text-lg font-semibold">
+                              {member.name} – {member.id}
+                            </div>
+                          </div>
                         </div>
                       </div>
                       
