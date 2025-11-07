@@ -2,6 +2,7 @@
 
 import { Button } from "../../components/ui/button"
 import { Card } from "../../components/ui/card"
+import SiteHeader from "../../components/site-header"
 
 export default function ExchangePage() {
   return (
@@ -12,12 +13,15 @@ export default function ExchangePage() {
           <img src="https://dsa.ueh.edu.vn/wp-content/uploads/2025/04/anh-1.jpg " alt="Giao thoa văn hoá" className="w-full h-[60vh] md:h-[70vh] object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/10" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 md:px-10 h-[60vh] md:h-[70vh] flex items-center">
-          <div className="space-y-4">
-            <h1 className="text-4xl md:text-6xl font-serif font-bold">Giao Thoa Văn Hoá</h1>
-            <h2 className="text-xl md:text-2xl text-amber-200/95">Khi Việt Nam gặp thế giới – và thế giới gặp Việt Nam</h2>
-            <p className="max-w-2xl text-amber-200/85">Hội nhập không xoá đi bản sắc. Nó tạo nên bản sắc mới – đa chiều hơn, hiện đại hơn, toàn cầu hơn.</p>
-            <a href="#examples"><Button className="bg-red-600 hover:bg-red-700 text-white">Xem ví dụ giao thoa</Button></a>
+        <div className="relative max-w-7xl mx-auto px-4 md:px-10 h-[60vh] md:h-[70vh] flex flex-col">
+          <SiteHeader />
+          <div className="flex-1 flex items-center">
+            <div className="space-y-4">
+              <h1 className="text-4xl md:text-6xl font-serif font-bold">Giao Thoa Văn Hoá</h1>
+              <h2 className="text-xl md:text-2xl text-amber-200/95">Khi Việt Nam gặp thế giới – và thế giới gặp Việt Nam</h2>
+              <p className="max-w-2xl text-amber-200/85">Hội nhập không xoá đi bản sắc. Nó tạo nên bản sắc mới – đa chiều hơn, hiện đại hơn, toàn cầu hơn.</p>
+              <a href="#examples"><Button className="bg-red-600 hover:bg-red-700 text-white">Xem ví dụ giao thoa</Button></a>
+            </div>
           </div>
         </div>
       </section>

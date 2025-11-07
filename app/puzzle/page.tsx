@@ -1,15 +1,15 @@
 "use client"
 
-import InteractiveGame from "../../components/interactive-game"
 import SiteHeader from "../../components/site-header"
+import PuzzleGame from "../../components/puzzle-game"
 
-export default function GamePage() {
+export default function PuzzlePage() {
   return (
     <main className="min-h-screen">
       <section className="relative min-h-screen">
         <div className="absolute inset-0">
           <img
-            src="https://upload.wikimedia.org/wikipedia/vi/c/c5/Nhanh-nh%C6%B0-ch%E1%BB%9Bp.jpg"
+            src="https://www.pace.edu.vn/uploads/news/2024/02/3-cac-loai-hinh-van-hoa.jpg"
             alt="Vietnam Culture"
             className="w-full h-full object-cover object-center"
           />
@@ -21,14 +21,11 @@ export default function GamePage() {
           <SiteHeader />
           
           <div className="mt-10 md:mt-20">
-            <div className="max-w-6xl mx-auto">
-              <InteractiveGame onBack={() => (window.location.href = "/")} />
-            </div>
+            <PuzzleGame />
           </div>
         </div>
       </section>
     </main>
   )
 }
-
 

@@ -2,11 +2,16 @@
 
 import { Button } from "../components/ui/button"
 import { Card } from "../components/ui/card"
+import SiteHeader from "../components/site-header"
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "../components/ui/hover-card"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Hero section */}
       <section className="relative h-screen">
         <div className="absolute inset-0">
         <img src="https://special.nhandan.vn/vanhoavietnamthongnhattrongdadang/assets/rldpmd4uQr/8ef9fb6c3d81e7dfbe90-1875x1250.jpg " alt="Explore Vietnam" className="w-full h-full object-cover object-center" />
@@ -15,16 +20,7 @@ export default function Home() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 md:px-10 py-6 md:py-8 h-full flex flex-col">
-        <div className="flex items-center justify-between text-white/90">
-          <div className="font-bold tracking-wider">VIETNAM</div>
-          <nav className="hidden md:flex gap-6 text-sm">
-            <a href="/culture" className="hover:text-white">Văn Hoá</a>
-            <a href="/economy" className="hover:text-white">Kinh Tế</a>
-            <a href="/exchange" className="hover:text-white">Giao Thoa</a>
-            <a href="https://tapchicongsan.org.vn/web/guest/van_hoa_xa_hoi/-/2018/1041102/xay-dung-nen-van-hoa-viet-nam-ngay-cang-ben-vung%2C-tien-bo%2C-ban-sac%2C-tuong-xung-voi-trinh-do-phat-trien-kinh-te---xa-hoi-hien-nay-theo-tinh-than-dai-hoi-xiii-cua-dang.aspx" className="hover:text-white">Tin tức</a>
-          </nav>
-          <a href="/game"> <Button className="bg-red-600 hover:bg-red-700 text-white">Chơi game trải nghiệm văn hoá Việt Nam</Button></a>
-        </div>
+        <SiteHeader />
 
         <div className="flex-1 grid md:grid-cols-[1.1fr_.9fr] items-center">
           <div className="text-white">
@@ -32,7 +28,29 @@ export default function Home() {
             <h1 className="mt-2 text-6xl md:text-8xl font-black leading-[0.9]">Trong Hội Nhập Kinh Tế Quốc Tế</h1>
             <p className="mt-4 max-w-xl text-white/85"></p>
             <div className="mt-6 flex gap-3">
-              <a href="/game"><Button className="bg-white text-black hover:bg-white/90">Chơi game trải nghiệm văn hoá Việt Nam</Button></a>
+              <HoverCard>
+                <HoverCardTrigger asChild>
+                  <a href="/game">
+                    <Button className="bg-white text-black hover:bg-white/90">
+                      Xem video trải nghiệm
+                    </Button>
+                  </a>
+                </HoverCardTrigger>
+                <HoverCardContent className="w-[560px] p-0 bg-transparent border-none shadow-none">
+                  <div className="rounded-lg overflow-hidden border-2 border-white/30 shadow-2xl bg-black/20 backdrop-blur-sm">
+                    <div className="aspect-video">
+                      <iframe
+                        className="w-full h-full"
+                        src="https://www.youtube.com/embed/6GVODhUhEdI?autoplay=1&mute=1&rel=0&modestbranding=1&playsinline=1&loop=1&playlist=6GVODhUhEdI"
+                        title="Video trải nghiệm văn hoá Việt Nam"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                </HoverCardContent>
+              </HoverCard>
               <span className="relative group">
                 <Button variant="outline" className="bg-white text-black hover:bg-white/90">Xem bản đồ</Button>
                 <img
@@ -43,13 +61,14 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="relative hidden md:block">
-            <img
-              src="https://images.pexels.com/photos/34469052/pexels-photo-34469052/free-photo-of-ph-n-vi-t-nam-truy-n-th-ng-trong-trang-ph-c-b-n-d-a-ngoai-tr-i.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt="Trang phục truyền thống Việt Nam"
-              className="absolute right-4 top-6 w-60 h-96 object-cover border-2 border-white/80 rounded-[40px] shadow-xl"
-            />
-          </div>
+          <div className="hidden md:flex justify-end">
+    <img
+      src="https://images.pexels.com/photos/34469052/pexels-photo-34469052/free-photo-of-ph-n-vi-t-nam-truy-n-th-ng-trong-trang-ph-c-b-n-d-a-ngoai-tr-i.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      alt="Trang phục truyền thống Việt Nam"
+      className="w-60 h-96 object-cover border-2 border-yellow-300/80 
+                 rounded-[40px] shadow-[0_0_20px_rgba(234,179,8,0.6)]"
+    />
+  </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-4 mb-4">

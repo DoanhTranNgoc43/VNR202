@@ -32,10 +32,7 @@ export default function InteractiveGame({ onBack }: InteractiveGameProps) {
 
   return (
     <div className="space-y-6">
-      <Button onClick={onBack} variant="outline" className="gap-2 bg-transparent">
-        <ArrowLeft className="w-4 h-4" />
-        Quay Lại Trang Chủ
-      </Button>
+  
 
       {gameMode === "menu" && (
         <div className="space-y-6">

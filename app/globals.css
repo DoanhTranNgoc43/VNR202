@@ -123,3 +123,32 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  @keyframes gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .animate-gradient {
+    animation: gradient 3s ease infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-33.333% - 1rem));
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+    will-change: transform;
+  }
+}

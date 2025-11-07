@@ -2,6 +2,7 @@
 
 import { Button } from "../../components/ui/button"
 import { Card } from "../../components/ui/card"
+import SiteHeader from "../../components/site-header"
 
 export default function CulturePage() {
   return (
@@ -12,12 +13,14 @@ export default function CulturePage() {
           <img src="https://tapchicongsan.org.vn/documents/20182/408068301/Tac+pham+Lop+hoc+hat+quan+ho+-+Tac+gia+Nguyen+Manh+Linh+%28Tuyen+Quang%29.jpg/2169726b-29dd-46e1-9103-26e311de11a2?t=1725955321000" alt="Văn hoá Việt Nam" className="w-full h-[60vh] md:h-[70vh] object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/10" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 md:px-10 h-[60vh] md:h-[70vh] flex items-center">
-          <div className="text-white space-y-4">
-            <h1 className="text-4xl md:text-6xl font-serif font-bold">Văn Hoá Việt Nam</h1>
-            <h2 className="text-xl md:text-2xl text-white/90">Bản sắc ngàn năm – Lan tỏa toàn cầu</h2>
-            <p className="max-w-2xl text-white/85">Văn hoá là nền tảng tinh thần của dân tộc. Trong thời kỳ hội nhập, bản sắc càng trở thành sức mạnh cạnh tranh mềm của Việt Nam.</p>
-           
+        <div className="relative max-w-7xl mx-auto px-4 md:px-10 h-[60vh] md:h-[70vh] flex flex-col">
+          <SiteHeader />
+          <div className="flex-1 flex items-center">
+            <div className="text-white space-y-4">
+              <h1 className="text-4xl md:text-6xl font-serif font-bold">Văn Hoá Việt Nam</h1>
+              <h2 className="text-xl md:text-2xl text-white/90">Bản sắc ngàn năm – Lan tỏa toàn cầu</h2>
+              <p className="max-w-2xl text-white/85">Văn hoá là nền tảng tinh thần của dân tộc. Trong thời kỳ hội nhập, bản sắc càng trở thành sức mạnh cạnh tranh mềm của Việt Nam.</p>
+            </div>
           </div>
         </div>
       </section>

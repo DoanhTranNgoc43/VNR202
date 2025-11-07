@@ -1,11 +1,17 @@
 "use client"
 
-import { useState, useEffect, useMemo } from "react"
+import { useState, useEffect, useMemo, useRef } from "react"
 import { Button } from "../components/ui/button"
 import { Card } from "../components/ui/card"
 import { ArrowLeft, Zap } from "lucide-react"
 import NhanhNhuChopIntro from "./nhanh-nhu-chop-intro"
 import { QUESTION_BANK, Question } from "./questions"
+
+declare global {
+  interface Window {
+    webkitAudioContext?: typeof AudioContext
+  }
+}
 
 interface LightningGameProps {
   onBack: () => void
@@ -119,6 +125,7 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
   const [matchWinner, setMatchWinner] = useState<number | null>(null)
   const [finalT1, setFinalT1] = useState(0)
   const [finalT2, setFinalT2] = useState(0)
+  const audioCtxRef = useRef<AudioContext | null>(null)
 
   const QUESTIONS_PER_ROUND = 10
   const questionsForRound = useMemo(() => QUESTIONS.slice(0, QUESTIONS_PER_ROUND), [])
@@ -127,6 +134,47 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
   const getTeamLabel = (id: number | null) => {
     if (!id) return ""
     return presetTeams ? `Đội ${id}` : (TEAMS.find((t) => t.id === id)?.name || `Đội ${id}`)
+  }
+
+  const ensureAudioContext = async () => {
+    if (typeof window === "undefined") return null
+    if (!audioCtxRef.current) {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext
+      if (!AudioCtx) return null
+      audioCtxRef.current = new AudioCtx()
+    }
+    const ctx = audioCtxRef.current
+    if (ctx.state === "suspended") {
+      try {
+        await ctx.resume()
+      } catch (error) {
+        console.warn("Không thể resume AudioContext", error)
+      }
+    }
+    return ctx
+  }
+
+  const playFeedback = async (type: "correct" | "incorrect") => {
+    const ctx = await ensureAudioContext()
+    if (!ctx) return
+
+    const oscillator = ctx.createOscillator()
+    const gain = ctx.createGain()
+
+    oscillator.type = "sine"
+    const now = ctx.currentTime
+    const frequency = type === "correct" ? 1047 : 220
+    oscillator.frequency.setValueAtTime(frequency, now)
+
+    gain.gain.setValueAtTime(0.0001, now)
+    gain.gain.exponentialRampToValueAtTime(type === "correct" ? 0.22 : 0.16, now + 0.02)
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.35)
+
+    oscillator.connect(gain)
+    gain.connect(ctx.destination)
+
+    oscillator.start(now)
+    oscillator.stop(now + 0.35)
   }
 
   useEffect(() => {
@@ -191,6 +239,8 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
     } else {
       setConsecutiveCorrect(0)
     }
+
+    void playFeedback(correct ? "correct" : "incorrect")
   }
 
   const handleNextQuestion = () => {

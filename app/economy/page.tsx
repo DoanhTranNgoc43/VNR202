@@ -2,6 +2,7 @@
 
 import { Button } from "../../components/ui/button"
 import { Card } from "../../components/ui/card"
+import SiteHeader from "../../components/site-header"
 
 export default function EconomyPage() {
   return (
@@ -11,12 +12,15 @@ export default function EconomyPage() {
           <img src="https://bcp.cdnchinhphu.vn/334894974524682240/2023/9/29/top-10-mat-hang-viet-nam-xuat-khau-nhieu-nhat-4-1695966833313386976560-1695967740244-16959677410741058621863.jpg" alt="Kinh tế Việt Nam" className="w-full h-[60vh] md:h-[70vh] object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/10" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 md:px-10 h-[60vh] md:h-[70vh] flex items-center">
-          <div className="space-y-4">
-            <h1 className="text-4xl md:text-6xl font-serif font-bold">Kinh Tế Việt Nam</h1>
-            <h2 className="text-xl md:text-2xl text-amber-200/95">Từ Đổi Mới đến Hội Nhập Toàn Cầu</h2>
-            <p className="max-w-2xl text-amber-200/85">Từ một nền kinh tế bao cấp, Việt Nam đã trở thành một trong những quốc gia tăng trưởng nhanh, tham gia sâu vào chuỗi giá trị toàn cầu.</p>
-            <a href="#timeline"><Button className="bg-red-600 hover:bg-red-700 text-white">Xem hành trình hội nhập</Button></a>
+        <div className="relative max-w-7xl mx-auto px-4 md:px-10 h-[60vh] md:h-[70vh] flex flex-col">
+          <SiteHeader />
+          <div className="flex-1 flex items-center">
+            <div className="space-y-4">
+              <h1 className="text-4xl md:text-6xl font-serif font-bold">Kinh Tế Việt Nam</h1>
+              <h2 className="text-xl md:text-2xl text-amber-200/95">Từ Đổi Mới đến Hội Nhập Toàn Cầu</h2>
+              <p className="max-w-2xl text-amber-200/85">Từ một nền kinh tế bao cấp, Việt Nam đã trở thành một trong những quốc gia tăng trưởng nhanh, tham gia sâu vào chuỗi giá trị toàn cầu.</p>
+              <a href="#timeline"><Button className="bg-red-600 hover:bg-red-700 text-white">Xem hành trình hội nhập</Button></a>
+            </div>
           </div>
         </div>
       </section>
