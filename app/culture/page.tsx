@@ -6,7 +6,7 @@ import SiteHeader from "../../components/site-header"
 
 export default function CulturePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#120c06] via-[#1a1009] to-[#2a1a0c] text-amber-100">
+    <main className="min-h-screen bg-gradient-to-b from-[#120c06] via-[#1a1009] to-[#2a1a0c] text-white">
       {/* Hero */}
       <section className="relative">
         <div className="absolute inset-0">
@@ -38,8 +38,8 @@ export default function CulturePage() {
             <Card key={p.title} className="p-0 bg-black/30 border border-amber-800/40 overflow-hidden">
               <img src={p.image} alt={p.title} className="w-full h-32 object-cover" />
               <div className="p-5">
-                <div className="mt-2 font-semibold text-amber-100">{p.title}</div>
-                <div className="text-sm text-amber-200/80">{p.desc}</div>
+                <div className="mt-2 font-semibold text-white">{p.title}</div>
+                <div className="text-sm text-white/80">{p.desc}</div>
               </div>
             </Card>
           ))}
@@ -60,9 +60,9 @@ export default function CulturePage() {
               <Card key={i.name} className="p-0 border border-amber-800/40 bg-black/30 overflow-hidden">
                 <img src={i.image} alt={i.name} className="w-full h-28 object-cover" />
                 <div className="p-4">
-                  <div className="text-xs text-amber-300">{i.type}</div>
-                  <div className="font-semibold text-amber-100">{i.name}</div>
-                  <div className="text-sm text-amber-200/80">Năm công nhận: {i.year}</div>
+                  <div className="text-xs text-white">{i.type}</div>
+                  <div className="font-semibold text-white">{i.name}</div>
+                  <div className="text-sm text-white/80">Năm công nhận: {i.year}</div>
                 </div>
               </Card>
             ))}
@@ -75,7 +75,7 @@ export default function CulturePage() {
           <img src="https://cdn.24h.com.vn/upload/1-2021/images/2021-02-17/anh-7-1613533743-364-width650height975.jpg" alt="Integration" className="w-full h-72 md:h-96 object-cover rounded-xl border border-amber-800/40" />
           <div className="space-y-3">
             <h3 className="text-3xl font-serif font-bold">Từ bản sắc địa phương → sức mạnh mềm toàn cầu</h3>
-            <ul className="list-disc pl-5 space-y-1 text-amber-200/90">
+            <ul className="list-disc pl-5 space-y-1 text-white/90">
               <li>Ẩm thực Việt Nam góp mặt Michelin Guide</li>
               <li>Áo dài xuất hiện tại sự kiện quốc tế</li>
               <li>Phim – âm nhạc – KOLs Việt Nam vươn ra thị trường nước ngoài</li>
@@ -97,14 +97,14 @@ export default function CulturePage() {
           ].map((item) => (
             <Card key={item.title} className="p-0 border border-amber-800/40 bg-black/30 overflow-hidden">
               <img src={item.image} alt={item.title} className="w-full h-28 object-cover" />
-              <div className="p-4 text-sm text-amber-200/90">{item.title}</div>
+              <div className="p-4 text-sm text-white/90">{item.title}</div>
             </Card>
           ))}
         </div>
       </section>
 
 
-      <section className="bg-[#0b0a09] text-amber-100">
+      <section className="bg-[#0b0a09] text-white">
         <div className="max-w-7xl mx-auto px-4 md:px-10 py-16">
           <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-center">Gìn giữ, phát huy bản sắc văn hóa trong quá trình hội nhập quốc tế</h3>
           <div className="max-w-4xl mx-auto">

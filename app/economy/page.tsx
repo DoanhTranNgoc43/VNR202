@@ -6,7 +6,7 @@ import SiteHeader from "../../components/site-header"
 
 export default function EconomyPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#120c06] via-[#1a1009] to-[#2a1a0c] text-amber-100">
+    <main className="min-h-screen bg-gradient-to-b from-[#120c06] via-[#1a1009] to-[#2a1a0c] text-white">
       <section className="relative">
         <div className="absolute inset-0">
           <img src="https://bcp.cdnchinhphu.vn/334894974524682240/2023/9/29/top-10-mat-hang-viet-nam-xuat-khau-nhieu-nhat-4-1695966833313386976560-1695967740244-16959677410741058621863.jpg" alt="Kinh tế Việt Nam" className="w-full h-[60vh] md:h-[70vh] object-cover" />
@@ -17,8 +17,8 @@ export default function EconomyPage() {
           <div className="flex-1 flex items-center">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-serif font-bold">Kinh Tế Việt Nam</h1>
-              <h2 className="text-xl md:text-2xl text-amber-200/95">Từ Đổi Mới đến Hội Nhập Toàn Cầu</h2>
-              <p className="max-w-2xl text-amber-200/85">Từ một nền kinh tế bao cấp, Việt Nam đã trở thành một trong những quốc gia tăng trưởng nhanh, tham gia sâu vào chuỗi giá trị toàn cầu.</p>
+              <h2 className="text-xl md:text-2xl text-white/95">Từ Đổi Mới đến Hội Nhập Toàn Cầu</h2>
+              <p className="max-w-2xl text-white/85">Từ một nền kinh tế bao cấp, Việt Nam đã trở thành một trong những quốc gia tăng trưởng nhanh, tham gia sâu vào chuỗi giá trị toàn cầu.</p>
               <a href="#timeline"><Button className="bg-red-600 hover:bg-red-700 text-white">Xem hành trình hội nhập</Button></a>
             </div>
           </div>
@@ -38,8 +38,8 @@ export default function EconomyPage() {
             <Card key={p.title} className="p-0 bg-black/30 border border-amber-800/40 overflow-hidden">
               <img src={p.image} alt={p.title} className="w-full h-32 object-cover" />
               <div className="p-5">
-                <div className="font-semibold text-amber-100">{p.title}</div>
-                <div className="text-sm text-amber-200/80">{p.desc}</div>
+                <div className="font-semibold text-white">{p.title}</div>
+                <div className="text-sm text-white/80">{p.desc}</div>
               </div>
             </Card>
           ))}
@@ -67,7 +67,7 @@ export default function EconomyPage() {
                     <img src={m.image} alt={`${m.year} ${m.title}`} className="w-full h-24 object-cover" />
                     <div className="p-4">
                       <div className="text-xl font-semibold">{m.year}</div>
-                      <div className="text-amber-200/80 text-sm">{m.title}</div>
+                      <div className="text-white/80 text-sm">{m.title}</div>
                     </div>
                   </Card>
                 </div>
@@ -90,8 +90,8 @@ export default function EconomyPage() {
             <Card key={i.title} className="p-0 bg-black/30 border border-amber-800/40 overflow-hidden">
               <img src={i.image} alt={i.title} className="w-full h-32 object-cover" />
               <div className="p-4">
-                <div className="font-semibold text-amber-100">{i.title}</div>
-                <div className="text-amber-200/80 text-sm">{i.desc}</div>
+                <div className="font-semibold text-white">{i.title}</div>
+                <div className="text-white/80 text-sm">{i.desc}</div>
               </div>
             </Card>
           ))}
@@ -103,7 +103,7 @@ export default function EconomyPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-10 grid md:grid-cols-2 gap-6">
           <div>
             <h3 className="text-2xl font-serif font-bold mb-4">Lợi ích của hội nhập</h3>
-            <ul className="space-y-2 text-amber-200/90 list-disc pl-5">
+            <ul className="space-y-2 text-white/90 list-disc pl-5">
               <li>Thương mại: xuất khẩu tăng hàng trăm lần so với 1986</li>
               <li>Lao động: hàng chục triệu việc làm mới</li>
               <li>Công nghệ: bứt phá chuyển đổi số, AI, Fintech</li>
@@ -112,7 +112,7 @@ export default function EconomyPage() {
           </div>
           <div>
             <h3 className="text-2xl font-serif font-bold mb-4">Thách thức</h3>
-            <ul className="space-y-2 text-amber-200/90 list-disc pl-5">
+            <ul className="space-y-2 text-white/90 list-disc pl-5">
               <li>Cạnh tranh quốc tế khốc liệt</li>
               <li>Nguy cơ phụ thuộc FDI</li>
               <li>Bài toán môi trường – phát triển bền vững</li>
@@ -125,7 +125,7 @@ export default function EconomyPage() {
       {/* Future strategy */}
       <section className="max-w-7xl mx-auto px-4 md:px-10 py-14">
         <h3 className="text-3xl font-serif font-bold mb-6">Tương lai & chiến lược</h3>
-        <ul className="grid md:grid-cols-2 gap-4 text-amber-200/90 list-disc pl-5">
+        <ul className="grid md:grid-cols-2 gap-4 text-white/90 list-disc pl-5">
           <li>Mục tiêu 2045: quốc gia phát triển, thu nhập cao</li>
           <li>Kinh tế số ~ 30% GDP</li>
           <li>Công nghiệp xanh, năng lượng tái tạo</li>

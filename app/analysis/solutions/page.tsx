@@ -8,7 +8,7 @@ import Link from "next/link"
 
 export default function SolutionsPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#120c06] via-[#1a1009] to-[#2a1a0c] text-amber-100">
+    <main className="min-h-screen bg-gradient-to-b from-[#120c06] via-[#1a1009] to-[#2a1a0c] text-white">
       {/* Hero Section */}
       <section className="relative">
         <div className="absolute inset-0">
@@ -25,12 +25,11 @@ export default function SolutionsPage() {
             <div className="space-y-4 max-w-4xl">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-600/20 backdrop-blur-sm border border-red-500/30">
                 <Target className="w-5 h-5 text-red-400" />
-                <span className="text-red-400 font-semibold text-sm">PHẦN 2</span>
-              </div>
+                </div>
               <h1 className="text-4xl md:text-6xl font-serif font-bold text-white">
                 Đường Lối Của Đảng
               </h1>
-              <p className="text-lg md:text-xl text-amber-200/90 max-w-3xl">
+              <p className="text-lg md:text-xl text-white/90 max-w-3xl">
                 Các chủ trương, nghị quyết và hành động cụ thể nhằm khắc phục các hạn chế văn hóa trong hội nhập
               </p>
             </div>
@@ -42,25 +41,24 @@ export default function SolutionsPage() {
       <section className="max-w-7xl mx-auto px-4 md:px-10 py-16">
         {/* 2.1. Nền tảng tư tưởng */}
         <div className="mb-16">
-          <Card className="bg-gradient-to-r from-red-900/40 via-red-800/30 to-amber-900/20 border-2 border-red-500/50 p-6 mb-8 shadow-xl shadow-red-900/20">
+          <Card className="bg-gradient-to-r from-blue-900/40 via-blue-800/30 to-indigo-900/20 border-2 border-blue-500/50 p-6 mb-8 shadow-xl shadow-blue-900/20">
             <div className="flex items-center gap-6">
               <div className="relative flex-shrink-0">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center shadow-lg">
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shadow-lg">
                   <FileText className="w-10 h-10 text-white" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center border-2 border-white shadow-lg">
-                  <span className="text-sm font-black text-red-800">1</span>
+                  <span className="text-sm font-black text-blue-800">1</span>
                 </div>
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="text-sm font-semibold text-yellow-400 bg-yellow-400/20 px-3 py-1 rounded-full">PHẦN 2.1</span>
-                  <span className="text-amber-300/70 text-sm">Nền tảng tư tưởng</span>
+                  <span className="text-white/70 text-sm">Nền tảng tư tưởng</span>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-white">
                   Coi Văn hóa là động lực phát triển
                 </h3>
-                <p className="text-amber-200/80 text-sm mt-2">
+                <p className="text-white/80 text-sm mt-2">
                   Các nghị quyết và văn kiện quan trọng của Đảng xác định vai trò nền tảng của văn hóa trong phát triển đất nước
                 </p>
               </div>
@@ -77,16 +75,16 @@ export default function SolutionsPage() {
               />
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <Award className="w-6 h-6 text-yellow-400" />
-                  <h4 className="font-semibold text-lg text-amber-200">Nghị quyết Trung ương 5 (Khóa VIII - 1998)</h4>
+                  <Award className="w-6 h-6 text-white" />
+                  <h4 className="font-semibold text-lg text-white">Nghị quyết Trung ương 5 (Khóa VIII - 1998)</h4>
                 </div>
-              <div className="space-y-3 text-sm text-amber-200/90">
+              <div className="space-y-3 text-sm text-white/90">
                 <div>
-                  <strong className="text-yellow-400">Nội dung cốt lõi:</strong>
+                  <strong className="text-white">Nội dung cốt lõi:</strong>
                   <p className="mt-1">"Xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc"</p>
                 </div>
                 <div>
-                  <strong className="text-yellow-400">Ý nghĩa:</strong>
+                  <strong className="text-white">Ý nghĩa:</strong>
                   <p className="mt-1">Đặt nền móng tư duy: Văn hóa là nền tảng tinh thần xã hội, vừa là mục tiêu, vừa là động lực thúc đẩy phát triển kinh tế - xã hội. Khẳng định văn hóa phải "soi đường cho quốc dân đi".</p>
                 </div>
               </div>
@@ -102,16 +100,16 @@ export default function SolutionsPage() {
               />
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <Award className="w-6 h-6 text-yellow-400" />
-                  <h4 className="font-semibold text-lg text-amber-200">Nghị quyết Trung ương 9 (Khóa XI - 2014)</h4>
+                  <Award className="w-6 h-6 text-white" />
+                  <h4 className="font-semibold text-lg text-white">Nghị quyết Trung ương 9 (Khóa XI - 2014)</h4>
                 </div>
-              <div className="space-y-3 text-sm text-amber-200/90">
+              <div className="space-y-3 text-sm text-white/90">
                 <div>
-                  <strong className="text-yellow-400">Nội dung cốt lõi:</strong>
+                  <strong className="text-white">Nội dung cốt lõi:</strong>
                   <p className="mt-1">"Xây dựng và phát triển văn hóa, con người Việt Nam đáp ứng yêu cầu phát triển bền vững đất nước"</p>
                 </div>
                 <div>
-                  <strong className="text-yellow-400">Ý nghĩa:</strong>
+                  <strong className="text-white">Ý nghĩa:</strong>
                   <p className="mt-1">Đặt trọng tâm vào xây dựng CON NGƯỜI (chủ thể của hội nhập) với các phẩm chất: nhân cách, lối sống tốt đẹp, có tinh thần yêu nước, đoàn kết, sáng tạo.</p>
                 </div>
               </div>
@@ -127,16 +125,16 @@ export default function SolutionsPage() {
               />
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <Award className="w-6 h-6 text-yellow-400" />
-                  <h4 className="font-semibold text-lg text-amber-200">Đại hội XIII (2021) & Hội nghị Văn hóa toàn quốc 2021</h4>
+                  <Award className="w-6 h-6 text-white" />
+                  <h4 className="font-semibold text-lg text-white">Đại hội XIII (2021) & Hội nghị Văn hóa toàn quốc 2021</h4>
                 </div>
-              <div className="space-y-3 text-sm text-amber-200/90">
+              <div className="space-y-3 text-sm text-white/90">
                 <div>
-                  <strong className="text-yellow-400">Nội dung cốt lõi:</strong>
+                  <strong className="text-white">Nội dung cốt lõi:</strong>
                   <p className="mt-1">Khơi dậy "khát vọng phát triển đất nước phồn vinh, hạnh phúc". Xây dựng "Hệ giá trị quốc gia", "Hệ giá trị văn hóa", "Hệ giá trị con người".</p>
                 </div>
                 <div>
-                  <strong className="text-yellow-400">Ý nghĩa:</strong>
+                  <strong className="text-white">Ý nghĩa:</strong>
                   <p className="mt-1">Tạo động lực tinh thần mới, lấy khát vọng làm sức mạnh để vượt qua các tư duy cũ, trì trệ.</p>
                 </div>
               </div>
@@ -147,32 +145,45 @@ export default function SolutionsPage() {
 
         {/* 2.2. Các hành động, chủ trương cụ thể */}
         <div className="mb-16">
-          <Card className="bg-gradient-to-r from-red-900/40 via-red-800/30 to-amber-900/20 border-2 border-red-500/50 p-6 mb-8 shadow-xl shadow-red-900/20">
+          <Card className="bg-gradient-to-r from-blue-900/40 via-blue-800/30 to-indigo-900/20 border-2 border-blue-500/50 p-6 mb-8 shadow-xl shadow-blue-900/20">
             <div className="flex items-center gap-6">
               <div className="relative flex-shrink-0">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center shadow-lg">
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shadow-lg">
                   <Target className="w-10 h-10 text-white" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center border-2 border-white shadow-lg">
-                  <span className="text-sm font-black text-red-800">2</span>
+                  <span className="text-sm font-black text-blue-800">2</span>
                 </div>
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="text-sm font-semibold text-yellow-400 bg-yellow-400/20 px-3 py-1 rounded-full">PHẦN 2.2</span>
-                  <span className="text-amber-300/70 text-sm">Hành động cụ thể</span>
+                  <span className="text-white/70 text-sm">Hành động cụ thể</span>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-white">
                   Các hành động, chủ trương cụ thể
                 </h3>
-                <p className="text-amber-200/80 text-sm mt-2">
+                <p className="text-white/80 text-sm mt-2">
                   Những biện pháp và chính sách cụ thể được triển khai để khắc phục từng nhóm hạn chế văn hóa
                 </p>
               </div>
             </div>
           </Card>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          {/* Tư duy & Nếp nghĩ */}
+          <div className="mb-8">
+            <Card className="bg-gradient-to-r from-amber-900/40 via-amber-800/30 to-yellow-900/20 border-2 border-amber-500/50 p-4 mb-6 shadow-xl shadow-amber-900/20">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-600 to-amber-800 flex items-center justify-center shadow-lg flex-shrink-0">
+                  <FileText className="w-6 h-6 text-white" />
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-lg md:text-xl font-serif font-bold text-white">Tư duy & Nếp nghĩ</h4>
+                  <p className="text-white/80 text-sm mt-1">Hạn chế trong Tư duy & Nếp nghĩ</p>
+                  <p className="text-white/70 text-xs mt-1">Các tư duy cũ, lạc hậu từ thời kỳ tiểu nông và bao cấp vẫn còn ảnh hưởng đến tư duy hiện đại</p>
+                </div>
+              </div>
+            </Card>
+            <div className="grid md:grid-cols-2 gap-6">
             {/* a. Khắc phục tư duy tiểu nông, bao cấp */}
             <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden">
               <img 
@@ -183,15 +194,15 @@ export default function SolutionsPage() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <CheckCircle2 className="w-5 h-5 text-green-400" />
-                  <h4 className="font-semibold text-lg text-amber-200">Khắc phục tư duy tiểu nông, bao cấp </h4>
+                  <h4 className="font-semibold text-lg text-white">Khắc phục tư duy tiểu nông, bao cấp </h4>
                 </div>
-              <div className="space-y-3 text-sm text-amber-200/90">
+              <div className="space-y-3 text-sm text-white/90">
                 <div>
-                  <strong className="text-yellow-400">Đường lối:</strong>
+                  <strong className="text-white">Đường lối:</strong>
                   <p className="mt-1">Nhất quán thực hiện kinh tế thị trường định hướng XHCN, đa dạng hóa sở hữu.</p>
                 </div>
                 <div>
-                  <strong className="text-yellow-400">Hành động:</strong>
+                  <strong className="text-white">Hành động:</strong>
                   <ul className="list-disc pl-5 mt-1 space-y-1">
                     <li>Khuyến khích khởi nghiệp, đổi mới sáng tạo (Startup)</li>
                     <li>Hỗ trợ doanh nghiệp tư nhân, coi kinh tế tư nhân là động lực quan trọng</li>
@@ -200,35 +211,24 @@ export default function SolutionsPage() {
               </div>
               </div>
             </Card>
+            </div>
+          </div>
 
-            {/* b. Khắc phục quan liêu, tham nhũng */}
-            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden">
-              <img 
-                src="https://lacduong.lamdong.dcs.vn/Portals/13/media/newsimage/1/7/a/17a-09.jpg" 
-                alt="Khắc phục quan liêu tham nhũng" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <CheckCircle2 className="w-5 h-5 text-green-400" />
-                  <h4 className="font-semibold text-lg text-amber-200">Khắc phục quan liêu, tham nhũng </h4>
+          {/* Tác phong & Kỷ luật */}
+          <div className="mb-8">
+            <Card className="bg-gradient-to-r from-green-900/40 via-green-800/30 to-emerald-900/20 border-2 border-green-500/50 p-4 mb-6 shadow-xl shadow-green-900/20">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center shadow-lg flex-shrink-0">
+                  <Target className="w-6 h-6 text-white" />
                 </div>
-              <div className="space-y-3 text-sm text-amber-200/90">
-                <div>
-                  <strong className="text-yellow-400">Đường lối:</strong>
-                  <p className="mt-1">Xây dựng Nhà nước pháp quyền XHCN.</p>
+                <div className="flex-1">
+                  <h4 className="text-lg md:text-xl font-serif font-bold text-white">Tác phong & Kỷ luật</h4>
+                  <p className="text-white/80 text-sm mt-1">Hạn chế trong Tác phong & Kỷ luật</p>
+                  <p className="text-white/70 text-xs mt-1">Tác phong làm việc thiếu chuyên nghiệp, kỷ luật lao động lỏng lẻo ảnh hưởng đến hiệu quả và uy tín</p>
                 </div>
-                <div>
-                  <strong className="text-yellow-400">Hành động:</strong>
-                  <ul className="list-disc pl-5 mt-1 space-y-1">
-                    <li><strong>Chống:</strong> Công cuộc "đốt lò" - phòng chống tham nhũng, tiêu cực quyết liệt, không có vùng cấm (do TBT Nguyễn Phú Trọng chỉ đạo)</li>
-                    <li><strong>Xây:</strong> Đẩy mạnh cải cách hành chính, xây dựng Chính phủ điện tử, Chính phủ số (giảm tiếp xúc trực tiếp, tăng minh bạch)</li>
-                  </ul>
-                </div>
-              </div>
               </div>
             </Card>
-
+            <div className="grid md:grid-cols-2 gap-6">
             {/* c. Khắc phục bệnh thành tích, kỷ luật kém */}
             <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden">
               <img 
@@ -239,19 +239,64 @@ export default function SolutionsPage() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <CheckCircle2 className="w-5 h-5 text-green-400" />
-                  <h4 className="font-semibold text-lg text-amber-200">Khắc phục bệnh thành tích, kỷ luật kém</h4>
+                  <h4 className="font-semibold text-lg text-white">Khắc phục bệnh thành tích, kỷ luật kém</h4>
                 </div>
-              <div className="space-y-3 text-sm text-amber-200/90">
+              <div className="space-y-3 text-sm text-white/90">
                 <div>
-                  <strong className="text-yellow-400">Đường lối:</strong>
+                  <strong className="text-white">Đường lối:</strong>
                   <p className="mt-1">Đổi mới căn bản, toàn diện giáo dục và đào tạo.</p>
                 </div>
                 <div>
-                  <strong className="text-yellow-400">Hành động:</strong>
+                  <strong className="text-white">Hành động:</strong>
                   <ul className="list-disc pl-5 mt-1 space-y-1">
                     <li>Chấn chỉnh kỷ luật, kỷ cương công vụ</li>
                     <li>Đẩy mạnh "thực học, thực nghiệp"</li>
                     <li>Yêu cầu cao hơn về chất lượng nguồn nhân lực</li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+            </Card>
+            </div>
+          </div>
+
+          {/* Thể chế & Quản lý */}
+          <div className="mb-8">
+            <Card className="bg-gradient-to-r from-purple-900/40 via-purple-800/30 to-violet-900/20 border-2 border-purple-500/50 p-4 mb-6 shadow-xl shadow-purple-900/20">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center shadow-lg flex-shrink-0">
+                  <Award className="w-6 h-6 text-white" />
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-lg md:text-xl font-serif font-bold text-white">Thể chế & Quản lý</h4>
+                  <p className="text-white/80 text-sm mt-1">Hạn chế trong Thể chế & Quản lý</p>
+                  <p className="text-white/70 text-xs mt-1">Quan liêu, tham nhũng và tư duy phe cánh làm giảm hiệu quả quản lý và môi trường đầu tư</p>
+                </div>
+              </div>
+            </Card>
+            <div className="grid md:grid-cols-2 gap-6">
+            {/* b. Khắc phục quan liêu, tham nhũng */}
+            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden">
+              <img 
+                src="https://lacduong.lamdong.dcs.vn/Portals/13/media/newsimage/1/7/a/17a-09.jpg" 
+                alt="Khắc phục quan liêu tham nhũng" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <CheckCircle2 className="w-5 h-5 text-green-400" />
+                  <h4 className="font-semibold text-lg text-white">Khắc phục quan liêu, tham nhũng </h4>
+                </div>
+              <div className="space-y-3 text-sm text-white/90">
+                <div>
+                  <strong className="text-white">Đường lối:</strong>
+                  <p className="mt-1">Xây dựng Nhà nước pháp quyền XHCN.</p>
+                </div>
+                <div>
+                  <strong className="text-white">Hành động:</strong>
+                  <ul className="list-disc pl-5 mt-1 space-y-1">
+                    <li><strong>Chống:</strong> Công cuộc "đốt lò" - phòng chống tham nhũng, tiêu cực quyết liệt, không có vùng cấm (do TBT Nguyễn Phú Trọng chỉ đạo)</li>
+                    <li><strong>Xây:</strong> Đẩy mạnh cải cách hành chính, xây dựng Chính phủ điện tử, Chính phủ số (giảm tiếp xúc trực tiếp, tăng minh bạch)</li>
                   </ul>
                 </div>
               </div>
@@ -268,11 +313,11 @@ export default function SolutionsPage() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <CheckCircle2 className="w-5 h-5 text-green-400" />
-                  <h4 className="font-semibold text-lg text-amber-200">Khắc phục tư duy COCC, phe cánh</h4>
+                  <h4 className="font-semibold text-lg text-white">Khắc phục tư duy COCC, phe cánh</h4>
                 </div>
-              <div className="space-y-3 text-sm text-amber-200/90">
+              <div className="space-y-3 text-sm text-white/90">
                 <div>
-                  <strong className="text-yellow-400">Hành động:</strong>
+                  <strong className="text-white">Hành động:</strong>
                   <ul className="list-disc pl-5 mt-1 space-y-1">
                     <li>Siết chặt công tác cán bộ, quy định về nêu gương</li>
                     <li>Chống chạy chức, chạy quyền</li>
@@ -282,6 +327,7 @@ export default function SolutionsPage() {
               </div>
               </div>
             </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -308,26 +354,26 @@ export default function SolutionsPage() {
                   <AlertTriangle className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-serif font-bold text-amber-200 mb-3">Khẳng định lại vấn đề</h3>
-                  <p className="text-amber-200/90 leading-relaxed">
+                  <h3 className="text-xl md:text-2xl font-serif font-bold text-white mb-3">Khẳng định lại vấn đề</h3>
+                  <p className="text-white/90 leading-relaxed">
                     Văn hóa Việt Nam trong quá trình hội nhập vẫn còn tồn tại những hạn chế cốt lõi:
                   </p>
                   <div className="mt-4 space-y-2">
                     <div className="flex items-start gap-2">
-                      <span className="text-yellow-400 mt-1">•</span>
-                      <p className="text-amber-200/90"><strong className="text-yellow-400">Tư duy & Nếp nghĩ:</strong> tư duy tiểu nông, bao cấp, bệnh thành tích</p>
+                      <span className="text-white mt-1">•</span>
+                      <p className="text-white/90"><strong className="text-white">Tư duy & Nếp nghĩ:</strong> tư duy tiểu nông, bao cấp, bệnh thành tích</p>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="text-yellow-400 mt-1">•</span>
-                      <p className="text-amber-200/90"><strong className="text-yellow-400">Tác phong & Kỷ luật:</strong> kỷ luật lao động lỏng lẻo, thiếu chữ tín</p>
+                      <span className="text-white mt-1">•</span>
+                      <p className="text-white/90"><strong className="text-white">Tác phong & Kỷ luật:</strong> kỷ luật lao động lỏng lẻo, thiếu chữ tín</p>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="text-yellow-400 mt-1">•</span>
-                      <p className="text-amber-200/90"><strong className="text-yellow-400">Thể chế & Quản lý:</strong> quan liêu, tham nhũng, tư duy COCC</p>
+                      <span className="text-white mt-1">•</span>
+                      <p className="text-white/90"><strong className="text-white">Thể chế & Quản lý:</strong> quan liêu, tham nhũng, tư duy COCC</p>
                     </div>
                   </div>
                   <div className="mt-4 p-4 bg-red-900/20 border-l-4 border-red-500 rounded-r">
-                    <p className="text-amber-200/90 italic">
+                    <p className="text-white/90 italic">
                       Nếu không khắc phục kịp thời, những hạn chế này sẽ tiếp tục cản trở quá trình hội nhập, làm giảm năng lực cạnh tranh quốc gia và mất cơ hội phát triển.
                     </p>
                   </div>
@@ -342,18 +388,18 @@ export default function SolutionsPage() {
                   <Award className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-serif font-bold text-amber-200 mb-3">Đánh giá chung về đường lối của Đảng</h3>
+                  <h3 className="text-xl md:text-2xl font-serif font-bold text-white mb-3">Đánh giá chung về đường lối của Đảng</h3>
                   <div className="space-y-4">
                     <div className="p-4 bg-yellow-900/20 border-l-4 border-yellow-400 rounded-r">
-                      <p className="text-amber-200/90 leading-relaxed">
-                        Các chủ trương, đường lối của Đảng là <strong className="text-yellow-400">đúng đắn, toàn diện, thể hiện tầm nhìn chiến lược</strong>. 
+                      <p className="text-white/90 leading-relaxed">
+                        Các chủ trương, đường lối của Đảng là <strong className="text-white">đúng đắn, toàn diện, thể hiện tầm nhìn chiến lược</strong>. 
                         Từ Nghị quyết Trung ương 5 (1998) đến Đại hội XIII (2021), Đảng đã xác định rõ vai trò của văn hóa và đưa ra các giải pháp cụ thể để khắc phục từng hạn chế.
                       </p>
                     </div>
                     <div className="p-4 bg-amber-900/20 border-l-4 border-amber-400 rounded-r">
-                      <p className="text-amber-200/90 leading-relaxed">
-                        Tuy nhiên, việc thực thi các đường lối này là một <strong className="text-yellow-400">quá trình lâu dài, kiên trì</strong>, đòi hỏi sự vào cuộc của cả hệ thống chính trị và toàn xã hội. 
-                        Cần có sự phối hợp chặt chẽ giữa <strong className="text-yellow-400">Nhà nước, doanh nghiệp, và người dân</strong> để tạo nên sự chuyển biến thực sự trong văn hóa.
+                      <p className="text-white/90 leading-relaxed">
+                        Tuy nhiên, việc thực thi các đường lối này là một <strong className="text-white">quá trình lâu dài, kiên trì</strong>, đòi hỏi sự vào cuộc của cả hệ thống chính trị và toàn xã hội. 
+                        Cần có sự phối hợp chặt chẽ giữa <strong className="text-white">Nhà nước, doanh nghiệp, và người dân</strong> để tạo nên sự chuyển biến thực sự trong văn hóa.
                       </p>
                     </div>
                   </div>
@@ -368,17 +414,17 @@ export default function SolutionsPage() {
                   <Lightbulb className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-serif font-bold text-amber-200 mb-3">Liên hệ bản thân và đề xuất</h3>
-                  <p className="text-amber-200/90 leading-relaxed mb-4">
-                    Mỗi cá nhân, đặc biệt là <strong className="text-yellow-400">thế hệ trẻ</strong>, cần nhận thức rõ trách nhiệm của mình trong việc rèn luyện, thay đổi tư duy và hành động để góp phần xây dựng một nền văn hóa mới, đáp ứng yêu cầu của thời đại.
+                  <h3 className="text-xl md:text-2xl font-serif font-bold text-white mb-3">Liên hệ bản thân và đề xuất</h3>
+                  <p className="text-white/90 leading-relaxed mb-4">
+                    Mỗi cá nhân, đặc biệt là <strong className="text-white">thế hệ trẻ</strong>, cần nhận thức rõ trách nhiệm của mình trong việc rèn luyện, thay đổi tư duy và hành động để góp phần xây dựng một nền văn hóa mới, đáp ứng yêu cầu của thời đại.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4 mt-6">
                     <div className="p-4 bg-yellow-900/20 border border-yellow-500/30 rounded-lg">
                       <div className="flex items-center gap-2 mb-2">
-                        <CheckCircle2 className="w-5 h-5 text-yellow-400" />
-                        <strong className="text-yellow-400">Phẩm chất cần phát huy:</strong>
+                        <CheckCircle2 className="w-5 h-5 text-white" />
+                        <strong className="text-white">Phẩm chất cần phát huy:</strong>
                       </div>
-                      <ul className="text-amber-200/90 text-sm space-y-1 ml-7">
+                      <ul className="text-white/90 text-sm space-y-1 ml-7">
                         <li>• Sáng tạo</li>
                         <li>• Chủ động</li>
                         <li>• Trách nhiệm</li>
@@ -387,11 +433,11 @@ export default function SolutionsPage() {
                     </div>
                     <div className="p-4 bg-amber-900/20 border border-amber-500/30 rounded-lg">
                       <div className="flex items-center gap-2 mb-2">
-                        <Target className="w-5 h-5 text-yellow-400" />
-                        <strong className="text-yellow-400">Mục tiêu hội nhập:</strong>
+                        <Target className="w-5 h-5 text-white" />
+                        <strong className="text-white">Mục tiêu hội nhập:</strong>
                       </div>
-                      <p className="text-amber-200/90 text-sm">
-                        Việt Nam có thể hội nhập một cách <strong className="text-yellow-400">chủ động, hiệu quả và bền vững</strong> trong mọi hoạt động, từ học tập đến lao động.
+                      <p className="text-white/90 text-sm">
+                        Việt Nam có thể hội nhập một cách <strong className="text-white">chủ động, hiệu quả và bền vững</strong> trong mọi hoạt động, từ học tập đến lao động.
                       </p>
                     </div>
                   </div>

@@ -88,12 +88,12 @@ export default function Home() {
       </section>
 
       {/* Scroll panels section */}
-      <section className="bg-gradient-to-b from-[#120c06] to-[#2a1a0c] text-amber-100">
+      <section className="bg-gradient-to-b from-[#120c06] to-[#2a1a0c] text-white">
         <div className="max-w-7xl mx-auto px-4 md:px-10 py-16 space-y-12">
           {/* Intro summary */}
           <div className="text-center space-y-3">
             <h2 className="text-3xl md:text-4xl font-serif font-bold">Việt Nam – Bản sắc trong dòng chảy hội nhập</h2>
-            <p className="text-amber-200/80 max-w-3xl mx-auto">Từ truyền thống ngàn đời đến hiện đại hoá, Việt Nam đang kết nối mạnh mẽ với thế giới bằng văn hoá, con người và kinh tế số. Hành trình hội nhập là sự giao thoa giữa di sản và đổi mới.</p>
+            <p className="text-white/80 max-w-3xl mx-auto">Từ truyền thống ngàn đời đến hiện đại hoá, Việt Nam đang kết nối mạnh mẽ với thế giới bằng văn hoá, con người và kinh tế số. Hành trình hội nhập là sự giao thoa giữa di sản và đổi mới.</p>
           </div>
           {[
             {
@@ -126,9 +126,9 @@ export default function Home() {
                 <img src={b.image} alt={b.title} className="w-full h-80 md:h-[420px] object-cover" />
               </div>
               <div className={`${b.reverse ? 'md:order-1' : ''} bg-black/30 border border-amber-800/40 rounded-xl p-8 flex flex-col justify-center`}> 
-                <div className="text-sm uppercase tracking-widest text-amber-300">{b.subtitle}</div>
-                <h3 className="mt-2 text-3xl md:text-4xl font-serif font-bold text-amber-200">{b.title}</h3>
-                <p className="mt-4 text-amber-200/80 leading-relaxed">{b.text}</p>
+                <div className="text-sm uppercase tracking-widest text-white">{b.subtitle}</div>
+                <h3 className="mt-2 text-3xl md:text-4xl font-serif font-bold text-white">{b.title}</h3>
+                <p className="mt-4 text-white/80 leading-relaxed">{b.text}</p>
               </div>
             </div>
           ))}
@@ -137,24 +137,24 @@ export default function Home() {
 
      
 
-      <section className="bg-[#0e0a07] text-amber-100">
+      <section className="bg-[#0e0a07] text-white">
         <div className="max-w-7xl mx-auto px-4 md:px-10 py-16 space-y-8">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-center">Truyền thống & Hiện đại</h2>
           <div className="grid md:grid-cols-2 gap-6 items-stretch">
             <div className="bg-black/30 border border-amber-800/40 rounded-xl overflow-hidden">
               <img src="https://www.quanlynhanuoc.vn/wp-content/uploads/2022/10/thuong-hieu-lang-nghe-truyen-thong-ha-noi.jpg" alt="Truyền thống" className="w-full h-72 md:h-96 object-cover" />
-              <div className="p-4"><div className="font-semibold">Truyền thống</div><p className="text-sm text-amber-200/80">Áo dài, chợ quê, làng nghề – di sản bản sắc.</p></div>
+              <div className="p-4"><div className="font-semibold">Truyền thống</div><p className="text-sm text-white/80">Áo dài, chợ quê, làng nghề – di sản bản sắc.</p></div>
             </div>
             <div className="bg-black/30 border border-amber-800/40 rounded-xl overflow-hidden">
               <img src="https://images2.thanhnien.vn/528068263637045248/2025/7/26/aodai1-1753535915713343848658.jpg" alt="Hiện đại" className="w-full h-72 md:h-96 object-cover" />
-              <div className="p-4"><div className="font-semibold">Hiện đại</div><p className="text-sm text-amber-200/80">Thời trang hoá, công nghệ, ẩm thực Michelin.</p></div>
+              <div className="p-4"><div className="font-semibold">Hiện đại</div><p className="text-sm text-white/80">Thời trang hoá, công nghệ, ẩm thực Michelin.</p></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Gallery/slider section */}
-      <section className="bg-[#0b0a09] text-amber-100">
+      <section className="bg-[#0e0a07] text-white">
         <div className="max-w-7xl mx-auto px-4 md:px-10 py-16">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-center">Sắc màu văn hóa Việt Nam qua góc nhìn của những nữ nghệ sĩ nhiếp ảnh </h2>
           <div className="max-w-5xl mx-auto">

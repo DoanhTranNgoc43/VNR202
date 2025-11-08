@@ -35,8 +35,8 @@ export default function TeamPage() {
             {/* Header Section */}
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-600/20 backdrop-blur-sm border border-red-500/30 mb-6">
-                <Award className="w-5 h-5 text-yellow-400" />
-                <span className="text-yellow-400 font-semibold text-sm">SE1802 - VNR202 - G8</span>
+                <Award className="w-5 h-5 text-white" />
+                <span className="text-white font-semibold text-sm">SE1802 - VNR202 - G8</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-black text-white mb-4 bg-gradient-to-r from-white via-yellow-200 to-white bg-clip-text text-transparent">
                 Nhóm Thực Hiện Dự Án
@@ -44,7 +44,7 @@ export default function TeamPage() {
               <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-6">
                 "Trầm tích Văn hoá Việt Nam trong Hội nhập Kinh tế Quốc tế"
               </p>
-              <p className="text-lg text-yellow-300/90 italic max-w-2xl mx-auto">
+              <p className="text-lg text-white/90 italic max-w-2xl mx-auto">
                 "Lan toả tinh hoa văn hoá Việt qua góc nhìn số."
               </p>
             </div>
@@ -107,7 +107,7 @@ export default function TeamPage() {
                         <h3 className="text-xl font-bold text-white mb-1">
                           {member.name}
                         </h3>
-                        <p className="text-yellow-300/80 text-sm font-mono mb-3">
+                        <p className="text-white/80 text-sm font-mono mb-3">
                           {member.id}
                         </p>
                         <div className="flex items-center justify-center gap-2">

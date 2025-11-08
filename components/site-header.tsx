@@ -13,176 +13,82 @@ export default function SiteHeader() {
   const pathname = usePathname()
 
   return (
-    <div className="relative z-50 pt-10 md:pt-12">
-      <div className="max-w-7xl mx-auto px-4 md:px-10 py-6 md:py-8">
-        <div className="flex items-center justify-between text-white/90">
+    <div className="relative z-50 pt-10 md:pt-12 w-full">
+      <div className="w-full px-2 md:px-4 lg:px-6 py-4 md:py-6">
+        <div className="flex items-center text-white/90 gap-1.5 md:gap-2 w-full">
           <Link 
             href="/" 
-            className="relative font-bold tracking-wider text-2xl md:text-3xl transition-all duration-300 hover:scale-110 group cursor-pointer"
+            className="relative font-semibold tracking-wider text-lg md:text-xl lg:text-2xl transition-all duration-300 hover:scale-110 group cursor-pointer px-2 md:px-3 py-1.5 md:py-2 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/30 backdrop-blur-sm flex-shrink-0"
           >
-            {/* Gradient text với animation */}
-            <span className="relative z-10 bg-gradient-to-r from-red-600 via-yellow-400 via-red-500 to-red-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto] inline-block">
+            <span className="relative z-10 text-white inline-block">
               Việt Nam
             </span>
-            {/* Glow effect khi hover */}
-            <span className="absolute inset-0 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-0">
-            Việt Nam
-            </span>
-            {/* Text shadow effect khi hover */}
-            <span className="absolute inset-0 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-[0_0_12px_rgba(220,38,38,1),0_0_24px_rgba(234,179,8,0.5)] -z-0">
-            Việt Nam
-            </span>
-            {/* Pulse animation ring */}
-            <span className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse bg-gradient-to-r from-red-600/20 via-yellow-400/20 to-red-600/20 blur-sm -z-10 scale-110"></span>
           </Link>
-         <nav className="hidden md:flex gap-4 lg:gap-5 text-sm lg:text-base flex-wrap items-center">
+         <nav className="flex gap-1.5 md:gap-2 text-xs md:text-sm items-center flex-1 flex-nowrap">
             <Link 
               href="/culture" 
-              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap"
+              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap px-2 md:px-2.5 py-1.5 md:py-2 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/30 backdrop-blur-sm flex-shrink-0"
             >
-              {pathname === "/culture" ? (
-                <span className="relative z-10 text-white inline-block whitespace-nowrap">
-                  Văn Hoá
-                </span>
-              ) : (
-                <>
-                  <span className="relative z-10 bg-gradient-to-r from-red-600 via-yellow-400 via-red-500 to-red-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto] inline-block whitespace-nowrap">
-                    Văn Hoá
-                  </span>
-                  <span className="absolute inset-0 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-300 -z-0 whitespace-nowrap">
-                    Văn Hoá
-                  </span>
-                  <span className="absolute inset-0 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-[0_0_8px_rgba(220,38,38,0.8)] -z-0 whitespace-nowrap">
-                    Văn Hoá
-                  </span>
-                </>
-              )}
+              <span className="relative z-10 text-white inline-block whitespace-nowrap">
+                Văn Hoá
+              </span>
             </Link>
             <Link 
               href="/economy" 
-              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap"
+              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap px-2 md:px-2.5 py-1.5 md:py-2 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/30 backdrop-blur-sm flex-shrink-0"
             >
-              {pathname === "/economy" ? (
-                <span className="relative z-10 text-white inline-block whitespace-nowrap">
-                  Kinh Tế
-                </span>
-              ) : (
-                <>
-                  <span className="relative z-10 bg-gradient-to-r from-red-600 via-yellow-400 via-red-500 to-red-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto] inline-block whitespace-nowrap">
-                    Kinh Tế
-                  </span>
-                  <span className="absolute inset-0 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-300 -z-0 whitespace-nowrap">
-                    Kinh Tế
-                  </span>
-                  <span className="absolute inset-0 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-[0_0_8px_rgba(220,38,38,0.8)] -z-0 whitespace-nowrap">
-                    Kinh Tế
-                  </span>
-                </>
-              )}
+              <span className="relative z-10 text-white inline-block whitespace-nowrap">
+                Kinh Tế
+              </span>
             </Link>
             
             <Link 
               href="/exchange" 
-              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap"
+              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap px-2 md:px-2.5 py-1.5 md:py-2 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/30 backdrop-blur-sm flex-shrink-0"
             >
-              {pathname === "/exchange" ? (
-                <span className="relative z-10 text-white inline-block whitespace-nowrap">
-                  Giao Thoa
-                </span>
-              ) : (
-                <>
-                  <span className="relative z-10 bg-gradient-to-r from-red-600 via-yellow-400 via-red-500 to-red-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto] inline-block whitespace-nowrap">
-                    Giao Thoa
-                  </span>
-                  <span className="absolute inset-0 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-300 -z-0 whitespace-nowrap">
-                    Giao Thoa
-                  </span>
-                  <span className="absolute inset-0 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-[0_0_8px_rgba(220,38,38,0.8)] -z-0 whitespace-nowrap">
-                    Giao Thoa
-                  </span>
-                </>
-              )}
+              <span className="relative z-10 text-white inline-block whitespace-nowrap">
+                Giao Thoa
+              </span>
             </Link>
             <Link 
               href="/analysis/challenges" 
-              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap"
+              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap px-2 md:px-2.5 py-1.5 md:py-2 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/30 backdrop-blur-sm flex-shrink-0"
             >
-              {pathname === "/analysis/challenges" ? (
-                <span className="relative z-10 text-white inline-block whitespace-nowrap">
-                  Trầm tích văn hoá
-                </span>
-              ) : (
-                <>
-                  <span className="relative z-10 bg-gradient-to-r from-red-600 via-yellow-400 via-red-500 to-red-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto] inline-block whitespace-nowrap">
-                    Trầm tích văn hoá
-                  </span>
-                  <span className="absolute inset-0 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-300 -z-0 whitespace-nowrap">
-                    Trầm tích văn hoá
-                  </span>
-                  <span className="absolute inset-0 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-[0_0_8px_rgba(220,38,38,0.8)] -z-0 whitespace-nowrap">
-                    Trầm tích văn hoá
-                  </span>
-                </>
-              )}
+              <span className="relative z-10 text-white inline-block whitespace-nowrap">
+                Trầm tích văn hoá
+              </span>
             </Link>
             <Link 
               href="/analysis/solutions" 
-              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap"
+              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap px-2 md:px-2.5 py-1.5 md:py-2 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/30 backdrop-blur-sm flex-shrink-0"
             >
-              {pathname === "/analysis/solutions" ? (
-                <span className="relative z-10 text-white inline-block whitespace-nowrap">
-                  Đường lối của đảng
-                </span>
-              ) : (
-                <>
-                  <span className="relative z-10 bg-gradient-to-r from-red-600 via-yellow-400 via-red-500 to-red-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto] inline-block whitespace-nowrap">
-                    Đường lối của đảng
-                  </span>
-                  <span className="absolute inset-0 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-300 -z-0 whitespace-nowrap">
-                    Đường lối của đảng
-                  </span>
-                  <span className="absolute inset-0 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-[0_0_8px_rgba(220,38,38,0.8)] -z-0 whitespace-nowrap">
-                    Đường lối của đảng
-                  </span>
-                </>
-              )}
+              <span className="relative z-10 text-white inline-block whitespace-nowrap">
+                Đường lối của đảng
+              </span>
             </Link>
             <a  
               href="https://tapchicongsan.org.vn/web/guest/van_hoa_xa_hoi/-/2018/1041102/xay-dung-nen-van-hoa-viet-nam-ngay-cang-ben-vung%2C-tien-bo%2C-ban-sac%2C-tuong-xung-voi-trinh-do-phat-trien-kinh-te---xa-hoi-hien-nay-theo-tinh-than-dai-hoi-xiii-cua-dang.aspx" 
-              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap"
+              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap px-2 md:px-2.5 py-1.5 md:py-2 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/30 backdrop-blur-sm flex-shrink-0"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="relative z-10 bg-gradient-to-r from-red-600 via-yellow-400 via-red-500 to-red-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto] inline-block whitespace-nowrap">
-                Tin tức
-              </span>
-              <span className="absolute inset-0 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-300 -z-0 whitespace-nowrap">
-                Tin tức
-              </span>
-              <span className="absolute inset-0 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-[0_0_8px_rgba(220,38,38,0.8)] -z-0 whitespace-nowrap">
+              <span className="relative z-10 text-white inline-block whitespace-nowrap">
                 Tin tức
               </span>
             </a>
-          </nav>
-          <HoverCard>
-  <HoverCardTrigger asChild>
-    <Link 
-      href="/team"
-      className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer text-sm lg:text-base whitespace-nowrap"
-    >
-      <span className="relative z-10 bg-gradient-to-r from-red-600 via-yellow-400 via-red-500 to-red-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto] inline-block whitespace-nowrap">
+            <HoverCard>
+              <HoverCardTrigger asChild>
+                <Link 
+                  href="/team"
+                  className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer text-xs md:text-sm whitespace-nowrap px-2 md:px-2.5 py-1.5 md:py-2 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/30 backdrop-blur-sm flex-shrink-0"
+                >
+      <span className="relative z-10 text-white inline-block whitespace-nowrap">
         Nhóm thực hiện dự án
       </span>
-      <span className="absolute inset-0 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-300 -z-0 whitespace-nowrap">
-        Nhóm thực hiện dự án
-      </span>
-      <span className="absolute inset-0 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-[0_0_8px_rgba(220,38,38,0.8)] -z-0 whitespace-nowrap">
-        Nhóm thực hiện dự án
-      </span>
-    </Link>
-  </HoverCardTrigger>
+                </Link>
+              </HoverCardTrigger>
 
-  <HoverCardContent className="w-80 bg-white/95 dark:bg-slate-800/95 backdrop-blur-md border-2 border-red-500/30 shadow-xl">
+              <HoverCardContent className="w-80 bg-white/95 dark:bg-slate-800/95 backdrop-blur-md border-2 border-red-500/30 shadow-xl">
     <div className="space-y-3">
       <div>
         <h4 className="text-lg font-bold text-red-600 dark:text-red-400 mb-2">
@@ -229,24 +135,19 @@ export default function SiteHeader() {
         <span>“Lan toả tinh hoa văn hoá Việt qua góc nhìn số.”</span>
       </div>
     </div>
-  </HoverCardContent>
-</HoverCard>
+              </HoverCardContent>
+            </HoverCard>
 
-  
-
-
-<HoverCard>
-  <HoverCardTrigger asChild>
-    <button className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer text-sm lg:text-base bg-transparent border-none whitespace-nowrap">
-      <span className="relative z-10 bg-gradient-to-r from-red-600 via-yellow-400 via-red-500 to-red-600 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto] inline-block whitespace-nowrap">
+            <HoverCard>
+              <HoverCardTrigger asChild>
+                <button className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer text-xs md:text-sm whitespace-nowrap px-2 md:px-2.5 py-1.5 md:py-2 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/30 backdrop-blur-sm flex-shrink-0">
+      <span className="relative z-10 text-white inline-block whitespace-nowrap">
         Trò chơi Văn Hoá
       </span>
-      <span className="absolute inset-0 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-300 -z-0 whitespace-nowrap"></span>
-      <span className="absolute inset-0 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-[0_0_8px_rgba(220,38,38,0.8)] -z-0 whitespace-nowrap"></span>
-    </button>
-  </HoverCardTrigger>
+                </button>
+              </HoverCardTrigger>
 
-  <HoverCardContent className="w-72 bg-white/95 dark:bg-slate-800/95 backdrop-blur-md border-2 border-red-500/30 shadow-xl">
+              <HoverCardContent className="w-72 bg-white/95 dark:bg-slate-800/95 backdrop-blur-md border-2 border-red-500/30 shadow-xl">
     <ul className="space-y-2 text-sm text-slate-700 dark:text-slate-300">
       <li>
         <Link href="/game" className="hover:text-red-600 font-medium flex items-center gap-1">
@@ -259,11 +160,9 @@ export default function SiteHeader() {
         </Link>
       </li>
     </ul>
-  </HoverCardContent>
-</HoverCard>
-
-
-
+              </HoverCardContent>
+            </HoverCard>
+          </nav>
         </div>
       </div>
     </div>

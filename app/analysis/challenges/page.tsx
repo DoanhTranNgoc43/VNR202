@@ -8,7 +8,7 @@ import Link from "next/link"
 
 export default function ChallengesPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#120c06] via-[#1a1009] to-[#2a1a0c] text-amber-100">
+    <main className="min-h-screen bg-gradient-to-b from-[#120c06] via-[#1a1009] to-[#2a1a0c] text-white">
       {/* Hero Section */}
       <section className="relative">
         <div className="absolute inset-0">
@@ -25,12 +25,11 @@ export default function ChallengesPage() {
             <div className="space-y-4 max-w-4xl">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-600/20 backdrop-blur-sm border border-red-500/30">
                 <TrendingDown className="w-5 h-5 text-red-400" />
-                <span className="text-red-400 font-semibold text-sm">PHẦN 1</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-serif font-bold text-white">
                 Trầm Tích, Yếu Kém Văn Hóa
               </h1>
-              <p className="text-lg md:text-xl text-amber-200/90 max-w-3xl">
+              <p className="text-lg md:text-xl text-white/90 max-w-3xl">
                 Phân tích các hạn chế văn hóa cản trở quá trình hội nhập kinh tế quốc tế của Việt Nam
               </p>
             </div>
@@ -47,27 +46,27 @@ export default function ChallengesPage() {
                 <AlertCircle className="w-6 h-6 text-white" />
               </div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-serif font-bold text-amber-200 mb-3">
+                <h3 className="text-xl md:text-2xl font-serif font-bold text-white mb-3">
                   Phương pháp phân tích
                 </h3>
-                <p className="text-amber-200/90 leading-relaxed mb-4">
+                <p className="text-white/90 leading-relaxed mb-4">
                   Để làm rõ các hạn chế văn hóa cản trở hội nhập, mỗi vấn đề được phân tích theo 3 khía cạnh:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4 mt-6">
                   <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
-                    <div className="text-2xl font-bold text-yellow-400 mb-2">1</div>
-                    <div className="font-semibold text-amber-200 mb-1">Biểu hiện</div>
-                    <p className="text-sm text-amber-200/80">Thể hiện cụ thể như thế nào trong thực tế?</p>
+                    <div className="text-2xl font-bold text-white mb-2">1</div>
+                    <div className="font-semibold text-white mb-1">Biểu hiện</div>
+                    <p className="text-sm text-white/80">Thể hiện cụ thể như thế nào trong thực tế?</p>
                   </div>
                   <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
-                    <div className="text-2xl font-bold text-yellow-400 mb-2">2</div>
-                    <div className="font-semibold text-amber-200 mb-1">Nguồn gốc</div>
-                    <p className="text-sm text-amber-200/80">Xuất phát từ đâu trong lịch sử, văn hóa?</p>
+                    <div className="text-2xl font-bold text-white mb-2">2</div>
+                    <div className="font-semibold text-white mb-1">Nguồn gốc</div>
+                    <p className="text-sm text-white/80">Xuất phát từ đâu trong lịch sử, văn hóa?</p>
                   </div>
                   <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
-                    <div className="text-2xl font-bold text-yellow-400 mb-2">3</div>
-                    <div className="font-semibold text-amber-200 mb-1">Tác động</div>
-                    <p className="text-sm text-amber-200/80">Cản trở hội nhập như thế nào?</p>
+                    <div className="text-2xl font-bold text-white mb-2">3</div>
+                    <div className="font-semibold text-white mb-1">Tác động</div>
+                    <p className="text-sm text-white/80">Cản trở hội nhập như thế nào?</p>
                   </div>
                 </div>
               </div>
@@ -94,13 +93,12 @@ export default function ChallengesPage() {
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="text-sm font-semibold text-yellow-400 bg-yellow-400/20 px-3 py-1 rounded-full">NHÓM 1</span>
-                    <span className="text-amber-300/70 text-sm">Tư duy & Nếp nghĩ</span>
+                    <span className="text-white/70 text-sm">Tư duy & Nếp nghĩ</span>
                   </div>
                   <h3 className="text-2xl md:text-3xl font-serif font-bold text-white">
                     Hạn chế trong Tư duy & Nếp nghĩ
                   </h3>
-                  <p className="text-amber-200/80 text-sm mt-2">
+                  <p className="text-white/80 text-sm mt-2">
                     Các tư duy cũ, lạc hậu từ thời kỳ tiểu nông và bao cấp vẫn còn ảnh hưởng đến tư duy hiện đại
                   </p>
                 </div>
@@ -117,12 +115,12 @@ export default function ChallengesPage() {
                 />
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-4">
-                    <AlertCircle className="w-5 h-5 text-yellow-400" />
-                    <h4 className="font-semibold text-lg text-amber-200">Tư duy tiểu nông</h4>
+                    <AlertCircle className="w-5 h-5 text-white" />
+                    <h4 className="font-semibold text-lg text-white">Tư duy tiểu nông</h4>
                   </div>
-                <div className="space-y-3 text-sm text-amber-200/90">
+                <div className="space-y-3 text-sm text-white/90">
                   <div>
-                    <strong className="text-yellow-400">Biểu hiện:</strong>
+                    <strong className="text-white">Biểu hiện:</strong>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
                       <li>Manh mún, ngắn hạn ("ăn xổi ở thì")</li>
                       <li>Ngại rủi ro, thiếu liên kết</li>
@@ -130,11 +128,11 @@ export default function ChallengesPage() {
                     </ul>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Nguồn gốc:</strong>
+                    <strong className="text-white">Nguồn gốc:</strong>
                     <p className="mt-1">Truyền thống tiểu nông, nền kinh tế tự cung tự cấp</p>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Cản trở hội nhập:</strong>
+                    <strong className="text-white">Cản trở hội nhập:</strong>
                     <p className="mt-1">Kinh tế quốc tế đòi hỏi tầm nhìn chiến lược, quy mô lớn, liên kết chuỗi giá trị toàn cầu, chấp nhận đầu tư mạo hiểm cho công nghệ và R&D.</p>
                   </div>
                 </div>
@@ -151,12 +149,12 @@ export default function ChallengesPage() {
                 />
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-4">
-                    <AlertCircle className="w-5 h-5 text-yellow-400" />
-                    <h4 className="font-semibold text-lg text-amber-200">Tàn dư tư duy bao cấp</h4>
+                    <AlertCircle className="w-5 h-5 text-white" />
+                    <h4 className="font-semibold text-lg text-white">Tàn dư tư duy bao cấp</h4>
                   </div>
-                <div className="space-y-3 text-sm text-amber-200/90">
+                <div className="space-y-3 text-sm text-white/90">
                   <div>
-                    <strong className="text-yellow-400">Biểu hiện:</strong>
+                    <strong className="text-white">Biểu hiện:</strong>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
                       <li>Tâm lý ỷ lại, trông chờ vào Nhà nước/tập thể</li>
                       <li>Thụ động, thiếu sáng tạo</li>
@@ -164,11 +162,11 @@ export default function ChallengesPage() {
                     </ul>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Nguồn gốc:</strong>
+                    <strong className="text-white">Nguồn gốc:</strong>
                     <p className="mt-1">Thời kỳ bao cấp, kinh tế kế hoạch hóa tập trung</p>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Cản trở hội nhập:</strong>
+                    <strong className="text-white">Cản trở hội nhập:</strong>
                     <p className="mt-1">Hội nhập là cạnh tranh sòng phẳng, đòi hỏi sự chủ động, sáng tạo không ngừng của doanh nghiệp và người lao động; phải chấp nhận chênh lệch giàu - nghèo do năng lực.</p>
                   </div>
                 </div>
@@ -184,12 +182,12 @@ export default function ChallengesPage() {
                 />
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-4">
-                    <AlertCircle className="w-5 h-5 text-yellow-400" />
-                    <h4 className="font-semibold text-lg text-amber-200">Bệnh thành tích & Hình thức chủ nghĩa</h4>
+                    <AlertCircle className="w-5 h-5 text-white" />
+                    <h4 className="font-semibold text-lg text-white">Bệnh thành tích & Hình thức chủ nghĩa</h4>
                   </div>
-                <div className="space-y-3 text-sm text-amber-200/90">
+                <div className="space-y-3 text-sm text-white/90">
                   <div>
-                    <strong className="text-yellow-400">Biểu hiện:</strong>
+                    <strong className="text-white">Biểu hiện:</strong>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
                       <li>Chú trọng báo cáo đẹp, số liệu tốt hơn là thực chất</li>
                       <li>Làm việc đối phó</li>
@@ -197,11 +195,11 @@ export default function ChallengesPage() {
                     </ul>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Nguồn gốc:</strong>
+                    <strong className="text-white">Nguồn gốc:</strong>
                     <p className="mt-1">Văn hóa quan liêu, thiếu minh bạch, thiếu trách nhiệm</p>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Cản trở hội nhập:</strong>
+                    <strong className="text-white">Cản trở hội nhập:</strong>
                     <p className="mt-1">Đối tác quốc tế cần sự MINH BẠCH, CHÍNH XÁC và THỰC CHẤT. Bệnh thành tích làm sai lệch thông tin, gây mất lòng tin, dẫn đến quyết định sai lầm trong kinh doanh.</p>
                   </div>
                 </div>
@@ -224,13 +222,12 @@ export default function ChallengesPage() {
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="text-sm font-semibold text-yellow-400 bg-yellow-400/20 px-3 py-1 rounded-full">NHÓM 2</span>
-                    <span className="text-amber-300/70 text-sm">Tác phong & Kỷ luật</span>
+                    <span className="text-white/70 text-sm">Tác phong & Kỷ luật</span>
                   </div>
                   <h3 className="text-2xl md:text-3xl font-serif font-bold text-white">
                     Hạn chế trong Tác phong & Kỷ luật
                   </h3>
-                  <p className="text-amber-200/80 text-sm mt-2">
+                  <p className="text-white/80 text-sm mt-2">
                     Tác phong làm việc thiếu chuyên nghiệp, kỷ luật lao động lỏng lẻo ảnh hưởng đến hiệu quả và uy tín
                   </p>
                 </div>
@@ -248,12 +245,12 @@ export default function ChallengesPage() {
                 />
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-4">
-                    <AlertCircle className="w-5 h-5 text-yellow-400" />
-                    <h4 className="font-semibold text-lg text-amber-200">Kỷ luật lao động lỏng lẻo</h4>
+                    <AlertCircle className="w-5 h-5 text-white" />
+                    <h4 className="font-semibold text-lg text-white">Kỷ luật lao động lỏng lẻo</h4>
                   </div>
-                <div className="space-y-3 text-sm text-amber-200/90">
+                <div className="space-y-3 text-sm text-white/90">
                   <div>
-                    <strong className="text-yellow-400">Biểu hiện:</strong>
+                    <strong className="text-white">Biểu hiện:</strong>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
                       <li>Tác phong tùy tiện, "giờ cao su"</li>
                       <li>Thiếu chuyên nghiệp</li>
@@ -261,11 +258,11 @@ export default function ChallengesPage() {
                     </ul>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Nguồn gốc:</strong>
+                    <strong className="text-white">Nguồn gốc:</strong>
                     <p className="mt-1">Văn hóa nông nghiệp, thiếu kỷ luật công nghiệp</p>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Cản trở hội nhập:</strong>
+                    <strong className="text-white">Cản trở hội nhập:</strong>
                     <p className="mt-1">Các chuỗi cung ứng toàn cầu (Apple, Samsung...) đòi hỏi kỷ luật công nghiệp tuyệt đối, chính xác về thời gian (Just-in-time), tuân thủ quy trình nghiêm ngặt. Kỷ luật kém dẫn đến phá vỡ chuỗi cung ứng.</p>
                   </div>
                 </div>
@@ -282,12 +279,12 @@ export default function ChallengesPage() {
                 />
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-4">
-                    <AlertCircle className="w-5 h-5 text-yellow-400" />
-                    <h4 className="font-semibold text-lg text-amber-200">Thói quen "đi tắt đón đầu" & Thiếu chữ tín</h4>
+                    <AlertCircle className="w-5 h-5 text-white" />
+                    <h4 className="font-semibold text-lg text-white">Thói quen "đi tắt đón đầu" & Thiếu chữ tín</h4>
                   </div>
-                <div className="space-y-3 text-sm text-amber-200/90">
+                <div className="space-y-3 text-sm text-white/90">
                   <div>
-                    <strong className="text-yellow-400">Biểu hiện:</strong>
+                    <strong className="text-white">Biểu hiện:</strong>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
                       <li>Muốn làm giàu nhanh, bỏ qua quy trình</li>
                       <li>Vi phạm bản quyền, làm hàng giả, hàng nhái</li>
@@ -295,11 +292,11 @@ export default function ChallengesPage() {
                     </ul>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Nguồn gốc:</strong>
+                    <strong className="text-white">Nguồn gốc:</strong>
                     <p className="mt-1">Văn hóa "ăn xổi ở thì", thiếu ý thức pháp luật</p>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Cản trở hội nhập:</strong>
+                    <strong className="text-white">Cản trở hội nhập:</strong>
                     <p className="mt-1">Kinh tế quốc tế vận hành dựa trên PHÁP QUYỀN và CHỮ TÍN. Vi phạm sẽ bị kiện, bị tẩy chay, mất thương hiệu quốc gia.</p>
                   </div>
                 </div>
@@ -322,13 +319,12 @@ export default function ChallengesPage() {
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="text-sm font-semibold text-yellow-400 bg-yellow-400/20 px-3 py-1 rounded-full">NHÓM 3</span>
-                    <span className="text-amber-300/70 text-sm">Thể chế & Quản lý</span>
+                    <span className="text-white/70 text-sm">Thể chế & Quản lý</span>
                   </div>
                   <h3 className="text-2xl md:text-3xl font-serif font-bold text-white">
                     Hạn chế trong Thể chế & Quản lý
                   </h3>
-                  <p className="text-amber-200/80 text-sm mt-2">
+                  <p className="text-white/80 text-sm mt-2">
                     Quan liêu, tham nhũng và tư duy phe cánh làm giảm hiệu quả quản lý và môi trường đầu tư
                   </p>
                 </div>
@@ -346,12 +342,12 @@ export default function ChallengesPage() {
                 />
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-4">
-                    <AlertCircle className="w-5 h-5 text-yellow-400" />
-                    <h4 className="font-semibold text-lg text-amber-200">Tệ quan liêu, hành chính hóa</h4>
+                    <AlertCircle className="w-5 h-5 text-white" />
+                    <h4 className="font-semibold text-lg text-white">Tệ quan liêu, hành chính hóa</h4>
                   </div>
-                <div className="space-y-3 text-sm text-amber-200/90">
+                <div className="space-y-3 text-sm text-white/90">
                   <div>
-                    <strong className="text-yellow-400">Biểu hiện:</strong>
+                    <strong className="text-white">Biểu hiện:</strong>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
                       <li>Thủ tục rườm rà, "hành là chính"</li>
                       <li>Gây phiền hà cho doanh nghiệp</li>
@@ -359,11 +355,11 @@ export default function ChallengesPage() {
                     </ul>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Nguồn gốc:</strong>
+                    <strong className="text-white">Nguồn gốc:</strong>
                     <p className="mt-1">Văn hóa quan liêu từ thời phong kiến, bao cấp</p>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Cản trở hội nhập:</strong>
+                    <strong className="text-white">Cản trở hội nhập:</strong>
                     <p className="mt-1">Tăng chi phí giao dịch, tăng chi phí tuân thủ, làm nản lòng nhà đầu tư nước ngoài, giảm năng lực cạnh tranh quốc gia.</p>
                   </div>
                 </div>
@@ -380,23 +376,23 @@ export default function ChallengesPage() {
                 />
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-4">
-                    <AlertCircle className="w-5 h-5 text-yellow-400" />
-                    <h4 className="font-semibold text-lg text-amber-200">Tham nhũng vặt & "Văn hóa phong bì"</h4>
+                    <AlertCircle className="w-5 h-5 text-white" />
+                    <h4 className="font-semibold text-lg text-white">Tham nhũng vặt & "Văn hóa phong bì"</h4>
                   </div>
-                <div className="space-y-3 text-sm text-amber-200/90">
+                <div className="space-y-3 text-sm text-white/90">
                   <div>
-                    <strong className="text-yellow-400">Biểu hiện:</strong>
+                    <strong className="text-white">Biểu hiện:</strong>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
                       <li>Phải có "lót tay" mọi khâu</li>
                       <li>Coi việc nhận hối lộ là "luật bất thành văn"</li>
                     </ul>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Nguồn gốc:</strong>
+                    <strong className="text-white">Nguồn gốc:</strong>
                     <p className="mt-1">Văn hóa "phong bì", thiếu minh bạch, thiếu trách nhiệm giải trình</p>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Cản trở hội nhập:</strong>
+                    <strong className="text-white">Cản trở hội nhập:</strong>
                     <p className="mt-1">Làm méo mó môi trường cạnh tranh, vi phạm các luật chống hối lộ quốc tế (ví dụ: FCPA của Mỹ), làm mất uy tín nghiêm trọng của môi trường đầu tư.</p>
                   </div>
                 </div>
@@ -412,23 +408,23 @@ export default function ChallengesPage() {
                 />
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-4">
-                    <AlertCircle className="w-5 h-5 text-yellow-400" />
-                    <h4 className="font-semibold text-lg text-amber-200">Tư duy "phe cánh", "con ông cháu cha" (COCC)</h4>
+                    <AlertCircle className="w-5 h-5 text-white" />
+                    <h4 className="font-semibold text-lg text-white">Tư duy "phe cánh", "con ông cháu cha" (COCC)</h4>
                   </div>
-                <div className="space-y-3 text-sm text-amber-200/90">
+                <div className="space-y-3 text-sm text-white/90">
                   <div>
-                    <strong className="text-yellow-400">Biểu hiện:</strong>
+                    <strong className="text-white">Biểu hiện:</strong>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
                       <li>Bổ nhiệm, tuyển dụng không dựa trên năng lực</li>
                       <li>Dựa trên quan hệ (Meritocracy)</li>
                     </ul>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Nguồn gốc:</strong>
+                    <strong className="text-white">Nguồn gốc:</strong>
                     <p className="mt-1">Văn hóa "quan hệ", thiếu công bằng, thiếu minh bạch</p>
                   </div>
                   <div>
-                    <strong className="text-yellow-400">Cản trở hội nhập:</strong>
+                    <strong className="text-white">Cản trở hội nhập:</strong>
                     <p className="mt-1">Lãng phí nhân tài, bộ máy quản lý (cả nhà nước và doanh nghiệp) yếu kém, ra quyết định sai lầm, không đủ năng lực đối thoại và cạnh tranh với đối tác quốc tế.</p>
                   </div>
                 </div>
