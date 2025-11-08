@@ -70,7 +70,7 @@ export default function BackgroundMusic() {
         disablekb: 1,
         showinfo: 0,
         mute: 0,
-        start: START_TIME, // Bắt đầu từ giây thứ 15
+        start: START_TIME, 
       },
       events: {
         onReady: (event: any) => {
@@ -88,7 +88,6 @@ export default function BackgroundMusic() {
     })
   }, [isLoaded])
 
-  // Điều khiển mute/unmute mà không reload iframe
   useEffect(() => {
     if (!playerRef.current) return
 
