@@ -125,10 +125,26 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
   const [matchWinner, setMatchWinner] = useState<number | null>(null)
   const [finalT1, setFinalT1] = useState(0)
   const [finalT2, setFinalT2] = useState(0)
+  const [gameSessionKey, setGameSessionKey] = useState(0) // Key để trigger random lại câu hỏi
   const audioCtxRef = useRef<AudioContext | null>(null)
 
-  const QUESTIONS_PER_ROUND = 10
-  const questionsForRound = useMemo(() => QUESTIONS.slice(0, QUESTIONS_PER_ROUND), [])
+  // Hàm shuffle để random câu hỏi
+  const shuffleArray = <T,>(array: T[]): T[] => {
+    const shuffled = [...array]
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+    }
+    return shuffled
+  }
+
+  const QUESTIONS_PER_ROUND = 180
+  // Sử dụng tất cả 180 câu hỏi, được random mỗi khi bắt đầu game mới
+  // Sử dụng gameSessionKey để random lại mỗi khi bắt đầu game mới
+  const questionsForRound = useMemo(() => {
+    const shuffled = shuffleArray(QUESTIONS)
+    return shuffled.slice(0, QUESTIONS_PER_ROUND)
+  }, [gameSessionKey])
   const currentQuestion = questionsForRound[currentQuestionIndex]
   const currentTeam = TEAMS.find((t) => t.id === currentTeamPlaying)
   const getTeamLabel = (id: number | null) => {
@@ -190,6 +206,8 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
   }, [timeLeft, gameState, answered])
 
   // Auto start with preset teams
+  // Lưu ý: Trong tournament mode, mỗi trận đấu có key riêng nên component sẽ được mount mới
+  // và câu hỏi sẽ được random tự động thông qua useMemo
   useEffect(() => {
     if (presetTeams) {
       setShowIntro(false)
@@ -215,6 +233,7 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
     setCurrentQuestionIndex(0)
     setConsecutiveCorrect(0)
     setMaxConsecutive(0)
+    setGameSessionKey(prev => prev + 1) // Random lại câu hỏi cho game mới
   }
 
   const handleAnswer = (optionIndex: number) => {
@@ -244,6 +263,7 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
   }
 
   const handleNextQuestion = () => {
+
     if (currentQuestionIndex === questionsForRound.length - 1) {
       handleRoundEnd()
     } else {
@@ -590,6 +610,7 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
                 setSelectedAnswer(null)
                 setIsCorrect(null)
                 setJackpotWon(false)
+                setGameSessionKey(prev => prev + 1) // Random lại câu hỏi khi chơi lại
               }}
               className="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-3 text-lg"
             >
