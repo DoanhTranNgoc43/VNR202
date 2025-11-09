@@ -118,7 +118,7 @@ export const ETHNIC_COSTUMES: EthnicCostume[] = [
   {
     name: "Giáy",
     description: "Áo màu sáng (thường xanh), quần đen, khăn quấn đầu đen, kiểu đơn giản, thanh.",
-    image: "https://icdn.dantri.com.vn/thumb_w/960/2019/07/20/xao-xuyen-net-dep-sac-nuoc-huong-troidocx-1563631475561.jpeg"
+    image: "https://vov2.vov.vn/sites/default/files/styles/large/public/2022-09/289461605_2162087893977368_3300248381260872544_n.jpg"
   },
   {
     name: "Cơ Tu",

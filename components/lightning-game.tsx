@@ -490,16 +490,37 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
                   })()}
                 </div>
                 {finalT1 === finalT2 && (
-                  <div className="text-sm md:text-base text-gray-700 dark:text-gray-300 font-semibold">
+                  <div className="text-sm md:text-base text-gray-700 dark:text-gray-300 font-semibold space-y-2">
+                    <div className="text-xs text-gray-600 dark:text-gray-400 mb-2">
+                      💡 Khi hòa điểm: Đội có thời gian còn lại NHIỀU HƠN (làm nhanh hơn) sẽ thắng
+                    </div>
                     {(() => {
                       const t1Name = getTeamLabel(team1)
                       const t2Name = getTeamLabel(team2)
                       if (team1TimeLeft > team2TimeLeft) {
-                        return `⚡ ${t1Name} thắng nhờ thời gian còn lại nhiều hơn (${Math.floor(team1TimeLeft / 60)}:${String(team1TimeLeft % 60).padStart(2, "0")} vs ${Math.floor(team2TimeLeft / 60)}:${String(team2TimeLeft % 60).padStart(2, "0")})`
+                        return (
+                          <div>
+                            <div className="font-bold text-green-700 dark:text-green-400">
+                              ⚡ {t1Name} thắng vì hoàn thành nhanh hơn
+                            </div>
+                            <div className="text-xs mt-1">
+                              Thời gian còn lại: {t1Name} {Math.floor(team1TimeLeft / 60)}:{String(team1TimeLeft % 60).padStart(2, "0")} &gt; {t2Name} {Math.floor(team2TimeLeft / 60)}:{String(team2TimeLeft % 60).padStart(2, "0")}
+                            </div>
+                          </div>
+                        )
                       } else if (team2TimeLeft > team1TimeLeft) {
-                        return `⚡ ${t2Name} thắng nhờ thời gian còn lại nhiều hơn (${Math.floor(team2TimeLeft / 60)}:${String(team2TimeLeft % 60).padStart(2, "0")} vs ${Math.floor(team1TimeLeft / 60)}:${String(team1TimeLeft % 60).padStart(2, "0")})`
+                        return (
+                          <div>
+                            <div className="font-bold text-green-700 dark:text-green-400">
+                              ⚡ {t2Name} thắng vì hoàn thành nhanh hơn
+                            </div>
+                            <div className="text-xs mt-1">
+                              Thời gian còn lại: {t2Name} {Math.floor(team2TimeLeft / 60)}:{String(team2TimeLeft % 60).padStart(2, "0")} &gt; {t1Name} {Math.floor(team1TimeLeft / 60)}:{String(team1TimeLeft % 60).padStart(2, "0")}
+                            </div>
+                          </div>
+                        )
                       } else {
-                        return `⚡ Hai đội hòa cả điểm và thời gian → Câu hỏi phụ (Sudden Death)`
+                        return `⚡ Hai đội hòa cả điểm và thời gian còn lại → Câu hỏi phụ (Sudden Death)`
                       }
                     })()}
                   </div>
