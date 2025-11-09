@@ -116,8 +116,6 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null)
   const [showLightning, setShowLightning] = useState(false)
-  const [jackpotWon, setJackpotWon] = useState(false)
-  const [jackpotAwarded, setJackpotAwarded] = useState(false)
   const [team1MaxStreak, setTeam1MaxStreak] = useState(0)
   const [team2MaxStreak, setTeam2MaxStreak] = useState(0)
   const [team1TimeLeft, setTeam1TimeLeft] = useState(0)
@@ -138,7 +136,7 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
     return shuffled
   }
 
-  const QUESTIONS_PER_ROUND = 180
+  const QUESTIONS_PER_ROUND = 10
   // Sử dụng tất cả 180 câu hỏi, được random mỗi khi bắt đầu game mới
   // Sử dụng gameSessionKey để random lại mỗi khi bắt đầu game mới
   const questionsForRound = useMemo(() => {
@@ -250,11 +248,6 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
       const newConsecutive = consecutiveCorrect + 1
       setConsecutiveCorrect(newConsecutive)
       setMaxConsecutive(Math.max(maxConsecutive, newConsecutive))
-
-      if (newConsecutive === 10 && !jackpotWon && !jackpotAwarded) {
-        setJackpotWon(true)
-        setJackpotAwarded(true)
-      }
     } else {
       setConsecutiveCorrect(0)
     }
@@ -452,12 +445,6 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
                 {currentQuestionIndex === questionsForRound.length - 1 ? "Kết Thúc" : "Tiếp Theo"}
               </Button>
             )}
-
-            {jackpotWon && (
-              <div className="bg-yellow-400 text-black p-4 rounded-lg text-center font-bold text-xl animate-pulse">
-                🎉 JACKPOT! 20.000.000 VND 🎉
-              </div>
-            )}
           </Card>
         </div>
       )}
@@ -609,7 +596,6 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
                 setAnswered(false)
                 setSelectedAnswer(null)
                 setIsCorrect(null)
-                setJackpotWon(false)
                 setGameSessionKey(prev => prev + 1) // Random lại câu hỏi khi chơi lại
               }}
               className="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-3 text-lg"
