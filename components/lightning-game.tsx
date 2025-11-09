@@ -471,39 +471,82 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
               <Zap className="w-12 h-12" />
             </h2>
             {team1 && team2 && (
-              <div className="text-xl md:text-2xl font-bold">
-                {(() => {
-                  const t1 = finalT1
-                  const t2 = finalT2
-                  const t1Name = getTeamLabel(team1)
-                  const t2Name = getTeamLabel(team2)
-                  if (t1 > t2) return `${t1Name} thắng (${t1} - ${t2})`
-                  if (t2 > t1) return `${t2Name} thắng (${t2} - ${t1})`
-                  return `Hòa điểm (${t1} - ${t2})`
-                })()}
+              <div className="space-y-2">
+                <div className="text-xl md:text-2xl font-bold">
+                  {(() => {
+                    const t1 = finalT1
+                    const t2 = finalT2
+                    const t1Name = getTeamLabel(team1)
+                    const t2Name = getTeamLabel(team2)
+                    if (t1 > t2) return `${t1Name} thắng (${t1} - ${t2})`
+                    if (t2 > t1) return `${t2Name} thắng (${t2} - ${t1})`
+                    // Hòa điểm - kiểm tra xem có đội thắng nhờ thời gian không
+                    if (team1TimeLeft > team2TimeLeft) {
+                      return `${t1Name} thắng (${t1} - ${t2}) - Nhờ thời gian`
+                    } else if (team2TimeLeft > team1TimeLeft) {
+                      return `${t2Name} thắng (${t2} - ${t1}) - Nhờ thời gian`
+                    }
+                    return `Hòa điểm (${t1} - ${t2})`
+                  })()}
+                </div>
+                {finalT1 === finalT2 && (
+                  <div className="text-sm md:text-base text-gray-700 dark:text-gray-300 font-semibold">
+                    {(() => {
+                      const t1Name = getTeamLabel(team1)
+                      const t2Name = getTeamLabel(team2)
+                      if (team1TimeLeft > team2TimeLeft) {
+                        return `⚡ ${t1Name} thắng nhờ thời gian còn lại nhiều hơn (${Math.floor(team1TimeLeft / 60)}:${String(team1TimeLeft % 60).padStart(2, "0")} vs ${Math.floor(team2TimeLeft / 60)}:${String(team2TimeLeft % 60).padStart(2, "0")})`
+                      } else if (team2TimeLeft > team1TimeLeft) {
+                        return `⚡ ${t2Name} thắng nhờ thời gian còn lại nhiều hơn (${Math.floor(team2TimeLeft / 60)}:${String(team2TimeLeft % 60).padStart(2, "0")} vs ${Math.floor(team1TimeLeft / 60)}:${String(team1TimeLeft % 60).padStart(2, "0")})`
+                      } else {
+                        return `⚡ Hai đội hòa cả điểm và thời gian → Câu hỏi phụ (Sudden Death)`
+                      }
+                    })()}
+                  </div>
+                )}
               </div>
             )}
           </Card>
 
           <div className="grid md:grid-cols-2 gap-4">
             {team1 && (
-              <Card className={`p-6 flex items-center justify-between ${
+              <Card className={`p-6 ${
                 TEAMS.find((t) => t.id === team1)?.bgColor
               } border-2 ${TEAMS.find((t) => t.id === team1)?.borderColor}`}>
-                <div className="text-2xl font-black">
-                  {getTeamLabel(team1)}
+                <div className="flex items-center justify-between mb-3">
+                  <div className="text-2xl font-black">
+                    {getTeamLabel(team1)}
+                  </div>
+                  <div className="text-5xl font-black">{finalT1}</div>
                 </div>
-                <div className="text-5xl font-black">{finalT1}</div>
+                <div className="flex items-center justify-between pt-3 border-t border-opacity-20 border-gray-600 dark:border-gray-400">
+                  <div className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    Thời gian còn lại:
+                  </div>
+                  <div className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                    {Math.floor(team1TimeLeft / 60)}:{String(team1TimeLeft % 60).padStart(2, "0")}
+                  </div>
+                </div>
               </Card>
             )}
             {team2 && (
-              <Card className={`p-6 flex items-center justify-between ${
+              <Card className={`p-6 ${
                 TEAMS.find((t) => t.id === team2)?.bgColor
               } border-2 ${TEAMS.find((t) => t.id === team2)?.borderColor}`}>
-                <div className="text-2xl font-black">
-                  {getTeamLabel(team2)}
+                <div className="flex items-center justify-between mb-3">
+                  <div className="text-2xl font-black">
+                    {getTeamLabel(team2)}
+                  </div>
+                  <div className="text-5xl font-black">{finalT2}</div>
                 </div>
-                <div className="text-5xl font-black">{finalT2}</div>
+                <div className="flex items-center justify-between pt-3 border-t border-opacity-20 border-gray-600 dark:border-gray-400">
+                  <div className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    Thời gian còn lại:
+                  </div>
+                  <div className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                    {Math.floor(team2TimeLeft / 60)}:{String(team2TimeLeft % 60).padStart(2, "0")}
+                  </div>
+                </div>
               </Card>
             )}
           </div>

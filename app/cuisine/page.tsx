@@ -70,7 +70,7 @@ const DISHES: Dish[] = [
     name: "Cơm lam",
     ingredients: "Gạo nếp, nước dừa, đậu xanh",
     origin: "Tây Bắc – Tây Nguyên",
-    image: "https://cdnphoto.dantri.com.vn/lNbIsfnQ6O8WhQCwd6k2f3nAkCo=/thumb_w/1155/2021/12/18/comlamtaynguyen7-1639845775533.jpg"
+    image: "https://cdn.tgdd.vn/Files/2020/05/16/1255894/cach-lam-com-lam-thom-ngon-deo-ngot-don-gian-chuan-vi-tay-bac-1-760x367.jpg"
   },
   {
     name: "Bánh chưng",

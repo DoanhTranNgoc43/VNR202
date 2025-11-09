@@ -284,8 +284,6 @@ export default function ExperiencePage() {
                 "https://drive.google.com/file/d/1ITj7nJreiTA22yL5sFDCdA2LE-u5V6j3/view?usp=drive_link",
                 "https://drive.google.com/file/d/1jEBl-12JnI0s6soi2_xzo_SdYAa66-i5/view?usp=drive_link",
                 "https://drive.google.com/file/d/1Yq7RMJPNs1zOLBeQPIUfWe91RZ6W5ks2/view?usp=drive_link",
-                "https://drive.google.com/file/d/1MpA0KqH8aSR7_QRgWSlY5z-sjJF497Bq/view?usp=drive_link",
-                "https://drive.google.com/file/d/1JCatm0_Tzw-1JHn47uqrL0NmVkp_9wF4/view?usp=drive_link",
                 "https://drive.google.com/file/d/1IrlklTt_UUbZLMEZvGY_b4Upew02Kd77/view?usp=drive_link",
                 "https://drive.google.com/file/d/1TAxK9h2jYoll9bsFD672_tY2NS_j8MLL/view?usp=drive_link",
                 "https://drive.google.com/file/d/1TfORZ_QSA_6snDJlIwwaOIe3Z4Y3I6Py/view?usp=drive_link",
