@@ -66,6 +66,7 @@ export default function SiteHeader() {
                 Đường lối của đảng
               </span>
             </Link>
+       
             <a  
               href="https://tapchicongsan.org.vn/web/guest/van_hoa_xa_hoi/-/2018/1041102/xay-dung-nen-van-hoa-viet-nam-ngay-cang-ben-vung%2C-tien-bo%2C-ban-sac%2C-tuong-xung-voi-trinh-do-phat-trien-kinh-te---xa-hoi-hien-nay-theo-tinh-than-dai-hoi-xiii-cua-dang.aspx" 
               className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap px-2 md:px-2.5 py-1.5 md:py-2 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/30 backdrop-blur-sm flex-shrink-0"
@@ -76,6 +77,14 @@ export default function SiteHeader() {
                 Tin tức
               </span>
             </a>
+            <Link 
+              href="/experience" 
+              className="relative font-semibold transition-all duration-300 hover:scale-105 group cursor-pointer whitespace-nowrap px-2 md:px-2.5 py-1.5 md:py-2 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/30 backdrop-blur-sm flex-shrink-0"
+            >
+              <span className="relative z-10 text-white inline-block whitespace-nowrap">
+                Trải nghiệm của nhóm
+              </span>
+            </Link>
             <HoverCard>
               <HoverCardTrigger asChild>
                 <Link 

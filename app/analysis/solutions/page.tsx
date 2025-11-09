@@ -39,7 +39,7 @@ export default function SolutionsPage() {
 
       {/* PHẦN 2: ĐƯỜNG LỐI CỦA ĐẢNG */}
       <section className="max-w-7xl mx-auto px-4 md:px-10 py-16">
-        {/* 2.1. Nền tảng tư tưởng */}
+        {/* 2.1. Nền tảng tư tưởng: Đại hội VI (1986) */}
         <div className="mb-16">
           <Card className="bg-gradient-to-r from-blue-900/40 via-blue-800/30 to-indigo-900/20 border-2 border-blue-500/50 p-6 mb-8 shadow-xl shadow-blue-900/20">
             <div className="flex items-center gap-6">
@@ -56,10 +56,13 @@ export default function SolutionsPage() {
                   <span className="text-white/70 text-sm">Nền tảng tư tưởng</span>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-white">
-                  Coi Văn hóa là động lực phát triển
+                  Đại hội VI (1986) - "Cách mạng" về tư duy
                 </h3>
                 <p className="text-white/80 text-sm mt-2">
-                  Các nghị quyết và văn kiện quan trọng của Đảng xác định vai trò nền tảng của văn hóa trong phát triển đất nước
+                  Bắt đầu từ "Đổi mới tư duy", đặc biệt là tư duy kinh tế. Tinh thần cốt lõi: "Nhìn thẳng vào sự thật, đánh giá đúng sự thật, nói rõ sự thật" (Trích Văn kiện ĐH VI).
+                </p>
+                <p className="text-white/70 text-xs mt-2 italic">
+                  Đây chính là một cuộc cách mạng văn hóa đầu tiên: Dùng "sự thật" (thực chất) để chống lại "bệnh thành tích, hình thức chủ nghĩa" đã tồn tại suốt thời bao cấp.
                 </p>
               </div>
             </div>
@@ -67,12 +70,14 @@ export default function SolutionsPage() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* Nghị quyết TW5 */}
-            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden">
-              <img 
-                src="https://imgv2-1-f.scribdassets.com/img/document/721170922/original/7f8e50dfc0/1?v=1" 
-                alt="Nghị quyết TW5" 
-                className="w-full h-40 object-cover"
-              />
+            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="https://imgv2-1-f.scribdassets.com/img/document/721170922/original/7f8e50dfc0/1?v=1" 
+                  alt="Nghị quyết TW5" 
+                  className="w-full h-40 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+              </div>
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <Award className="w-6 h-6 text-white" />
@@ -80,24 +85,40 @@ export default function SolutionsPage() {
                 </div>
               <div className="space-y-3 text-sm text-white/90">
                 <div>
-                  <strong className="text-white">Nội dung cốt lõi:</strong>
-                  <p className="mt-1">"Xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc"</p>
+                  <strong className="text-white">Bối cảnh (LSD):</strong>
+                  <p className="mt-1">10 năm Đổi mới, kinh tế phát triển nhưng đạo đức xã hội xuống cấp, "mặt trái của kinh tế thị trường" (chủ nghĩa cá nhân, thực dụng) xuất hiện.</p>
+                </div>
+                <div>
+                  <strong className="text-white">Nội dung cốt lõi (5 quan điểm chỉ đạo):</strong>
+                  <ul className="list-disc pl-5 mt-1 space-y-1">
+                    <li>Văn hóa là nền tảng tinh thần, vừa là mục tiêu, vừa là động lực phát triển KT-XH</li>
+                    <li>Nền văn hóa ta xây dựng là tiên tiến (khoa học, hiện đại) và đậm đà bản sắc dân tộc</li>
+                    <li>Văn hóa Việt Nam là thống nhất mà đa dạng</li>
+                    <li>Xây dựng văn hóa là sự nghiệp của toàn dân do Đảng lãnh đạo</li>
+                    <li>Phải chủ động giao lưu quốc tế, tiếp thu tinh hoa văn hóa nhân loại</li>
+                  </ul>
+                </div>
+                <div>
+                  <strong className="text-white">Nhiệm vụ:</strong>
+                  <p className="mt-1">Nhiệm vụ số 1 là Xây dựng con người Việt Nam (về tư tưởng, đạo đức, lối sống, trí tuệ...). Các nhiệm vụ khác: Xây dựng môi trường văn hóa; Phát triển văn học, nghệ thuật; Mở rộng giao lưu văn hóa quốc tế...</p>
                 </div>
                 <div>
                   <strong className="text-white">Ý nghĩa:</strong>
-                  <p className="mt-1">Đặt nền móng tư duy: Văn hóa là nền tảng tinh thần xã hội, vừa là mục tiêu, vừa là động lực thúc đẩy phát triển kinh tế - xã hội. Khẳng định văn hóa phải "soi đường cho quốc dân đi".</p>
+                  <p className="mt-1">Đây là Cương lĩnh về văn hóa thời kỳ Đổi Mới, trực tiếp định hướng cho việc "gạn đục khơi trong", đặt nền móng lý luận cho việc khắc phục các tàn dư.</p>
                 </div>
               </div>
               </div>
             </Card>
 
             {/* Nghị quyết TW9 */}
-            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden">
-              <img 
-                src="https://bcp.cdnchinhphu.vn/zoom/600_315/Uploaded/buithuhuong/2014_06_11/HNTW.jpg" 
-                alt="Nghị quyết TW9" 
-                className="w-full h-40 object-cover"
-              />
+            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="https://bcp.cdnchinhphu.vn/zoom/600_315/Uploaded/buithuhuong/2014_06_11/HNTW.jpg" 
+                  alt="Nghị quyết TW9" 
+                  className="w-full h-40 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+              </div>
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <Award className="w-6 h-6 text-white" />
@@ -105,24 +126,35 @@ export default function SolutionsPage() {
                 </div>
               <div className="space-y-3 text-sm text-white/90">
                 <div>
-                  <strong className="text-white">Nội dung cốt lõi:</strong>
-                  <p className="mt-1">"Xây dựng và phát triển văn hóa, con người Việt Nam đáp ứng yêu cầu phát triển bền vững đất nước"</p>
+                  <strong className="text-white">Bối cảnh (LSD):</strong>
+                  <p className="mt-1">Tổng kết 15 năm thực hiện NQTW 5. Bối cảnh hội nhập quốc tế sâu rộng hơn (đã gia nhập WTO), các vấn đề "xâm lăng văn hóa", suy thoái đạo đức, và "văn hóa trong kinh tế" nổi lên cấp bách.</p>
                 </div>
                 <div>
-                  <strong className="text-white">Ý nghĩa:</strong>
-                  <p className="mt-1">Đặt trọng tâm vào xây dựng CON NGƯỜI (chủ thể của hội nhập) với các phẩm chất: nhân cách, lối sống tốt đẹp, có tinh thần yêu nước, đoàn kết, sáng tạo.</p>
+                  <strong className="text-white">Nội dung cốt lõi (6 nhiệm vụ, trọng tâm 4):</strong>
+                  <ul className="list-disc pl-5 mt-1 space-y-1">
+                    <li>Xây dựng con người Việt Nam phát triển toàn diện (yêu nước, nhân ái, nghĩa tình, trung thực, đoàn kết, cần cù, sáng tạo)</li>
+                    <li>Xây dựng môi trường văn hóa lành mạnh</li>
+                    <li><strong className="text-white">XÂY DỰNG VĂN HÓA TRONG CHÍNH TRỊ VÀ KINH TẾ</strong> (Điểm mới then chốt, đánh thẳng vào các hạn chế 1.3)</li>
+                    <li>Chủ động hội nhập quốc tế về văn hóa</li>
+                  </ul>
+                </div>
+                <div>
+                  <strong className="text-white">Phân tích sâu "Văn hóa trong kinh tế":</strong>
+                  <p className="mt-1">Nghị quyết yêu cầu phải xây dựng "đạo đức kinh doanh", "văn hóa doanh nghiệp", "văn hóa doanh nhân". Mục tiêu là làm cho văn hóa (nội lực mềm) và pháp luật (công cụ cứng) cùng lúc điều tiết hành vi kinh doanh. Đây là giải pháp trực tiếp cho "thiếu chữ tín", "làm ăn chộp giật".</p>
                 </div>
               </div>
               </div>
             </Card>
 
             {/* Đại hội XIII */}
-            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden">
-              <img 
-                src="https://bvhttdl.mediacdn.vn/291773308735864832/2021/11/24/ghi-van-hoa-toan-quoc-trien-khai-thuc-hien-nghi-quyet-dai-hoi-dai-bieu-toan-quoc-lan-thu-xiii-cua-dang15-16377185976821760747235-1637720949775-16377209498951435389405.jpg" 
-                alt="Đại hội XIII" 
-                className="w-full h-40 object-cover"
-              />
+            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="https://bvhttdl.mediacdn.vn/291773308735864832/2021/11/24/ghi-van-hoa-toan-quoc-trien-khai-thuc-hien-nghi-quyet-dai-hoi-dai-bieu-toan-quoc-lan-thu-xiii-cua-dang15-16377185976821760747235-1637720949775-16377209498951435389405.jpg" 
+                  alt="Đại hội XIII" 
+                  className="w-full h-40 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+              </div>
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <Award className="w-6 h-6 text-white" />
@@ -130,14 +162,121 @@ export default function SolutionsPage() {
                 </div>
               <div className="space-y-3 text-sm text-white/90">
                 <div>
-                  <strong className="text-white">Nội dung cốt lõi:</strong>
-                  <p className="mt-1">Khơi dậy "khát vọng phát triển đất nước phồn vinh, hạnh phúc". Xây dựng "Hệ giá trị quốc gia", "Hệ giá trị văn hóa", "Hệ giá trị con người".</p>
+                  <p className="mt-1">Văn kiện Đại hội XIII (Phần cập nhật mới nhất).</p>
                 </div>
                 <div>
-                  <strong className="text-white">Ý nghĩa:</strong>
-                  <p className="mt-1">Tạo động lực tinh thần mới, lấy khát vọng làm sức mạnh để vượt qua các tư duy cũ, trì trệ.</p>
+                  <strong className="text-white">Nội dung mới:</strong>
+                  <ul className="list-disc pl-5 mt-1 space-y-1">
+                    <li>Khơi dậy "Khát vọng phát triển đất nước phồn vinh, hạnh phúc"</li>
+                    <li>Xây dựng <strong className="text-white">Hệ giá trị quốc gia:</strong> (Hòa bình, Thống nhất, Độc lập, Dân giàu, Nước mạnh, Dân chủ, Công bằng, Văn minh, Hạnh phúc)</li>
+                    <li>Xây dựng <strong className="text-white">Hệ giá trị con người:</strong> (Yêu nước, Đoàn kết, Tự cường, Nghĩa tình, Trung thực, Trách nhiệm, Kỷ luật, Sáng tạo)</li>
+                  </ul>
+                </div>
+                <div>
+                  <strong className="text-white">Ý nghĩa (Phân tích sâu):</strong>
+                  <p className="mt-1">Đây là sự tổng hợp và nâng cao toàn bộ các Nghị quyết trước. Đưa "Khát vọng" (một giá trị văn hóa tinh thần) lên làm động lực phát triển cao nhất, để thay thế cho các tư duy vụ lợi, ngắn hạn, cục bộ. Đặc biệt, việc nhấn mạnh "Kỷ luật" và "Sáng tạo" trong hệ giá trị con người Việt Nam mới là sự đối trọng trực tiếp và là giải pháp căn cơ để khắc phục "Kỷ luật lỏng lẻo" và "Tư duy ngại rủi ro, kinh nghiệm chủ nghĩa".</p>
                 </div>
               </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+
+        {/* 2.3. Các chủ trương song hành (Mang tính quyết định - "Xây" đi đôi với "Chống") */}
+        <div className="mb-16">
+          <Card className="bg-gradient-to-r from-blue-900/40 via-blue-800/30 to-indigo-900/20 border-2 border-blue-500/50 p-6 mb-8 shadow-xl shadow-blue-900/20">
+            <div className="flex items-center gap-6">
+              <div className="relative flex-shrink-0">
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shadow-lg">
+                  <Target className="w-10 h-10 text-white" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center border-2 border-white shadow-lg">
+                  <span className="text-sm font-black text-blue-800">2</span>
+                </div>
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-white/70 text-sm">Chủ trương song hành</span>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-serif font-bold text-white">
+                  "Xây" đi đôi với "Chống"
+                </h3>
+                <p className="text-white/80 text-sm mt-2">
+                  Các chủ trương mang tính quyết định, kết hợp giữa xây dựng và đấu tranh để khắc phục các hạn chế văn hóa
+                </p>
+              </div>
+            </div>
+          </Card>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {/* a. "Chống": Xây dựng, chỉnh đốn Đảng */}
+            <Card className="bg-black/30 border border-red-500/40 p-0 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="https://file3.qdnd.vn/data/images/0/2023/09/07/kimoanh/02.jpg" 
+                  alt="Chống tham nhũng" 
+                  className="w-full h-48 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <AlertTriangle className="w-6 h-6 text-red-400" />
+                  <h4 className="font-semibold text-lg text-white">"Chống": Xây dựng, chỉnh đốn Đảng</h4>
+                </div>
+                <div className="space-y-3 text-sm text-white/90">
+                  <div>
+                    <p className="mt-1">Nghị quyết Trung ương 4 (Khóa XI) và Nghị quyết Trung ương 4 (Khóa XII) về "Tăng cường xây dựng, chỉnh đốn Đảng".</p>
+                  </div>
+                  <div>
+                    <strong className="text-white">Nội dung (Chi tiết):</strong>
+                    <p className="mt-1">Thẳng thắn chỉ ra 27 biểu hiện "tự diễn biến", "tự chuyển hóa". (Ví dụ cụ thể: "Nói nhiều làm ít", "Phát ngôn vô nguyên tắc", "Tham vọng chức quyền", "Tư duy nhiệm kỳ", "Lợi ích nhóm", "Quan liêu, xa dân"...).</p>
+                  </div>
+                  <div>
+                    <strong className="text-white">Hành động:</strong>
+                    <p className="mt-1">Công cuộc "đốt lò" do TBT Nguyễn Phú Trọng khởi xướng. Thành lập Ban Chỉ đạo Trung ương về phòng, chống tham nhũng, tiêu cực (thể hiện sự thể chế hóa, quyết tâm chính trị cao nhất).</p>
+                  </div>
+                  <div>
+                    <strong className="text-white">Ý nghĩa:</strong>
+                    <p className="mt-1">Đây là hành động trực tiếp nhất, quyết liệt nhất dùng kỷ luật Đảng và pháp luật của Nhà nước để "chặt bỏ" những ung nhọt văn hóa (tham nhũng, phe cánh, quan liêu) đang cản trở hội nhập.</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* b. "Xây": Xây dựng Nhà nước pháp quyền XHCN */}
+            <Card className="bg-black/30 border border-green-500/40 p-0 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/3/26/1027656/2603-Thu-Tuong-Tham-.jpeg" 
+                  alt="Nhà nước pháp quyền" 
+                  className="w-full h-48 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <CheckCircle className="w-6 h-6 text-green-400" />
+                  <h4 className="font-semibold text-lg text-white">"Xây": Nhà nước pháp quyền XHCN</h4>
+                </div>
+                <div className="space-y-3 text-sm text-white/90">
+                  <div>
+                    <p className="mt-1">Được nhấn mạnh qua tất cả các kỳ Đại hội thời kỳ Đổi Mới.</p>
+                  </div>
+                  <div>
+                    <strong className="text-white">Nội dung:</strong>
+                    <p className="mt-1">Chuyển từ "Nhà nước quản lý" sang "Nhà nước kiến tạo, phục vụ".</p>
+                  </div>
+                  <div>
+                    <strong className="text-white">Hành động (Chi tiết):</strong>
+                    <ul className="list-disc pl-5 mt-1 space-y-1">
+                      <li>Đẩy mạnh cải cách hành chính, "cắt giảm điều kiện kinh doanh" (chống "giấy phép con")</li>
+                      <li>Xây dựng Chính phủ điện tử, Chính phủ số (như Cổng Dịch vụ công Quốc gia) → mục tiêu là giảm tối đa tiếp xúc trực tiếp giữa người dân/doanh nghiệp và cán bộ, từ đó triệt tiêu môi trường của "văn hóa phong bì"</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <strong className="text-white">Ý nghĩa:</strong>
+                    <p className="mt-1">Dùng thể chế (pháp luật, quy trình điện tử minh bạch) để thay thế cho thói quen (quan liêu, xin-cho, phong bì).</p>
+                  </div>
+                </div>
               </div>
             </Card>
           </div>
@@ -152,7 +291,7 @@ export default function SolutionsPage() {
                   <Target className="w-10 h-10 text-white" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center border-2 border-white shadow-lg">
-                  <span className="text-sm font-black text-blue-800">2</span>
+                  <span className="text-sm font-black text-blue-800">3</span>
                 </div>
               </div>
               <div className="flex-1">
@@ -185,12 +324,14 @@ export default function SolutionsPage() {
             </Card>
             <div className="grid md:grid-cols-2 gap-6">
             {/* a. Khắc phục tư duy tiểu nông, bao cấp */}
-            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden">
-              <img 
-                src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/3/26/1027656/2603-Thu-Tuong-Tham-.jpeg" 
-                alt="Khắc phục tư duy tiểu nông" 
-                className="w-full h-48 object-cover"
-              />
+            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/3/26/1027656/2603-Thu-Tuong-Tham-.jpeg" 
+                  alt="Khắc phục tư duy tiểu nông" 
+                  className="w-full h-48 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+              </div>
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <CheckCircle2 className="w-5 h-5 text-green-400" />
@@ -207,6 +348,42 @@ export default function SolutionsPage() {
                     <li>Khuyến khích khởi nghiệp, đổi mới sáng tạo (Startup)</li>
                     <li>Hỗ trợ doanh nghiệp tư nhân, coi kinh tế tư nhân là động lực quan trọng</li>
                   </ul>
+                </div>
+              </div>
+              </div>
+            </Card>
+
+            {/* b. Khắc phục bệnh thành tích, hình thức chủ nghĩa */}
+            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="https://file3.qdnd.vn/data/images/0/2023/09/07/kimoanh/02.jpg" 
+                  alt="Khắc phục bệnh thành tích" 
+                  className="w-full h-48 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <CheckCircle2 className="w-5 h-5 text-green-400" />
+                  <h4 className="font-semibold text-lg text-white">Khắc phục bệnh thành tích, hình thức chủ nghĩa</h4>
+                </div>
+              <div className="space-y-3 text-sm text-white/90">
+                <div>
+                  <strong className="text-white">Đường lối:</strong>
+                  <p className="mt-1">Đại hội VI (1986) - "Nhìn thẳng vào sự thật, đánh giá đúng sự thật, nói rõ sự thật". Dùng "sự thật" (thực chất) để chống lại "bệnh thành tích, hình thức chủ nghĩa".</p>
+                </div>
+                <div>
+                  <strong className="text-white">Hành động:</strong>
+                  <ul className="list-disc pl-5 mt-1 space-y-1">
+                    <li>Đổi mới cách đánh giá cán bộ, chuyển từ "báo cáo đẹp" sang "kết quả thực tế"</li>
+                    <li>Yêu cầu minh bạch, truy xuất nguồn gốc trong sản xuất, xuất khẩu</li>
+                    <li>Chống làm giả chứng nhận (VietGAP, ISO...), "greenwashing"</li>
+                    <li>Xây dựng hệ thống kiểm tra, giám sát chất lượng thực tế</li>
+                  </ul>
+                </div>
+                <div>
+                  <strong className="text-white">Ý nghĩa:</strong>
+                  <p className="mt-1">Đảm bảo tính minh bạch và truy xuất nguồn gốc - yêu cầu cốt lõi của đối tác quốc tế. Tránh tẩy chay cả ngành hàng, quốc gia do một lô hàng gian dối.</p>
                 </div>
               </div>
               </div>
@@ -230,12 +407,14 @@ export default function SolutionsPage() {
             </Card>
             <div className="grid md:grid-cols-2 gap-6">
             {/* c. Khắc phục bệnh thành tích, kỷ luật kém */}
-            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden">
-              <img 
-                src="https://moha.gov.vn/Media_Share/BoNoiVu/DATA/2022/04/18-00_40_02_563.jpg" 
-                alt="Khắc phục bệnh thành tích" 
-                className="w-full h-48 object-cover"
-              />
+            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="https://moha.gov.vn/Media_Share/BoNoiVu/DATA/2022/04/18-00_40_02_563.jpg" 
+                  alt="Khắc phục bệnh thành tích" 
+                  className="w-full h-48 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+              </div>
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <CheckCircle2 className="w-5 h-5 text-green-400" />
@@ -253,6 +432,42 @@ export default function SolutionsPage() {
                     <li>Đẩy mạnh "thực học, thực nghiệp"</li>
                     <li>Yêu cầu cao hơn về chất lượng nguồn nhân lực</li>
                   </ul>
+                </div>
+              </div>
+              </div>
+            </Card>
+
+            {/* d. Khắc phục thiếu chữ tín, xây dựng văn hóa doanh nghiệp */}
+            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/528147011_1177861001026252_2269891275596632700_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ITry2s8vBYUQ7kNvwG_H9zS&_nc_oc=AdmCo-dG8fi8P0zXnQ_9Wg3rUh54opEBzVcPRnAQoua9y0rtPjfHgXEn703v5Ij91FY&_nc_zt=23&_nc_ht=scontent.fhan14-5.fna&_nc_gid=nv6YfhUY27sM7SB5MVpJhg&oh=00_Afg2q7ir2kWjrVoFR2SMtgR_QG6jUMLPI3vzzTAZhW0m3A&oe=69155CAD" 
+                  alt="Xây dựng văn hóa doanh nghiệp" 
+                  className="w-full h-48 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <CheckCircle2 className="w-5 h-5 text-green-400" />
+                  <h4 className="font-semibold text-lg text-white">Khắc phục thiếu chữ tín, xây dựng văn hóa doanh nghiệp</h4>
+                </div>
+              <div className="space-y-3 text-sm text-white/90">
+                <div>
+                  <strong className="text-white">Đường lối:</strong>
+                  <p className="mt-1">Nghị quyết Trung ương 9 (Khóa XI) yêu cầu xây dựng "Văn hóa trong kinh tế": đạo đức kinh doanh, văn hóa doanh nghiệp, văn hóa doanh nhân.</p>
+                </div>
+                <div>
+                  <strong className="text-white">Hành động:</strong>
+                  <ul className="list-disc pl-5 mt-1 space-y-1">
+                    <li>Xây dựng đạo đức kinh doanh, tuân thủ pháp luật</li>
+                    <li>Phát triển văn hóa doanh nghiệp, thương hiệu quốc gia</li>
+                    <li>Chống hàng giả, hàng nhái, vi phạm sở hữu trí tuệ</li>
+                    <li>Đảm bảo chất lượng đồng đều, giữ chữ tín với đối tác quốc tế</li>
+                  </ul>
+                </div>
+                <div>
+                  <strong className="text-white">Ý nghĩa:</strong>
+                  <p className="mt-1">Làm cho văn hóa (nội lực mềm) và pháp luật (công cụ cứng) cùng lúc điều tiết hành vi kinh doanh. Đây là giải pháp trực tiếp cho "thiếu chữ tín", "làm ăn chộp giật".</p>
                 </div>
               </div>
               </div>
@@ -276,12 +491,14 @@ export default function SolutionsPage() {
             </Card>
             <div className="grid md:grid-cols-2 gap-6">
             {/* b. Khắc phục quan liêu, tham nhũng */}
-            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden">
-              <img 
-                src="https://lacduong.lamdong.dcs.vn/Portals/13/media/newsimage/1/7/a/17a-09.jpg" 
-                alt="Khắc phục quan liêu tham nhũng" 
-                className="w-full h-48 object-cover"
-              />
+            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="https://lacduong.lamdong.dcs.vn/Portals/13/media/newsimage/1/7/a/17a-09.jpg" 
+                  alt="Khắc phục quan liêu tham nhũng" 
+                  className="w-full h-48 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+              </div>
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <CheckCircle2 className="w-5 h-5 text-green-400" />
@@ -304,12 +521,14 @@ export default function SolutionsPage() {
             </Card>
 
             {/* d. Khắc phục tư duy COCC, phe cánh */}
-            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden">
-              <img 
-                src="https://lh3.googleusercontent.com/proxy/Rvc7Uz1H-1zczrryIJ5wULr377df4QnwCVK9XU3QMOQ0is671-7gNFY7nVPHmal2mqS61yDuNbvS474E67QijwtLO8KJTtOBXKObqBcu4j7iGejCxPlsnbWgPorulRklLfvDy9Rvqf5dGkuJKleOP7L9VTNi22uz51lI0I8tkb8wMBWHu-zz5V8" 
-                alt="Khắc phục tư duy COCC" 
-                className="w-full h-48 object-cover"
-              />
+            <Card className="bg-black/30 border border-amber-800/40 p-0 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="https://lh3.googleusercontent.com/proxy/Rvc7Uz1H-1zczrryIJ5wULr377df4QnwCVK9XU3QMOQ0is671-7gNFY7nVPHmal2mqS61yDuNbvS474E67QijwtLO8KJTtOBXKObqBcu4j7iGejCxPlsnbWgPorulRklLfvDy9Rvqf5dGkuJKleOP7L9VTNi22uz51lI0I8tkb8wMBWHu-zz5V8" 
+                  alt="Khắc phục tư duy COCC" 
+                  className="w-full h-48 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+              </div>
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <CheckCircle2 className="w-5 h-5 text-green-400" />
@@ -449,14 +668,10 @@ export default function SolutionsPage() {
       </section>
 
       {/* Navigation */}
-      <section className="max-w-7xl mx-auto px-4 md:px-10 py-16">
-        <div className="flex gap-4 justify-center flex-wrap">
-          <Link href="/analysis/challenges">
-            <Button variant="outline" className="border-white/60 text-white hover:bg-white/10">
-              <ArrowLeft className="w-4 h-4 mr-2 rotate-180" />
-              Xem Trầm tích, Yếu kém
-            </Button>
-          </Link>
+      <section className="max-w-7xl mx-auto px-4 md:px-10 py-16 text-center">
+        <h3 className="text-2xl md:text-3xl font-serif font-bold mb-4">Đường lối của Đảng với những chủ trương và hành động thiết thực đã thể hiện quyết tâm xây dựng nền văn hóa tiên tiến, đậm đà bản sắc dân tộc trong quá trình hội nhập quốc tế.</h3>
+        <div className="flex gap-3 justify-center">
+          <a href="https://tapchicongsan.org.vn/web/guest/van_hoa_xa_hoi/-/2018/1041102/xay-dung-nen-van-hoa-viet-nam-ngay-cang-ben-vung%2C-tien-bo%2C-ban-sac%2C-tuong-xung-voi-trinh-do-phat-trien-kinh-te---xa-hoi-hien-nay-theo-tinh-than-dai-hoi-xiii-cua-dang.aspx"><Button className="bg-red-600 hover:bg-red-700 text-white">Tin tức</Button></a>
         </div>
       </section>
     </main>

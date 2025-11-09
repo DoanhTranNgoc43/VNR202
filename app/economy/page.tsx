@@ -35,8 +35,10 @@ export default function EconomyPage() {
             { title: "Thương Mại", desc: "Xuất khẩu > 400 tỷ USD", image: "https://ktmt.vnmediacdn.com/images/2021/06/17/13-1623923237-anhh-thuong-mai.jpg" },
             { title: "Đầu Tư Quốc Tế", desc: "FDI từ 143 quốc gia", image: "https://cdn.vietnambiz.vn/2019/8/8/tao-dieu-kien-thuan-loi-cho-nha-dau-tu-nuoc-ngoaigrande-1565258935581935755316.jpg"},
           ].map((p) => (
-            <Card key={p.title} className="p-0 bg-black/30 border border-amber-800/40 overflow-hidden">
-              <img src={p.image} alt={p.title} className="w-full h-32 object-cover" />
+            <Card key={p.title} className="p-0 bg-black/30 border border-amber-800/40 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img src={p.image} alt={p.title} className="w-full h-32 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+              </div>
               <div className="p-5">
                 <div className="font-semibold text-white">{p.title}</div>
                 <div className="text-sm text-white/80">{p.desc}</div>
@@ -63,8 +65,10 @@ export default function EconomyPage() {
               ].map((m) => (
                 <div key={m.year} className="relative">
                   <div className="hidden md:block absolute -top-2 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-amber-400" />
-                  <Card className="bg-black/30 border border-amber-800/40 overflow-hidden text-center">
-                    <img src={m.image} alt={`${m.year} ${m.title}`} className="w-full h-24 object-cover" />
+                  <Card className="bg-black/30 border border-amber-800/40 overflow-hidden text-center group">
+                    <div className="relative overflow-hidden">
+                      <img src={m.image} alt={`${m.year} ${m.title}`} className="w-full h-24 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                    </div>
                     <div className="p-4">
                       <div className="text-xl font-semibold">{m.year}</div>
                       <div className="text-white/80 text-sm">{m.title}</div>
@@ -87,8 +91,10 @@ export default function EconomyPage() {
             { title: "Thương hiệu mới", desc: "VinFast, FPT, VNG… biểu tượng kinh tế số", image: "https://mangfpt.vn/wp-content/uploads/2021/06/gioi-thieu-ve-nha-mang-FPT.jpg" },
             { title: "Nông sản chủ lực", desc: "Top 3 xuất khẩu cà phê, điều, hồ tiêu", image: "https://file.hstatic.net/1000383842/article/an_c787758d12eb44f0a13c637e298c72eb.png" },
           ].map((i) => (
-            <Card key={i.title} className="p-0 bg-black/30 border border-amber-800/40 overflow-hidden">
-              <img src={i.image} alt={i.title} className="w-full h-32 object-cover" />
+            <Card key={i.title} className="p-0 bg-black/30 border border-amber-800/40 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img src={i.image} alt={i.title} className="w-full h-32 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+              </div>
               <div className="p-4">
                 <div className="font-semibold text-white">{i.title}</div>
                 <div className="text-white/80 text-sm">{i.desc}</div>
@@ -137,7 +143,7 @@ export default function EconomyPage() {
       {/* CTA */}
       <section className="max-w-7xl mx-auto px-4 md:px-10 py-16 text-center">
         <h3 className="text-2xl md:text-3xl font-serif font-bold mb-4">Việt Nam không chỉ hội nhập để tồn tại, mà để khẳng định vị thế trong nền kinh tế thế giới.</h3>
-        <a href="/culture"><Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">Giao Thoa Văn Hoá</Button></a>
+        <a href="/exchange"><Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">Giao Thoa Văn Hoá</Button></a>
       </section>
     </main>
   )

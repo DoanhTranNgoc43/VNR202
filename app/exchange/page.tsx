@@ -34,8 +34,10 @@ export default function ExchangePage() {
             { title: "Bản Sắc Thành Thương Hiệu", desc: "Cà phê phin → chuỗi toàn cầu", image: "https://bvhttdl.mediacdn.vn/291773308735864832/2022/3/22/duc4394-1647874701826226529343-1647918567879-1647918568017404649273.jpg" },
             {title: "Toàn Cầu Hoá", desc: "Nhạc trẻ Việt Nam vươn ra quốc tế - Flop quá thì ghi tên anh vào !", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Son_Tung_M-TP_%282014%29.jpg/250px-Son_Tung_M-TP_%282014%29.jpg"},
           ].map((c) => (
-            <Card key={c.title} className="p-0 bg-black/30 border border-amber-800/40 overflow-hidden">
-              <img src={c.image} alt={c.title} className="w-full h-36 object-cover" />
+            <Card key={c.title} className="p-0 bg-black/30 border border-amber-800/40 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img src={c.image} alt={c.title} className="w-full h-36 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+              </div>
               <div className="p-5">
                 <div className="mt-1 font-semibold text-white">{c.title}</div>
                 <div className="text-sm text-white/80">{c.desc}</div>
@@ -48,7 +50,9 @@ export default function ExchangePage() {
 
       <section className="bg-gradient-to-b from-[#1a1009] to-[#2a1a0c] py-14">
         <div className="max-w-7xl mx-auto px-4 md:px-10 grid md:grid-cols-2 gap-6 items-center">
-          <img src="https://aegvietnam.edu.vn/wp-content/uploads/2021/03/lam-quen-voi-mo-hinh-steam-truoc-khi-du-hoc-my.jpg.webp" alt="Ảnh hưởng quốc tế" className="w-full h-80 object-cover rounded-xl border border-amber-800/40" />
+          <div className="relative overflow-hidden rounded-xl border border-amber-800/40 group">
+            <img src="https://aegvietnam.edu.vn/wp-content/uploads/2021/03/lam-quen-voi-mo-hinh-steam-truoc-khi-du-hoc-my.jpg.webp" alt="Ảnh hưởng quốc tế" className="w-full h-80 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+          </div>
           <div>
             <h3 className="text-3xl font-serif font-bold mb-4">Ảnh hưởng quốc tế tại Việt Nam</h3>
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-white/90">
@@ -72,8 +76,10 @@ export default function ExchangePage() {
             { left: "Nghệ thuật", right: "Múa rối nước, cải lương lưu diễn", image: "https://haycafe.vn/wp-content/uploads/2022/01/anh-dep-ve-nghe-thuat-mua-roi-nuoc.jpeg" },
             { left: "Thủ công", right: "Gốm Bát Tràng, mây tre đan Amazon", image: "https://ktmt.vnmediacdn.com/thumb_x600x400/images/2022/03/15/30-1647333443-lang-gom-bat-trang-3.jpg" },
           ].map((r, i) => (
-            <Card key={i} className="p-0 bg-black/30 border border-amber-800/40 overflow-hidden">
-              <img src={r.image} alt={r.left} className="w-full h-28 object-cover" />
+            <Card key={i} className="p-0 bg-black/30 border border-amber-800/40 overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img src={r.image} alt={r.left} className="w-full h-28 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+              </div>
               <div className="p-4">
                 <div className="font-semibold text-white">{r.left}</div>
                 <div className="text-sm text-white/80">{r.right}</div>
@@ -121,8 +127,7 @@ export default function ExchangePage() {
       <section className="max-w-7xl mx-auto px-4 md:px-10 py-16 text-center">
         <h3 className="text-2xl md:text-3xl font-serif font-bold mb-4">Giao thoa là cầu nối để Việt Nam bước ra thế giới.</h3>
         <div className="flex gap-3 justify-center">
-          <a href="/culture"><Button variant="outline" className="border-white/60 text-white hover:bg-white/10">Quay lại Văn Hoá</Button></a>
-          <a href="/economy"><Button className="bg-red-600 hover:bg-red-700 text-white">Khám phá Kinh Tế</Button></a>
+          <a href="/analysis/solutions"><Button className="bg-red-600 hover:bg-red-700 text-white">Trầm tích văn hoá</Button></a>
         </div>
       </section>
     </main>

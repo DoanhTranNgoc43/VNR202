@@ -30,11 +30,11 @@ export default function Home() {
             <div className="mt-6 flex gap-3">
               <HoverCard>
                 <HoverCardTrigger asChild>
-                  <a href="/game">
+                  
                     <Button className="bg-white text-black hover:bg-white/90">
                       Xem video trải nghiệm
                     </Button>
-                  </a>
+                  
                 </HoverCardTrigger>
                 <HoverCardContent className="w-[560px] p-0 bg-transparent border-none shadow-none">
                   <div className="rounded-lg overflow-hidden border-2 border-white/30 shadow-2xl bg-black/20 backdrop-blur-sm">
@@ -51,24 +51,25 @@ export default function Home() {
                   </div>
                 </HoverCardContent>
               </HoverCard>
-              <span className="relative group">
+              {/* <span className="relative group">
                 <Button variant="outline" className="bg-white text-black hover:bg-white/90">Xem bản đồ</Button>
                 <img
                   src="https://i.pinimg.com/736x/f1/3b/89/f13b89db31022c24f9144595c3bbb8c9.jpg"
                   alt="Vietnam map preview"
                   className="hidden group-hover:block absolute left-1/2 -translate-x-1/2 mt-2 w-64 h-40 object-cover rounded-lg border border-white/30 shadow-xl"
                 />
-              </span>
+              </span> */}
             </div>
           </div>
-          <div className="hidden md:flex justify-end">
-    <img
-      src="https://images.pexels.com/photos/34469052/pexels-photo-34469052/free-photo-of-ph-n-vi-t-nam-truy-n-th-ng-trong-trang-ph-c-b-n-d-a-ngoai-tr-i.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      alt="Trang phục truyền thống Việt Nam"
-      className="w-60 h-96 object-cover border-2 border-yellow-300/80 
-                 rounded-[40px] shadow-[0_0_20px_rgba(234,179,8,0.6)]"
-    />
-  </div>
+          <div className="hidden md:flex justify-end group">
+            <div className="relative overflow-hidden rounded-[40px] border-2 border-yellow-300/80 shadow-[0_0_20px_rgba(234,179,8,0.6)]">
+              <img
+                src="https://images.pexels.com/photos/34469052/pexels-photo-34469052/free-photo-of-ph-n-vi-t-nam-truy-n-th-ng-trong-trang-ph-c-b-n-d-a-ngoai-tr-i.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="Trang phục truyền thống Việt Nam"
+                className="w-60 h-96 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-4 mb-4">
@@ -122,8 +123,8 @@ export default function Home() {
             },
           ].map((b) => (
             <div key={b.id} className={`grid md:grid-cols-2 gap-6 items-stretch`}> 
-              <div className={`${b.reverse ? 'md:order-2' : ''} overflow-hidden rounded-xl border border-amber-800/40`}> 
-                <img src={b.image} alt={b.title} className="w-full h-80 md:h-[420px] object-cover" />
+              <div className={`${b.reverse ? 'md:order-2' : ''} overflow-hidden rounded-xl border border-amber-800/40 group`}> 
+                <img src={b.image} alt={b.title} className="w-full h-80 md:h-[420px] object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
               </div>
               <div className={`${b.reverse ? 'md:order-1' : ''} bg-black/30 border border-amber-800/40 rounded-xl p-8 flex flex-col justify-center`}> 
                 <div className="text-sm uppercase tracking-widest text-white">{b.subtitle}</div>
@@ -141,12 +142,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 md:px-10 py-16 space-y-8">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-center">Truyền thống & Hiện đại</h2>
           <div className="grid md:grid-cols-2 gap-6 items-stretch">
-            <div className="bg-black/30 border border-amber-800/40 rounded-xl overflow-hidden">
-              <img src="https://www.quanlynhanuoc.vn/wp-content/uploads/2022/10/thuong-hieu-lang-nghe-truyen-thong-ha-noi.jpg" alt="Truyền thống" className="w-full h-72 md:h-96 object-cover" />
+            <div className="bg-black/30 border border-amber-800/40 rounded-xl overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img src="https://www.quanlynhanuoc.vn/wp-content/uploads/2022/10/thuong-hieu-lang-nghe-truyen-thong-ha-noi.jpg" alt="Truyền thống" className="w-full h-72 md:h-96 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+              </div>
               <div className="p-4"><div className="font-semibold">Truyền thống</div><p className="text-sm text-white/80">Áo dài, chợ quê, làng nghề – di sản bản sắc.</p></div>
             </div>
-            <div className="bg-black/30 border border-amber-800/40 rounded-xl overflow-hidden">
-              <img src="https://images2.thanhnien.vn/528068263637045248/2025/7/26/aodai1-1753535915713343848658.jpg" alt="Hiện đại" className="w-full h-72 md:h-96 object-cover" />
+            <div className="bg-black/30 border border-amber-800/40 rounded-xl overflow-hidden group">
+              <div className="relative overflow-hidden">
+                <img src="https://images2.thanhnien.vn/528068263637045248/2025/7/26/aodai1-1753535915713343848658.jpg" alt="Hiện đại" className="w-full h-72 md:h-96 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+              </div>
               <div className="p-4"><div className="font-semibold">Hiện đại</div><p className="text-sm text-white/80">Thời trang hoá, công nghệ, ẩm thực Michelin.</p></div>
             </div>
           </div>

@@ -37,92 +37,12 @@ export default function GameInstructions({ onClose }: GameInstructionsProps) {
                 <li>✓ Trả lời đúng → tiến lên 1 bậc trên dốc</li>
                 <li>✓ Trả lời sai → quay về bậc 0</li>
                 <li>✓ Điểm = số câu trả lời đúng liên tiếp cao nhất</li>
-                <li>✓ 10 câu đúng liên tiếp = Giải thưởng đặc biệt 20,000,000 VND (chỉ 1 lần/tập)</li>
               </ul>
-              <p className="font-semibold text-green-900 dark:text-green-100 mt-4">Vòng Đặc Biệt:</p>
-              <ul className="space-y-2 text-sm text-green-800 dark:text-green-200">
-                <li>✓ Đội chiến thắng có 1 phút để liệt kê 20 câu trả lời theo chủ đề</li>
-                <li>✓ Các thành viên phải xen kẽ nhau và chạm vào cột</li>
-                <li>✓ Không được lặp lại câu trả lời</li>
-                <li>✓ Nếu liệt kê được 20+ câu trong 1 phút → Chiến thắng giải thưởng cao nhất</li>
-              </ul>
+              
             </div>
           </div>
 
-          {/* Cuộc Thi 4 Đội */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <span className="text-4xl">🏆</span>
-              <h3 className="text-2xl font-bold text-amber-600 dark:text-amber-400">Cuộc Thi 4 Đội</h3>
-            </div>
-            <div className="bg-amber-50 dark:bg-slate-800 border-l-4 border-amber-500 p-4 space-y-3">
-              <p className="font-semibold text-amber-900 dark:text-amber-100">Luật Chơi:</p>
-              <ul className="space-y-2 text-sm text-amber-800 dark:text-amber-200">
-                <li>✓ Chia lớp thành 4 nhóm: Đội Đỏ, Đội Xanh, Đội Vàng, Đội Tím</li>
-                <li>✓ Mỗi vòng có 3 câu hỏi với mức điểm tăng dần (100, 150, 200 điểm)</li>
-                <li>✓ Các đội trả lời lần lượt</li>
-                <li>✓ Trả lời đúng → cộng điểm, sai → không cộng</li>
-                <li>✓ Tổng cộng 3 vòng</li>
-                <li>✓ Đội có tổng điểm cao nhất chiến thắng</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Nón Kỳ Diệu */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <span className="text-4xl">🎩</span>
-              <h3 className="text-2xl font-bold text-red-600 dark:text-red-400">Nón Kỳ Diệu</h3>
-            </div>
-            <div className="bg-red-50 dark:bg-slate-800 border-l-4 border-red-500 p-4 space-y-3">
-              <p className="font-semibold text-red-900 dark:text-red-100">Luật Chơi:</p>
-              <ul className="space-y-2 text-sm text-red-800 dark:text-red-200">
-                <li>✓ Có 10 chiếc nón được sắp xếp trên bàn</li>
-                <li>✓ Mỗi nón chứa một câu hỏi bí ẩn</li>
-                <li>✓ Chọn một nón để tiết lộ câu hỏi</li>
-                <li>✓ Trả lời đúng → cộng điểm, sai → không cộng</li>
-                <li>✓ Mỗi nón chỉ được chọn 1 lần</li>
-                <li>✓ Người chơi có thể chọn nón cho đến khi hết hoặc muốn dừng</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Ghép Cặp */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <span className="text-4xl">🧩</span>
-              <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400">Ghép Cặp</h3>
-            </div>
-            <div className="bg-blue-50 dark:bg-slate-800 border-l-4 border-blue-500 p-4 space-y-3">
-              <p className="font-semibold text-blue-900 dark:text-blue-100">Luật Chơi:</p>
-              <ul className="space-y-2 text-sm text-blue-800 dark:text-blue-200">
-                <li>✓ Có 10 cặp thẻ được lật úp</li>
-                <li>✓ Mỗi cặp gồm một khái niệm và định nghĩa tương ứng</li>
-                <li>✓ Lật 2 thẻ để tìm cặp khớp</li>
-                <li>✓ Nếu khớp → cộng điểm và tiếp tục</li>
-                <li>✓ Nếu không khớp → lật lại và đợi lượt tiếp theo</li>
-                <li>✓ Mục tiêu: Tìm được nhiều cặp nhất trong thời gian cho phép</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Thử Thách Nhanh */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <span className="text-4xl">⚡</span>
-              <h3 className="text-2xl font-bold text-purple-600 dark:text-purple-400">Thử Thách Nhanh</h3>
-            </div>
-            <div className="bg-purple-50 dark:bg-slate-800 border-l-4 border-purple-500 p-4 space-y-3">
-              <p className="font-semibold text-purple-900 dark:text-purple-100">Luật Chơi:</p>
-              <ul className="space-y-2 text-sm text-purple-800 dark:text-purple-200">
-                <li>✓ Có 10 câu hỏi trắc nghiệm</li>
-                <li>✓ Mỗi câu có 15 giây để trả lời</li>
-                <li>✓ Trả lời đúng → cộng điểm, sai → không cộng</li>
-                <li>✓ Trả lời nhanh → cộng thêm điểm thưởng</li>
-                <li>✓ Mục tiêu: Đạt điểm cao nhất</li>
-              </ul>
-            </div>
-          </div>
+          
 
           {/* Mẹo Chơi */}
           <div className="space-y-4">
