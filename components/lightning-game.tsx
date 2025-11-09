@@ -98,7 +98,7 @@ interface RoundResult {
 }
 
 export default function LightningGame({ onBack, skipInternalIntro = false, presetTeams, onMatchEnd }: LightningGameProps) {
-  const [gameState, setGameState] = useState<"setup" | "selectTeams" | "playing" | "specialRound" | "results">(
+  const [gameState, setGameState] = useState<"setup" | "selectTeams" | "playing" | "team1Finished" | "specialRound" | "results">(
     skipInternalIntro ? "selectTeams" : "setup"
   )
   const [showIntro, setShowIntro] = useState(!skipInternalIntro)
@@ -271,17 +271,10 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
     if (!team1 || !team2 || !currentTeamPlaying) return
 
     if (currentTeamPlaying === team1) {
-      // Team 1 finished, now team 2 plays
-      setCurrentTeamPlaying(team2)
-      setCurrentQuestionIndex(0)
-      setTimeLeft(120)
-      setConsecutiveCorrect(0)
-      setMaxConsecutive(0)
-      setAnswered(false)
-      setSelectedAnswer(null)
-      setIsCorrect(null)
+      // Team 1 finished, show intermediate screen with "Chơi tiếp" button
       setTeam1MaxStreak(maxConsecutive)
       setTeam1TimeLeft(timeLeft)
+      setGameState("team1Finished")
     } else {
       // Both teams finished, determine round winner
       const team1MaxConsec = team1MaxStreak
@@ -446,6 +439,60 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
               </Button>
             )}
           </Card>
+        </div>
+      )}
+
+      {gameState === "team1Finished" && team1 && team2 && (
+        <div className="space-y-6">
+          <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 border-2 border-blue-400 dark:border-blue-600 p-8 text-center space-y-6">
+            <h2 className="text-4xl font-black text-blue-600 dark:text-blue-400">Đội 1 Đã Hoàn Thành!</h2>
+            <div className="space-y-4">
+              <div className="text-2xl font-bold">
+                {getTeamLabel(team1)}: {team1MaxStreak} câu liên tiếp đúng
+              </div>
+              <div className="text-lg text-gray-700 dark:text-gray-300">
+                Thời gian còn lại: {Math.floor(team1TimeLeft / 60)}:{String(team1TimeLeft % 60).padStart(2, "0")}
+              </div>
+            </div>
+          </Card>
+
+          <Card className={`p-6 ${
+            TEAMS.find((t) => t.id === team1)?.bgColor
+          } border-2 ${TEAMS.find((t) => t.id === team1)?.borderColor}`}>
+            <div className="flex items-center justify-between mb-3">
+              <div className="text-2xl font-black">
+                {getTeamLabel(team1)}
+              </div>
+              <div className="text-5xl font-black">{team1MaxStreak}</div>
+            </div>
+            <div className="flex items-center justify-between pt-3 border-t border-opacity-20 border-gray-600 dark:border-gray-400">
+              <div className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                Thời gian còn lại:
+              </div>
+              <div className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                {Math.floor(team1TimeLeft / 60)}:{String(team1TimeLeft % 60).padStart(2, "0")}
+              </div>
+            </div>
+          </Card>
+
+          <div className="flex justify-center">
+            <Button
+              onClick={() => {
+                setCurrentTeamPlaying(team2)
+                setCurrentQuestionIndex(0)
+                setTimeLeft(120)
+                setConsecutiveCorrect(0)
+                setMaxConsecutive(0)
+                setAnswered(false)
+                setSelectedAnswer(null)
+                setIsCorrect(null)
+                setGameState("playing")
+              }}
+              className="bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-bold py-4 px-8 text-xl"
+            >
+              Chơi Tiếp
+            </Button>
+          </div>
         </div>
       )}
 
