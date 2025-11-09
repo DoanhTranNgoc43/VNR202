@@ -7,1104 +7,2017 @@ export interface Question {
 
 export const QUESTION_BANK: Question[] = [
   {
-    "question": "Sự khác biệt chính trong cản trở hội nhập giữa \"tư duy tiểu nông\" (ngại rủi ro) và \"tàn dư tư duy bao cấp\" (ỷ lại) là gì?",
+    "question": "Hạn chế văn hóa nào sau đây xuất phát từ truyền thống tiểu nông, dẫn đến ngại đổi mới trong hội nhập kinh tế?",
     "options": [
-      "Tiểu nông làm \"tăng chi phí giao dịch\", bao cấp làm \"méo mó môi trường cạnh tranh\".",
-      "Tiểu nông (ngại rủi ro) làm *chậm* đổi mới công nghệ; Bao cấp (ỷ lại, bình quân) làm *triệt tiêu* động lực sáng tạo, cạnh tranh.",
-      "Tiểu nông gây ra \"bệnh thành tích\", bao cấp gây ra \"tư duy COCC\".",
-      "Tiểu nông chỉ ảnh hưởng nông nghiệp, bao cấp ảnh hưởng toàn bộ nền kinh tế."
+      "Sáng tạo cao trong công nghệ",
+      "Tâm lý bảo thủ, an phận thủ thường",
+      "Tuân thủ nghiêm ngặt thời gian",
+      "Minh bạch hành chính cao"
     ],
     "correct": 1,
-    "explanation": "Tiểu nông (ngại rủi ro) khiến doanh nghiệp không dám đầu tư R&D. Bao cấp (ỷ lại, cào bằng) khiến người lao động không có động lực để sáng tạo."
+    "explanation": "Làm giảm khả năng cạnh tranh toàn cầu"
   },
   {
-    "question": "Trong bối cảnh hội nhập, tại sao \"tệ quan liêu, hành chính hóa\" (thủ tục rườm rà) đôi khi còn nguy hiểm hơn \"tham nhũng vặt\" (phong bì)?",
+    "question": "Tâm lý \"an phận\" từ văn hóa tiểu nông cản trở điều gì trong CPTPP?",
     "options": [
-      "Vì \"tham nhũng vặt\" chỉ làm tăng chi phí, có thể dự đoán được.",
-      "Vì \"quan liêu\" làm mất thời gian, tăng chi phí tuân thủ, gây nản lòng nhà đầu tư và làm giảm năng lực cạnh tranh quốc gia.",
-      "Vì \"quan liêu\" là nguồn gốc đẻ ra \"tham nhũng vặt\".",
-      "Vì \"quan liêu\" là biểu hiện của \"tư duy COCC\"."
-    ],
-    "correct": 1,
-    "explanation": "Quan liêu làm tăng chi phí giao dịch và chi phí tuân thủ một cách hệ thống, làm nản lòng nhà đầu tư, giảm năng lực cạnh tranh quốc gia."
-  },
-  {
-    "question": "So với Nghị quyết TW 5 (1998) coi văn hóa là \"nền tảng, động lực\", tinh thần Đại hội XIII (2021) về \"khơi dậy khát vọng\" có bước phát triển gì?",
-    "options": [
-      "Khẳng định lại vai trò của kinh tế thị trường.",
-      "Chuyển từ vai trò \"nền tảng\" sang vai trò \"công cụ\".",
-      "Bắt đầu tập trung vào xây dựng con người.",
-      "Chủ động biến \"động lực\" (tiềm năng) thành \"sức mạnh tinh thần\" (hành động) để tạo bứt phá."
+      "Tăng FDI",
+      "Giảm quan liêu",
+      "Nâng cao giáo dục",
+      "Đổi mới công nghệ và sản phẩm"
     ],
     "correct": 3,
-    "explanation": "NQ TW 5 đặt nền móng lý luận (động lực). ĐH XIII chủ động \"khơi dậy khát vọng\", tạo động lực tinh thần mới để vượt qua trì trệ."
+    "explanation": "Làm vị thế thấp trong chuỗi giá trị"
   },
   {
-    "question": "Mối liên hệ nào sau đây mô tả đúng nhất sự liên đới giữa \"Bệnh thành tích\" và \"Kỷ luật lỏng lẻo\"?",
+    "question": "Trong RCEP, khuyết tật tiểu nông ảnh hưởng lớn đến lĩnh vực nào?",
     "options": [
-      "\"Bệnh thành tích\" là nguyên nhân của \"kỷ luật lỏng lẻo\".",
-      "Khi làm việc \"tùy tiện\" (kỷ luật lỏng lẻo), kết quả thực chất sẽ kém, buộc người ta phải \"làm báo cáo đẹp\" (thành tích) để bù đắp.",
-      "Cả hai đều là sản phẩm của \"tư duy COCC\".",
-      "Không có liên hệ, một là vấn đề tư duy, một là vấn đề tác phong."
-    ],
-    "correct": 1,
-    "explanation": "Làm việc lỏng lẻo (nguyên nhân) dẫn đến kết quả thực chất kém. Để che giấu, người ta phải tạo ra thành tích ảo (kết quả)."
-  },
-  {
-    "question": "Giải pháp \"Xây dựng Chính phủ số\" được coi là đòn bẩy để khắc phục \"tệ quan liêu\" vì nó tấn công vào cốt lõi của vấn đề là:",
-    "options": [
-      "Giảm tiếp xúc trực tiếp, minh bạch hóa quy trình, triệt tiêu môi trường \"ban phát\" cơ chế.",
-      "Tăng cường \"văn hóa phong bì\" trên môi trường trực tuyến.",
-      "Siết chặt công tác cán bộ, chống \"chạy chức\".",
-      "Đào tạo lại toàn bộ công chức."
-    ],
-    "correct": 0,
-    "explanation": "Chính phủ số thay đổi quy trình, giảm tiếp xúc trực tiếp giữa công chức và doanh nghiệp, làm tăng tính minh bạch, từ đó giảm tệ quan liêu."
-  },
-  {
-    "question": "Điểm chung cốt lõi nào khiến \"Tư duy COCC\" và \"Chủ nghĩa bình quân\" (bao cấp) đều là rào cản của hội nhập?",
-    "options": [
-      "Cả hai đều là tàn dư của tư duy tiểu nông.",
-      "Đều làm tăng \"văn hóa phong bì\".",
-      "Đều phủ nhận nguyên tắc \"Meritocracy\" (trọng dụng nhân tài) và cạnh tranh sòng phẳng dựa trên năng lực.",
-      "Đều làm tăng \"kỷ luật lao động lỏng lẻo\"."
+      "Công nghiệp nặng",
+      "Dịch vụ tài chính",
+      "Hiện đại hóa nông nghiệp và xuất khẩu",
+      "Giáo dục đại học"
     ],
     "correct": 2,
-    "explanation": "Hội nhập đòi hỏi cạnh tranh sòng phẳng. Cả COCC (dùng quan hệ) và Chủ nghĩa bình quân (cào bằng) đều triệt tiêu động lực cạnh tranh dựa trên năng lực."
+    "explanation": "Khó áp dụng công nghệ cao"
   },
   {
-    "question": "Trong các \"trầm tích\", yếu tố nào là mối đe dọa *lớn nhất* đối với nền tảng \"Pháp quyền\" (Rule of Law) trong hội nhập?",
+    "question": "Văn hóa \"có thực mới vực được đạo\" đôi khi dẫn đến gì?",
     "options": [
-      "\"Tư duy tiểu nông\" (manh mún).",
-      "\"Kỷ luật lỏng lẻo\" (giờ cao su).",
-      "\"Tư duy bao cấp\" (ỷ lại).",
-      "\"Thiếu chữ tín\" (vi phạm cam kết, hàng giả) và \"Tham nhũng\" (dùng tiền/quan hệ thay luật)."
+      "Chậm trễ trong kế hoạch dài hạn",
+      "Tăng hiệu quả",
+      "Giảm bảo thủ",
+      "Tăng sáng tạo"
+    ],
+    "correct": 0,
+    "explanation": "Ưu tiên ngắn hạn"
+  },
+  {
+    "question": "Trong hội nhập, khuyết tật tiểu nông làm chậm lĩnh vực nào?",
+    "options": [
+      "Dịch vụ",
+      "Giáo dục",
+      "Y tế",
+      "Nông nghiệp công nghệ cao"
     ],
     "correct": 3,
-    "explanation": "Pháp quyền (vận hành bằng luật) bị phá vỡ bởi Thiếu chữ tín (vi phạm luật - hợp đồng) và Tham nhũng (dùng tiền/quan hệ để bẻ cong luật)."
+    "explanation": "Ngại rủi ro đổi mới"
   },
   {
-    "question": "Giải pháp \"nhất quán thực hiện kinh tế thị trường\" giúp khắc phục \"tư duy cục bộ địa phương\" (tiểu nông) như thế nào?",
+    "question": "Tư duy tiểu nông khiến nông dân Việt Nam khó chấp nhận điều gì?",
     "options": [
-      "Kinh tế thị trường khuyến khích các địa phương tự chủ, tự lo.",
-      "Kinh tế thị trường (vận hành theo quy luật cung cầu) buộc các địa phương phải \"liên kết chuỗi giá trị\" để cạnh tranh, thay vì \"cục bộ\".",
-      "Giải pháp này không liên quan đến \"tư duy cục bộ\".",
-      "Kinh tế thị trường làm tăng \"bệnh thành tích\" ở các địa phương."
-    ],
-    "correct": 1,
-    "explanation": "Thị trường là một sân chơi chung, buộc các địa phương (vốn cục bộ, manh mún) phải liên kết lại thành chuỗi giá trị để đủ sức cạnh tranh."
-  },
-  {
-    "question": "Hành vi \"vi phạm bản quyền, làm hàng giả\" là biểu hiện rõ nét nhất của sự kết hợp giữa hai tư duy nào?",
-    "options": [
-      "Tư duy \"ngắn hạn, ăn xổi\" (tiểu nông) và \"muốn làm giàu nhanh, bỏ qua quy trình\" (đi tắt đón đầu).",
-      "Tư duy \"ỷ lại\" (bao cấp) và \"tư duy COCC\" (phe cánh).",
-      "\"Bệnh thành tích\" (báo cáo đẹp) và \"Kỷ luật lỏng lẻo\" (tùy tiện).",
-      "\"Tệ quan liêu\" (ban phát) và \"Văn hóa phong bì\" (tham nhũng vặt)."
-    ],
-    "correct": 0,
-    "explanation": "Việc làm hàng giả, vi phạm bản quyền xuất phát từ tư duy \"ăn xổi ở thì\" (tiểu nông) và biểu hiện bằng hành động \"muốn làm giàu nhanh, bỏ qua quy trình\"."
-  },
-  {
-    "question": "Giải pháp \"Đổi mới căn bản, toàn diện giáo dục\" được kỳ vọng sẽ khắc phục \"kỷ luật lao động lỏng lẻo\" thông qua cơ chế nào?",
-    "options": [
-      "Chỉ cần tăng cường dạy ngoại ngữ.",
-      "Tăng cường \"chủ nghĩa bình quân\" trong lớp học.",
-      "Chấn chỉnh \"thực học, thực nghiệp\", rèn luyện kỷ cương, tác phong công nghiệp ngay từ nhà trường.",
-      "Tăng học phí để sinh viên có trách nhiệm hơn."
+      "Làm ruộng truyền thống",
+      "Giữ lại giống địa phương",
+      "Canh tác quy mô lớn theo chuẩn quốc tế",
+      "Bán sản phẩm nội địa"
     ],
     "correct": 2,
-    "explanation": "Đổi mới giáo dục (thực học, thực nghiệp) và chấn chỉnh kỷ cương công vụ sẽ rèn luyện tác phong công nghiệp, thay đổi thói quen tùy tiện."
+    "explanation": "Sợ rủi ro, thiếu vốn"
   },
   {
-    "question": "Đâu là điểm khác biệt cốt lõi về bản chất giữa \"Chủ nghĩa bình quân\" (bao cấp) và \"Bệnh thành tích\"?",
+    "question": "Bảo thủ văn hóa làm doanh nghiệp Việt chậm áp dụng công nghệ nào?",
     "options": [
-      "\"Bình quân\" là tư duy \"cào bằng\", \"Thành tích\" là tư duy \"báo cáo đẹp\".",
-      "\"Bình quân\" là tàn dư tiểu nông, \"Thành tích\" là tàn dư bao cấp.",
-      "\"Bình quân\" triệt tiêu sáng tạo, \"Thành tích\" khuyến khích sáng tạo (làm báo cáo đẹp).",
-      "\"Bình quân\" (không khuyến khích vượt trội) là tư duy *thụ động*, \"Thành tích\" (làm việc đối phó) là hành động *chủ động tiêu cực*."
+      "Máy móc thủ công",
+      "Số hóa và tự động hóa",
+      "Phương pháp cũ",
+      "Sản xuất nhỏ lẻ"
+    ],
+    "correct": 1,
+    "explanation": "Ngại thay đổi quy trình"
+  },
+  {
+    "question": "Tâm lý \"ăn xổi\" từ văn hóa tiểu nông ảnh hưởng đến yếu tố nào trong xuất khẩu?",
+    "options": [
+      "Tăng năng suất",
+      "Giảm chi phí",
+      "Chất lượng sản phẩm không ổn định",
+      "Cải thiện thương hiệu"
+    ],
+    "correct": 2,
+    "explanation": "Thiếu tiêu chuẩn quốc tế"
+  },
+  {
+    "question": "Sợ rủi ro trong văn hóa tiểu nông khiến doanh nghiệp Việt Nam khó làm gì?",
+    "options": [
+      "Duy trì sản xuất nội địa",
+      "Mở rộng thị trường quốc tế",
+      "Giữ quy mô nhỏ",
+      "Bán hàng truyền thống"
+    ],
+    "correct": 1,
+    "explanation": "Lo sợ thất bại"
+  },
+  {
+    "question": "Bảo thủ văn hóa làm Việt Nam chậm trong việc gì so với các nước ASEAN?",
+    "options": [
+      "Tăng dân số",
+      "Khai thác tài nguyên",
+      "Chuyển đổi số doanh nghiệp",
+      "Giữ truyền thống"
+    ],
+    "correct": 2,
+    "explanation": "Ngại đổi mới"
+  },
+  {
+    "question": "Văn hóa \"trông chờ nhà nước\" từ thời bao cấp dẫn đến hạn chế gì?",
+    "options": [
+      "Tăng sáng tạo",
+      "Giảm quan liêu",
+      "Thiếu tự chủ doanh nghiệp",
+      "Cải thiện hiệu quả"
+    ],
+    "correct": 2,
+    "explanation": "Giảm tính chủ động"
+  },
+  {
+    "question": "Tâm lý \"làm theo\" thay vì \"dẫn đầu\" xuất phát từ văn hóa nào?",
+    "options": [
+      "Sáng tạo hiện đại",
+      "Bảo thủ tiểu nông",
+      "Cạnh tranh cao",
+      "Đổi mới mạnh"
+    ],
+    "correct": 1,
+    "explanation": "Thiếu tinh thần tiên phong"
+  },
+  {
+    "question": "Ngại thay đổi trong văn hóa Việt Nam làm chậm quá trình nào?",
+    "options": [
+      "Tăng xuất khẩu nông sản",
+      "Giảm nhập khẩu",
+      "Tái cấu trúc doanh nghiệp",
+      "Duy trì truyền thống"
+    ],
+    "correct": 2,
+    "explanation": "Cản trở hiện đại hóa"
+  },
+  {
+    "question": "Văn hóa \"ưa ổn định\" khiến lao động Việt khó chấp nhận gì?",
+    "options": [
+      "Làm việc cố định",
+      "Lương ổn định",
+      "Thay đổi công việc linh hoạt",
+      "Môi trường quen thuộc"
+    ],
+    "correct": 2,
+    "explanation": "Thiếu thích nghi"
+  },
+  {
+    "question": "Bảo thủ trong đầu tư khiến doanh nghiệp Việt thường chọn gì?",
+    "options": [
+      "Công nghệ cao",
+      "Thị trường mới",
+      "Đổi mới sản phẩm",
+      "Lĩnh vực truyền thống, ít rủi ro"
     ],
     "correct": 3,
-    "explanation": "Bình quân là tâm lý ỷ lại, không muốn làm (thụ động). Bệnh thành tích là chủ động làm việc đối phó, tạo số liệu ảo (chủ động tiêu cực)."
+    "explanation": "Sợ thất bại"
   },
   {
-    "question": "Công cuộc \"đốt lò\" (chống tham nhũng) góp phần giải quyết \"Tư duy COCC\" (bổ nhiệm người nhà) như thế nào?",
+    "question": "Tư duy \"làm quen\" trong văn hóa Việt ảnh hưởng đến năng lực nào?",
     "options": [
-      "\"Đốt lò\" làm tăng \"văn hóa phong bì\".",
-      "\"Đốt lò\" (không có vùng cấm) tạo ra sự răn đe, khiến việc bổ nhiệm theo \"quan hệ\" thay vì \"năng lực\" bị phanh phui, xử lý.",
-      "\"Đốt lò\" chỉ chống tham nhũng, không liên quan đến công tác cán bộ.",
-      "Giải pháp này không hiệu quả bằng \"Đổi mới giáo dục\"."
-    ],
-    "correct": 1,
-    "explanation": "Công cuộc \"đốt lò\" (chống) và \"siết chặt công tác cán bộ\" (xây) là hai giải pháp song hành để giải quyết tệ phe cánh, COCC."
-  },
-  {
-    "question": "Nguồn gốc sâu xa của \"tư duy ban phát\" trong \"tệ quan liêu\" bắt nguồn từ đâu?",
-    "options": [
-      "Cơ chế tập trung bao cấp, khi Nhà nước/tập thể nắm mọi nguồn lực và \"ban phát\" cho cá nhân.",
-      "Tư duy tiểu nông \"manh mún, cục bộ\".",
-      "Bệnh thành tích trong báo cáo.",
-      "Ảnh hưởng của \"văn hóa phong bì\"."
-    ],
-    "correct": 0,
-    "explanation": "Thời bao cấp, mọi thứ đều do nhà nước/tập thể phân phối (ban phát), từ đó hình thành tư duy \"ban phát\" cơ chế của công chức."
-  },
-  {
-    "question": "Vì sao \"tác phong tùy tiện, giờ cao su\" (kỷ luật lỏng lẻo) lại là biểu hiện của \"tư duy tiểu nông\" trong môi trường công nghiệp?",
-    "options": [
-      "Tư duy tiểu nông \"ngắn hạn\" nên không muốn cam kết thời gian làm việc lâu dài.",
-      "\"Giờ cao su\" là sản phẩm của thời bao cấp (chủ nghĩa bình quân), không phải tiểu nông.",
-      "Sản xuất tiểu nông (theo mùa vụ, thời tiết) vốn không bị ràng buộc bởi thời gian công nghiệp chính xác, tạo thói quen tùy tiện.",
-      "\"Tác phong tùy tiện\" là biểu hiện của \"bệnh thành tích\"."
+      "Duy trì nội địa",
+      "Tăng truyền thống",
+      "Cạnh tranh quốc tế",
+      "Giảm chi phí"
     ],
     "correct": 2,
-    "explanation": "Sản xuất nông nghiệp (tiểu nông) làm việc theo mùa vụ, thời tiết, mang tính tùy tiện. Khi mang tư duy đó vào sản xuất công nghiệp (đòi hỏi chính xác), nó trở thành \"kỷ luật lỏng lẻo\"."
+    "explanation": "Thiếu đổi mới"
   },
   {
-    "question": "Trọng tâm của Nghị quyết Trung ương 9 (Khóa XI - 2014) là gì?",
+    "question": "Văn hóa tiểu nông khiến nông dân khó tham gia vào gì?",
     "options": [
-      "Khơi dậy \"khát vọng phát triển đất nước\".",
-      "Xây dựng \"Nhà nước pháp quyền XHCN\".",
-      "Chỉ tập trung vào \"chống tham nhũng\".",
-      "Đặt trọng tâm vào \"xây dựng con người\" (chủ thể) với các phẩm chất đáp ứng yêu cầu phát triển bền vững."
+      "Làm ruộng nhỏ",
+      "Bán chợ địa phương",
+      "Chuỗi giá trị toàn cầu",
+      "Giữ giống truyền thống"
+    ],
+    "correct": 2,
+    "explanation": "Thiếu quy mô và tiêu chuẩn"
+  },
+  {
+    "question": "Bảo thủ văn hóa làm Việt Nam chậm trong lĩnh vực nào của kinh tế số?",
+    "options": [
+      "Bán hàng truyền thống",
+      "Giao dịch tiền mặt",
+      "Thương mại điện tử xuyên biên giới",
+      "Chợ nội địa"
+    ],
+    "correct": 2,
+    "explanation": "Ngại công nghệ mới"
+  },
+  {
+    "question": "Tâm lý \"đủ ăn là được\" từ văn hóa tiểu nông cản trở gì?",
+    "options": [
+      "Duy trì mức sống",
+      "Mở rộng sản xuất và xuất khẩu",
+      "Giữ ruộng nhỏ",
+      "Làm việc ít giờ"
+    ],
+    "correct": 1,
+    "explanation": "Thiếu tham vọng phát triển"
+  },
+  {
+    "question": "Văn hóa \"sợ thất bại\" khiến doanh nghiệp Việt khó làm gì?",
+    "options": [
+      "Làm việc ổn định",
+      "Sản xuất truyền thống",
+      "Khởi nghiệp sáng tạo",
+      "Bán hàng quen thuộc"
+    ],
+    "correct": 2,
+    "explanation": "Thiếu tinh thần mạo hiểm"
+  },
+  {
+    "question": "Trong kinh tế quốc tế, thói quen chậm trễ trong văn hóa Việt Nam ảnh hưởng đến yếu tố nào?",
+    "options": [
+      "Xuất khẩu nông sản",
+      "Năng suất lao động và uy tín hợp đồng",
+      "Du lịch nội địa",
+      "Giáo dục cơ bản"
+    ],
+    "correct": 1,
+    "explanation": "Cản trở chuỗi cung ứng"
+  },
+  {
+    "question": "Khuyết tật \"quan liêu\" trong văn hóa hành chính khiến Việt Nam khó thu hút FDI như thế nào?",
+    "options": [
+      "Giảm chi phí sản xuất",
+      "Tăng sáng tạo doanh nghiệp",
+      "Tăng thủ tục phức tạp, chậm trễ đầu tư",
+      "Cải thiện môi trường kinh doanh"
+    ],
+    "correct": 2,
+    "explanation": "Giảm sức hấp dẫn với nhà đầu tư nước ngoài"
+  },
+  {
+    "question": "Thiếu kỷ luật thời gian trong văn hóa ảnh hưởng đến hợp đồng quốc tế như thế nào?",
+    "options": [
+      "Tăng năng suất",
+      "Cải thiện quan hệ",
+      "Giảm chi phí",
+      "Giảm uy tín và mất cơ hội"
     ],
     "correct": 3,
-    "explanation": "Dàn ý nêu rõ: NQ TW 9 (2014) đặt trọng tâm vào xây dựng CON NGƯỜI (chủ thể của hội nhập) với các phẩm chất: nhân cách, lối sống tốt đẹp..."
+    "explanation": "Thời gian là yếu tố then chốt trong kinh doanh toàn cầu"
   },
   {
-    "question": "\"Văn hóa phong bì\" (tham nhũng vặt) phá hoại nguyên tắc \"Meritocracy\" (trọng dụng nhân tài) như thế nào?",
+    "question": "Quan liêu hành chính là di sản nào cản trở cải cách kinh tế?",
     "options": [
-      "Khiến người có năng lực nhưng không \"lót tay\" bị thất bại, còn người yếu kém nhưng \"biết điều\" lại thắng.",
-      "Làm tăng \"bệnh thành tích\", khiến không ai biết đâu là nhân tài thật.",
-      "Khiến nhân tài nản lòng và rời bỏ đất nước (chảy máu chất xám).",
-      "Chỉ \"Tư duy COCC\" mới phá hoại \"Meritocracy\"."
-    ],
-    "correct": 0,
-    "explanation": "Văn hóa phong bì làm méo mó môi trường cạnh tranh, khiến \"tiền\" thắng \"năng lực\", đi ngược lại nguyên tắc trọng dụng nhân tài (Meritocracy)."
-  },
-  {
-    "question": "Giải pháp \"Siết chặt công tác cán bộ\" (chống chạy chức) nhằm triệt tiêu môi trường sống của \"Bệnh thành tích\" như thế nào?",
-    "options": [
-      "Siết chặt cán bộ sẽ làm tăng \"văn hóa phong bì\".",
-      "Giải pháp này chỉ chống \"COCC\", không liên quan.",
-      "Khi bổ nhiệm dựa trên năng lực thực chất (thực học), cán bộ không còn động cơ \"làm việc đối phó\" hay tạo \"báo cáo đẹp\" (thành tích) để thăng tiến.",
-      "Cán bộ bị siết chặt sẽ không còn thời gian để làm \"báo cáo đẹp\"."
+      "Từ văn hóa hiện đại",
+      "Từ hội nhập nhanh",
+      "Từ cơ chế tập trung cũ",
+      "Từ giáo dục cao"
     ],
     "correct": 2,
-    "explanation": "Khi con đường thăng tiến không còn là \"chạy\" (chạy chức, chạy thành tích) mà là năng lực thật, \"bệnh thành tích\" sẽ mất đi động cơ tồn tại."
+    "explanation": "Làm chậm trễ đầu tư"
   },
   {
-    "question": "Tư duy nào là nguồn gốc chung của tâm lý \"an phận\", \"ỷ lại\", \"cào bằng\" và \"ngại thay đổi\", tạo ra sức ì lớn nhất cản trở hội nhập?",
+    "question": "Thói quen \"giấy tờ\" phức tạp trong văn hóa hành chính Việt Nam ảnh hưởng đến gì?",
     "options": [
-      "Tư duy tiểu nông và tàn dư tư duy bao cấp.",
-      "Chỉ tư duy tiểu nông.",
-      "Chỉ tư duy bao cấp.",
-      "Bệnh thành tích và hình thức chủ nghĩa."
-    ],
-    "correct": 0,
-    "explanation": "Tư duy tiểu nông (an phận, ngại thay đổi) và tư duy bao cấp (ỷ lại, cào bằng) là hai nguồn gốc chính tạo ra sức ì (thụ động) của xã hội."
-  },
-  {
-    "question": "Tại sao \"Khát vọng phát triển\" (ĐH XIII) được coi là giải pháp tinh thần để khắc phục \"tư duy ngắn hạn, ăn xổi\" (tiểu nông)?",
-    "options": [
-      "\"Khát vọng\" giúp tăng \"văn hóa phong bì\".",
-      "\"Khát vọng\" đòi hỏi tầm nhìn chiến lược, chấp nhận đầu tư dài hạn, đối lập với \"ăn xổi ở thì\".",
-      "\"Khát vọng\" là sản phẩm của \"Chính phủ số\".",
-      "\"Khát vọng\" chỉ là khẩu hiệu, không khắc phục được \"tư duy ngắn hạn\"."
+      "Tăng minh bạch",
+      "Tốc độ cấp phép doanh nghiệp",
+      "Giảm tham nhũng",
+      "Cải thiện dịch vụ"
     ],
     "correct": 1,
-    "explanation": "Khát vọng phát triển (tầm nhìn 2030, 2045) là tư duy dài hạn, đối lập và là giải pháp cho tư duy \"ngắn hạn, ăn xổi\" của tiểu nông."
+    "explanation": "Làm chậm khởi nghiệp"
   },
   {
-    "question": "Nhóm giải pháp nào của Đảng tập trung chủ yếu vào việc \"Xây\" (cải cách thể chế) thay vì \"Chống\" (xử lý vi phạm)?",
+    "question": "Văn hóa \"không đúng giờ\" ảnh hưởng đến lĩnh vực nào trong hội nhập?",
     "options": [
-      "\"Công cuộc đốt lò\" và \"Siết chặt công tác cán bộ\".",
-      "\"Kinh tế thị trường\" và \"Đổi mới giáo dục\".",
-      "\"Khát vọng phát triển\" và \"Xây dựng hệ giá trị\".",
-      "\"Xây dựng Nhà nước pháp quyền\" và \"Đẩy mạnh Chính phủ số\"."
+      "Nông nghiệp nội địa",
+      "Giáo dục cơ bản",
+      "Logistics và xuất khẩu",
+      "Y tế công"
+    ],
+    "correct": 2,
+    "explanation": "Giao hàng trễ mất hợp đồng"
+  },
+  {
+    "question": "Quan liêu trong cấp giấy phép xuất khẩu làm tăng gì?",
+    "options": [
+      "Hiệu quả sản xuất",
+      "Chi phí và thời gian cho doanh nghiệp",
+      "Minh bạch thủ tục",
+      "Tốc độ giao hàng"
+    ],
+    "correct": 1,
+    "explanation": "Giảm cạnh tranh"
+  },
+  {
+    "question": "Thói quen \"xin-cho\" trong văn hóa hành chính dẫn đến điều gì?",
+    "options": [
+      "Giảm thủ tục",
+      "Tăng minh bạch",
+      "Tăng tham nhũng tiềm ẩn",
+      "Cải thiện dịch vụ"
+    ],
+    "correct": 2,
+    "explanation": "Giảm lòng tin nhà đầu tư"
+  },
+  {
+    "question": "Chậm trễ trong giải quyết tranh chấp thương mại ảnh hưởng đến gì?",
+    "options": [
+      "Tăng xuất khẩu",
+      "Môi trường pháp lý cho FDI",
+      "Giảm nhập khẩu",
+      "Cải thiện sản xuất"
+    ],
+    "correct": 1,
+    "explanation": "Nhà đầu tư lo ngại rủi ro"
+  },
+  {
+    "question": "Văn hóa \"làm việc chậm rãi\" ảnh hưởng đến năng suất như thế nào?",
+    "options": [
+      "Tăng chất lượng",
+      "Cải thiện sáng tạo",
+      "Giảm cạnh tranh so với khu vực",
+      "Giảm chi phí"
+    ],
+    "correct": 2,
+    "explanation": "Năng suất thấp hơn Thái Lan, Malaysia"
+  },
+  {
+    "question": "Quan liêu trong quản lý dự án ODA làm gì?",
+    "options": [
+      "Tăng minh bạch",
+      "Cải thiện hợp tác",
+      "Chậm giải ngân và hiệu quả thấp",
+      "Giảm tham nhũng"
+    ],
+    "correct": 2,
+    "explanation": "Mất lòng tin đối tác"
+  },
+  {
+    "question": "Thói quen \"họp nhiều, quyết ít\" trong văn hóa công sở ảnh hưởng đến gì?",
+    "options": [
+      "Tăng hiệu quả",
+      "Tốc độ ra quyết định đầu tư",
+      "Giảm chi phí",
+      "Cải thiện giao tiếp"
+    ],
+    "correct": 1,
+    "explanation": "Nhà đầu tư mất thời gian"
+  },
+  {
+    "question": "Thiếu kỷ luật giao hàng trong văn hóa doanh nghiệp Việt làm mất gì?",
+    "options": [
+      "Tăng khách hàng nội địa",
+      "Giảm chi phí vận chuyển",
+      "Đơn hàng từ đối tác quốc tế",
+      "Cải thiện chất lượng"
+    ],
+    "correct": 2,
+    "explanation": "Uy tín bị ảnh hưởng"
+  },
+  {
+    "question": "Quan liêu trong thủ tục hải quan ảnh hưởng đến lợi thế nào của Việt Nam?",
+    "options": [
+      "Tăng xuất khẩu",
+      "Giảm nhập khẩu",
+      "Cạnh tranh logistics khu vực",
+      "Cải thiện hạ tầng"
+    ],
+    "correct": 2,
+    "explanation": "Thời gian thông quan chậm"
+  },
+  {
+    "question": "Văn hóa \"giữ chức\" trong hành chính dẫn đến gì?",
+    "options": [
+      "Tăng đổi mới",
+      "Thiếu cải cách mạnh mẽ",
+      "Giảm quan liêu",
+      "Cải thiện dịch vụ"
+    ],
+    "correct": 1,
+    "explanation": "Sợ trách nhiệm"
+  },
+  {
+    "question": "Chậm trễ trong cập nhật luật pháp theo cam kết quốc tế ảnh hưởng đến gì?",
+    "options": [
+      "Tăng xuất khẩu",
+      "Giảm nhập khẩu",
+      "Thực thi các FTA",
+      "Cải thiện sản xuất"
+    ],
+    "correct": 2,
+    "explanation": "Vi phạm cam kết"
+  },
+  {
+    "question": "Thói quen \"đùn đẩy trách nhiệm\" trong văn hóa công sở làm gì?",
+    "options": [
+      "Tăng hợp tác",
+      "Giảm hiệu quả giải quyết vấn đề",
+      "Cải thiện dịch vụ",
+      "Giảm quan liêu"
+    ],
+    "correct": 1,
+    "explanation": "Nhà đầu tư khó tìm người quyết định"
+  },
+  {
+    "question": "Quan liêu trong cấp visa lao động ảnh hưởng đến gì?",
+    "options": [
+      "Tăng lao động nội địa",
+      "Thu hút chuyên gia nước ngoài",
+      "Giảm chi phí",
+      "Cải thiện giáo dục"
+    ],
+    "correct": 1,
+    "explanation": "Doanh nghiệp FDI gặp khó khăn"
+  },
+  {
+    "question": "Thiếu kỷ luật trong báo cáo tài chính doanh nghiệp ảnh hưởng đến gì?",
+    "options": [
+      "Tăng lợi nhuận",
+      "Giảm thuế",
+      "Niềm tin từ nhà đầu tư quốc tế",
+      "Cải thiện sản xuất"
+    ],
+    "correct": 2,
+    "explanation": "Minh bạch kém"
+  },
+  {
+    "question": "Văn hóa \"làm việc theo giờ hành chính\" cản trở gì trong hội nhập?",
+    "options": [
+      "Tăng năng suất",
+      "Giảm chi phí",
+      "Phục vụ khách hàng quốc tế 24/7",
+      "Cải thiện chất lượng"
+    ],
+    "correct": 2,
+    "explanation": "Không linh hoạt"
+  },
+  {
+    "question": "Trầm tích \"tham nhũng\" cản trở Việt Nam trong các FTA như EVFTA bằng cách nào?",
+    "options": [
+      "Tăng xuất khẩu tự do",
+      "Giảm lòng tin từ đối tác châu Âu",
+      "Cải thiện xếp hạng minh bạch",
+      "Giảm thủ tục hải quan"
+    ],
+    "correct": 1,
+    "explanation": "Vi phạm cam kết quốc tế về minh bạch"
+  },
+  {
+    "question": "Tham nhũng văn hóa ảnh hưởng đến xếp hạng nào của Việt Nam?",
+    "options": [
+      "Tăng trưởng GDP",
+      "Dân số",
+      "Môi trường kinh doanh toàn cầu",
+      "Tài nguyên"
+    ],
+    "correct": 2,
+    "explanation": "Giảm theo Doing Business Index"
+  },
+  {
+    "question": "Thiếu minh bạch trong đấu thầu dự án làm gì với FDI?",
+    "options": [
+      "Tăng vốn đầu tư",
+      "Giảm niềm tin nhà đầu tư",
+      "Cải thiện hạ tầng",
+      "Giảm chi phí"
+    ],
+    "correct": 1,
+    "explanation": "Nhà đầu tư lo ngại bất công"
+  },
+  {
+    "question": "Văn hóa \"lót tay\" trong giao dịch hành chính ảnh hưởng đến gì?",
+    "options": [
+      "Tăng hiệu quả",
+      "Giảm thủ tục",
+      "Chi phí kinh doanh của doanh nghiệp",
+      "Cải thiện dịch vụ"
+    ],
+    "correct": 2,
+    "explanation": "Tăng chi phí ngầm"
+  },
+  {
+    "question": "Tham nhũng trong quản lý đất đai làm khó khăn gì cho FDI?",
+    "options": [
+      "Tăng diện tích",
+      "Giảm giá thuê",
+      "Thuê mặt bằng minh bạch",
+      "Cải thiện vị trí"
+    ],
+    "correct": 2,
+    "explanation": "Quy trình không rõ ràng"
+  },
+  {
+    "question": "Thiếu minh bạch trong chính sách thuế ảnh hưởng đến quyết định gì?",
+    "options": [
+      "Tăng xuất khẩu",
+      "Giảm nhập khẩu",
+      "Đầu tư của doanh nghiệp nước ngoài",
+      "Cải thiện sản xuất"
+    ],
+    "correct": 2,
+    "explanation": "Khó tính toán chi phí"
+  },
+  {
+    "question": "Văn hóa \"biếu xén\" trong quan hệ doanh nghiệp-nhà nước dẫn đến gì?",
+    "options": [
+      "Tăng minh bạch",
+      "Cạnh tranh không công bằng",
+      "Giảm tham nhũng",
+      "Cải thiện dịch vụ"
+    ],
+    "correct": 1,
+    "explanation": "Doanh nghiệp nhỏ bị thiệt"
+  },
+  {
+    "question": "Tham nhũng trong thanh tra, kiểm tra ảnh hưởng đến gì?",
+    "options": [
+      "Tăng tuân thủ",
+      "Môi trường kinh doanh lành mạnh",
+      "Giảm vi phạm",
+      "Cải thiện chất lượng"
+    ],
+    "correct": 1,
+    "explanation": "Doanh nghiệp mất niềm tin"
+  },
+  {
+    "question": "Thiếu minh bạch trong quản lý ngân sách công làm gì với ODA?",
+    "options": [
+      "Tăng nguồn vốn",
+      "Cải thiện dự án",
+      "Giảm hỗ trợ từ quốc tế",
+      "Giảm chi phí"
+    ],
+    "correct": 2,
+    "explanation": "Đối tác lo ngại hiệu quả"
+  },
+  {
+    "question": "Văn hóa \"quen biết\" trong giao dịch dẫn đến hạn chế gì?",
+    "options": [
+      "Tăng hợp tác",
+      "Giảm chi phí",
+      "Thiếu cạnh tranh công bằng",
+      "Cải thiện quan hệ"
+    ],
+    "correct": 2,
+    "explanation": "Ưu tiên quan hệ hơn năng lực"
+  },
+  {
+    "question": "Tham nhũng trong giáo dục ảnh hưởng đến chất lượng gì?",
+    "options": [
+      "Tăng số lượng sinh viên",
+      "Nguồn nhân lực cho hội nhập",
+      "Giảm học phí",
+      "Cải thiện cơ sở vật chất"
+    ],
+    "correct": 1,
+    "explanation": "Bằng cấp không phản ánh năng lực"
+  },
+  {
+    "question": "Thiếu minh bạch trong thông tin thị trường làm khó khăn gì?",
+    "options": [
+      "Tăng xuất khẩu",
+      "Giảm nhập khẩu",
+      "Doanh nghiệp nước ngoài nghiên cứu đầu tư",
+      "Cải thiện sản xuất"
+    ],
+    "correct": 2,
+    "explanation": "Thiếu dữ liệu tin cậy"
+  },
+  {
+    "question": "Văn hóa \"che giấu sai phạm\" trong tổ chức dẫn đến gì?",
+    "options": [
+      "Tăng minh bạch",
+      "Giảm vi phạm",
+      "Khó cải thiện hiệu quả",
+      "Cải thiện quản lý"
+    ],
+    "correct": 2,
+    "explanation": "Không rút kinh nghiệm"
+  },
+  {
+    "question": "Tham nhũng trong y tế ảnh hưởng đến yếu tố nào thu hút lao động quốc tế?",
+    "options": [
+      "Tăng bệnh viện",
+      "Chất lượng dịch vụ y tế",
+      "Giảm chi phí",
+      "Cải thiện thuốc"
+    ],
+    "correct": 1,
+    "explanation": "Chuyên gia nước ngoài lo ngại"
+  },
+  {
+    "question": "Thiếu minh bạch trong xử lý vi phạm môi trường ảnh hưởng đến gì?",
+    "options": [
+      "Tăng xuất khẩu",
+      "Cam kết phát triển bền vững trong FTA",
+      "Giảm ô nhiễm",
+      "Cải thiện sản xuất"
+    ],
+    "correct": 1,
+    "explanation": "EU yêu cầu nghiêm ngặt"
+  },
+  {
+    "question": "Văn hóa \"né trách nhiệm\" trong xử lý sai phạm dẫn đến gì?",
+    "options": [
+      "Tăng kỷ luật",
+      "Tham nhũng tái diễn",
+      "Giảm vi phạm",
+      "Cải thiện quản lý"
+    ],
+    "correct": 1,
+    "explanation": "Không răn đe"
+  },
+  {
+    "question": "Tham nhũng trong cấp phép môi trường làm gì với doanh nghiệp xanh?",
+    "options": [
+      "Tăng dự án xanh",
+      "Giảm động lực đầu tư bền vững",
+      "Cải thiện môi trường",
+      "Giảm ô nhiễm"
+    ],
+    "correct": 1,
+    "explanation": "Doanh nghiệp \"bẩn\" vẫn được phép"
+  },
+  {
+    "question": "Thiếu minh bạch trong chính sách nhập khẩu ảnh hưởng đến gì?",
+    "options": [
+      "Tăng xuất khẩu",
+      "Thực thi cam kết WTO",
+      "Giảm thuế",
+      "Cải thiện logistics"
+    ],
+    "correct": 1,
+    "explanation": "Rào cản phi thuế quan"
+  },
+  {
+    "question": "Văn hóa \"không dám đấu tranh\" với tham nhũng dẫn đến gì?",
+    "options": [
+      "Tăng minh bạch",
+      "Giảm vi phạm",
+      "Tham nhũng lan rộng",
+      "Cải thiện kỷ luật"
+    ],
+    "correct": 2,
+    "explanation": "Văn hóa im lặng"
+  },
+  {
+    "question": "Tham nhũng trong đánh giá tác động môi trường ảnh hưởng đến gì?",
+    "options": [
+      "Tăng dự án",
+      "Uy tín với nhà đầu tư xanh",
+      "Giảm chi phí",
+      "Cải thiện môi trường"
+    ],
+    "correct": 1,
+    "explanation": "Nhà đầu tư ESG lo ngại"
+  },
+  {
+    "question": "Yếu kém nào làm Việt Nam khó dẫn dắt chuỗi giá trị toàn cầu?",
+    "options": [
+      "Dồi dào nguồn lực văn hóa",
+      "Kỷ luật lao động cao",
+      "Thiếu sáng tạo, chỉ gia công",
+      "Minh bạch cao"
+    ],
+    "correct": 2,
+    "explanation": "Do tâm lý bảo thủ"
+  },
+  {
+    "question": "Bị động trong hội nhập văn hóa dẫn đến mất cân bằng nào trong kinh tế?",
+    "options": [
+      "Tăng xuất khẩu phim ảnh",
+      "Giảm sức mạnh mềm, ảnh hưởng du lịch và thương hiệu",
+      "Giảm tham nhũng",
+      "Nâng cao kỹ năng lao động"
+    ],
+    "correct": 1,
+    "explanation": "Không chủ động xuất khẩu giá trị văn hóa"
+  },
+  {
+    "question": "Bị động văn hóa làm Việt Nam khó xuất khẩu gì để hỗ trợ kinh tế?",
+    "options": [
+      "Lao động giá rẻ",
+      "Tài nguyên khoáng sản",
+      "Công nghệ cao",
+      "Giá trị văn hóa như ẩm thực, phim ảnh"
     ],
     "correct": 3,
-    "explanation": "Nhà nước pháp quyền và Chính phủ số là các giải pháp mang tính \"Xây\" (xây dựng thể chế, quy trình mới) để tăng minh bạch, giảm quan liêu."
+    "explanation": "Mất cơ hội sức mạnh mềm"
   },
   {
-    "question": "Đâu là khác biệt cơ bản về tác động lên \"sự sáng tạo\" giữa \"tư duy tiểu nông\" và \"tư duy bao cấp\"?",
+    "question": "Thiếu sáng tạo từ trầm tích văn hóa khiến doanh nghiệp Việt Nam thường làm gì?",
     "options": [
-      "Cả hai đều khuyến khích sáng tạo để làm giàu nhanh.",
-      "Tư duy tiểu nông (ngại rủi ro) làm *chậm* đổi mới; Tàn dư bao cấp (bình quân) *triệt tiêu* động lực cạnh tranh.",
-      "Tiểu nông gây quan liêu, còn tư duy bao cấp gây tham nhũng và lãng phí của công.",
-      "Tiểu nông chỉ ảnh hưởng nông nghiệp."
+      "Đầu tư lớn",
+      "Sao chép thay vì dẫn dắt",
+      "Hợp tác quốc tế",
+      "Cải cách nhanh"
     ],
     "correct": 1,
-    "explanation": "Tư duy tiểu nông (ngại rủi ro R&D) làm chậm quá trình đổi mới. Tư duy bao cấp (không khuyến khích vượt trội) làm triệt tiêu động lực sáng tạo."
+    "explanation": "Vị thế gia công thấp"
   },
   {
-    "question": "\"Tệ quan liêu\" (thủ tục rườm rà) tạo môi trường cho \"Văn hóa phong bì\" (tham nhũng vặt) nảy sinh như thế nào?",
+    "question": "Văn hóa \"cộng đồng\" đôi khi dẫn đến hạn chế gì trong kinh doanh quốc tế?",
     "options": [
-      "Quan liêu làm tăng \"bệnh thành tích\" và \"tư duy COCC\" trong bộ máy.",
-      "COCC là nguyên nhân của cả hai vấn đề nhức nhối này.",
-      "Tạo \"điểm nghẽn\", buộc doanh nghiệp phải \"lót tay\".",
-      "\"Văn hóa phong bì\" là tàn dư bao cấp; \"Quan liêu\" là tàn dư tiểu nông."
+      "Tăng sáng tạo cá nhân",
+      "Giảm quan liêu",
+      "Ưu tiên tập thể hơn hiệu quả cá nhân",
+      "Tăng tuân thủ thời gian"
     ],
     "correct": 2,
-    "explanation": "Tệ quan liêu (thủ tục rườm rà) tạo ra quyền lực \"ban phát\", là môi trường cho \"văn hóa phong bì\" (lót tay) phát triển để bôi trơn."
+    "explanation": "Giảm tính cạnh tranh"
   },
   {
-    "question": "Giải pháp nào có khả năng tác động *nhanh nhất* và mang tính *cấu trúc* để khắc phục \"Tệ quan liêu, hành chính hóa\"?",
+    "question": "Thiếu tinh thần sáng tạo trong giáo dục Việt Nam ảnh hưởng đến gì?",
     "options": [
-      "Đổi mới căn bản, toàn diện giáo dục (tác động lâu dài).",
-      "Công cuộc \"đốt lò\" (tập trung vào \"chống\", không phải \"xây\" cấu trúc).",
-      "Khơi dậy khát vọng phát triển (tác động tư tưởng).",
-      "Xây dựng Chính phủ điện tử, Chính phủ số (thay đổi quy trình, công nghệ)."
+      "Tăng số lượng sinh viên",
+      "Giảm học phí",
+      "Khả năng đổi mới sản phẩm",
+      "Cải thiện cơ sở vật chất"
+    ],
+    "correct": 2,
+    "explanation": "Học thuộc lòng thay vì sáng tạo"
+  },
+  {
+    "question": "Bị động trong tiếp thu văn hóa nước ngoài dẫn đến gì?",
+    "options": [
+      "Tăng đổi mới",
+      "Cải thiện hội nhập",
+      "Thiếu chọn lọc, mất bản sắc",
+      "Giảm bảo thủ"
+    ],
+    "correct": 2,
+    "explanation": "Không chủ động bảo vệ giá trị"
+  },
+  {
+    "question": "Thiếu sáng tạo trong marketing làm doanh nghiệp Việt khó làm gì?",
+    "options": [
+      "Bán hàng nội địa",
+      "Giảm chi phí",
+      "Tăng sản lượng",
+      "Xây dựng thương hiệu quốc tế"
     ],
     "correct": 3,
-    "explanation": "Chính phủ số thay đổi quy trình (cấu trúc) và giảm tiếp xúc trực tiếp, có hiệu quả nhanh hơn giáo dục hay thay đổi tư duy."
+    "explanation": "Chỉ dựa vào giá rẻ"
   },
   {
-    "question": "Mối quan hệ tương hỗ (cùng củng cố lẫn nhau) giữa \"Tư duy COCC\" và \"Bệnh thành tích\" là gì?",
+    "question": "Văn hóa \"học theo\" thay vì \"tạo ra\" ảnh hưởng đến lĩnh vực nào?",
     "options": [
-      "Bổ nhiệm vì \"COCC\" (thiếu năng lực) dẫn đến xu hướng tạo \"báo cáo đẹp\" (thành tích) để che đậy yếu kém thực chất.",
-      "Người có \"Bệnh thành tích\" thường là người tài.",
-      "Cả hai đều là sản phẩm của \"văn hóa phong bì\".",
-      "\"COCC\" và \"Bệnh thành tích\" hoàn toàn đối lập nhau."
-    ],
-    "correct": 0,
-    "explanation": "Bổ nhiệm không dựa trên năng lực (COCC) dẫn đến hệ quả là người được bổ nhiệm phải làm việc đối phó, tạo báo cáo không thực chất (Bệnh thành tích) để bảo vệ vị trí."
-  },
-  {
-    "question": "\"Chủ nghĩa bình quân\" (cào bằng) cản trở trực tiếp \"khát vọng phát triển phồn vinh\" (ĐH XIII) như thế nào?",
-    "options": [
-      "\"Bình quân\" dẫn đến \"văn hóa phong bì\".",
-      "\"Khát vọng\" (cần sự vượt trội) mâu thuẫn với \"bình quân\" (cào bằng, triệt tiêu động lực cạnh tranh).",
-      "\"Khát vọng\" là hệ giá trị mới, thay thế \"bình quân\".",
-      "\"Khát vọng\" đòi hỏi \"tầm nhìn chiến lược\", \"bình quân\" chỉ là \"tư duy ngắn hạn\"."
-    ],
-    "correct": 1,
-    "explanation": "Khát vọng phát triển (cần sự vượt trội) mâu thuẫn trực tiếp với tư duy chủ nghĩa bình quân (không khuyến khích vượt trội)."
-  },
-  {
-    "question": "Tại sao \"kỷ luật lao động lỏng lẻo\" (giờ cao su) lại là rào cản chí mạng đối với các chuỗi cung ứng toàn cầu (Just-in-time)?",
-    "options": [
-      "Vì nó vi phạm các luật chống hối lộ quốc tế.",
-      "Vì nó thể hiện \"tư duy ban phát\" cơ chế.",
-      "Vì chuỗi cung ứng (Just-in-time) đòi hỏi sự chính xác tuyệt đối về thời gian và quy trình.",
-      "Vì nó làm tăng \"bệnh thành tích\" trong báo cáo."
+      "Sản xuất gia công",
+      "Xuất khẩu lao động",
+      "Nghiên cứu và phát triển (R&D)",
+      "Nông nghiệp truyền thống"
     ],
     "correct": 2,
-    "explanation": "Chuỗi cung ứng toàn cầu (Just-in-time) đòi hỏi kỷ luật công nghiệp tuyệt đối, chính xác về thời gian; \"giờ cao su\" sẽ phá vỡ toàn bộ hệ thống."
+    "explanation": "Ít bằng sáng chế"
   },
   {
-    "question": "\"Thiếu chữ tín\" (làm hàng giả) và \"Bệnh thành tích\" (làm báo cáo đẹp) khác nhau cốt lõi ở điểm nào?",
+    "question": "Bị động trong quảng bá văn hóa làm Việt Nam thua kém nước nào trong ASEAN?",
     "options": [
-      "\"Thiếu chữ tín\" là do tiểu nông; \"Bệnh thành tích\" là do bao cấp.",
-      "Cả hai đều là một.",
-      "\"Thiếu chữ tín\" vi phạm pháp luật; \"Bệnh thành tích\" chỉ là đạo đức.",
-      "\"Thiếu chữ tín\" là lừa dối *đối tác* (bên ngoài); \"Bệnh thành tích\" là lừa dối *cấp trên/tổ chức* (bên trong)."
+      "Lào về công nghiệp",
+      "Myanmar về công nghệ",
+      "Thái Lan về du lịch",
+      "Campuchia về tài chính"
+    ],
+    "correct": 2,
+    "explanation": "Thái Lan chủ động marketing"
+  },
+  {
+    "question": "Thiếu sáng tạo trong thiết kế sản phẩm làm hàng Việt thường bị gì?",
+    "options": [
+      "Tăng nhu cầu",
+      "Đánh giá thấp về giá trị gia tăng",
+      "Cải thiện chất lượng",
+      "Giảm cạnh tranh"
+    ],
+    "correct": 1,
+    "explanation": "Chỉ gia công theo mẫu"
+  },
+  {
+    "question": "Văn hóa \"ngại nổi bật\" cản trở gì trong khởi nghiệp?",
+    "options": [
+      "Duy trì doanh nghiệp",
+      "Tăng lao động",
+      "Phát triển startup sáng tạo",
+      "Giảm chi phí"
+    ],
+    "correct": 2,
+    "explanation": "Sợ thất bại trước cộng đồng"
+  },
+  {
+    "question": "Bị động trong tham gia tổ chức quốc tế làm Việt Nam mất gì?",
+    "options": [
+      "Tăng thành viên",
+      "Giảm cam kết",
+      "Tiếng nói trong đàm phán",
+      "Cải thiện quan hệ"
+    ],
+    "correct": 2,
+    "explanation": "Ít chủ động đề xuất"
+  },
+  {
+    "question": "Thiếu sáng tạo trong giải quyết vấn đề dẫn đến gì?",
+    "options": [
+      "Tăng hiệu quả",
+      "Giảm chi phí",
+      "Chậm thích nghi với thay đổi",
+      "Cải thiện quản lý"
+    ],
+    "correct": 2,
+    "explanation": "Áp dụng máy móc quy trình"
+  },
+  {
+    "question": "Văn hóa \"không dám đặt câu hỏi\" ảnh hưởng đến gì?",
+    "options": [
+      "Tăng kỷ luật",
+      "Khả năng đổi mới tổ chức",
+      "Giảm xung đột",
+      "Cải thiện đồng thuận"
+    ],
+    "correct": 1,
+    "explanation": "Thiếu tư duy phản biện"
+  },
+  {
+    "question": "Bị động trong nghiên cứu thị trường quốc tế làm doanh nghiệp Việt khó gì?",
+    "options": [
+      "Bán hàng quen thuộc",
+      "Giảm chi phí",
+      "Phát hiện cơ hội xuất khẩu mới",
+      "Tăng sản lượng"
+    ],
+    "correct": 2,
+    "explanation": "Chỉ chờ đơn hàng đến"
+  },
+  {
+    "question": "Thiếu sáng tạo trong mô hình kinh doanh khiến doanh nghiệp Việt làm gì?",
+    "options": [
+      "Tăng giá trị gia tăng",
+      "Cải thiện thương hiệu",
+      "Cạnh tranh bằng giá thấp",
+      "Giảm phụ thuộc"
+    ],
+    "correct": 2,
+    "explanation": "Không tạo khác biệt"
+  },
+  {
+    "question": "Văn hóa \"ngại thử nghiệm\" cản trở gì trong chuyển đổi số?",
+    "options": [
+      "Duy trì hệ thống cũ",
+      "Tăng ổn định",
+      "Ứng dụng công nghệ mới",
+      "Giảm rủi ro"
+    ],
+    "correct": 2,
+    "explanation": "Sợ thay đổi"
+  },
+  {
+    "question": "Bị động trong xây dựng chuẩn mực quốc tế làm Việt Nam thường phải gì?",
+    "options": [
+      "Tạo chuẩn riêng",
+      "Dẫn dắt khu vực",
+      "Tuân theo chuẩn của nước khác",
+      "Cải thiện vị thế"
+    ],
+    "correct": 2,
+    "explanation": "Không chủ động đề xuất"
+  },
+  {
+    "question": "Thiếu sáng tạo trong giải trí làm văn hóa Việt khó cạnh tranh với gì?",
+    "options": [
+      "Nội dung nội địa",
+      "Làn sóng Hallyu Hàn Quốc",
+      "Truyền thống dân gian",
+      "Lễ hội địa phương"
+    ],
+    "correct": 1,
+    "explanation": "Phim, nhạc Việt ít xuất khẩu"
+  },
+  {
+    "question": "Hạn chế giáo dục văn hóa ở Việt Nam thể hiện ở việc thiếu gì cho lao động hội nhập?",
+    "options": [
+      "Dư thừa lao động chất lượng cao",
+      "Tăng trưởng kinh tế số nhanh",
+      "Kỹ năng mềm và tiếng Anh",
+      "Giảm phụ thuộc giá rẻ"
+    ],
+    "correct": 2,
+    "explanation": "Khó chuyển sang kinh tế tri thức"
+  },
+  {
+    "question": "Hạn chế nguồn lực văn hóa dẫn đến thiếu gì trong hội nhập?",
+    "options": [
+      "Lao động dồi dào",
+      "Tài nguyên thiên nhiên",
+      "Ngân sách quảng bá quốc tế",
+      "Dân số trẻ"
+    ],
+    "correct": 2,
+    "explanation": "Giảm khả năng hỗ trợ kinh tế mềm"
+  },
+  {
+    "question": "Hệ thống giáo dục nặng lý thuyết dẫn đến thiếu gì trong lao động?",
+    "options": [
+      "Số lượng lao động",
+      "Tinh thần cộng đồng",
+      "Kỹ năng thực hành cho kinh tế tri thức",
+      "Bảo thủ"
+    ],
+    "correct": 2,
+    "explanation": "Cản trở chuyển đổi kinh tế"
+  },
+  {
+    "question": "Thiếu nguồn lực cho quảng bá văn hóa ảnh hưởng đến ngành nào?",
+    "options": [
+      "Công nghiệp",
+      "Du lịch và thương hiệu quốc gia",
+      "Nông nghiệp",
+      "Tài chính"
+    ],
+    "correct": 1,
+    "explanation": "Giảm thu nhập từ kinh tế mềm"
+  },
+  {
+    "question": "Thiếu kỹ năng ngôn ngữ trong lao động Việt Nam ảnh hưởng đến gì?",
+    "options": [
+      "Sản xuất nội địa",
+      "Nông nghiệp truyền thống",
+      "Làm việc trong công ty đa quốc gia",
+      "Xây dựng cơ bản"
+    ],
+    "correct": 2,
+    "explanation": "Khó giao tiếp quốc tế"
+  },
+  {
+    "question": "Giáo dục thiếu tư duy phản biện dẫn đến lao động có tính gì?",
+    "options": [
+      "Độc lập cao",
+      "Tuân thủ máy móc, ít sáng tạo",
+      "Linh hoạt mạnh",
+      "Đổi mới nhanh"
+    ],
+    "correct": 1,
+    "explanation": "Không thích nghi tốt"
+  },
+  {
+    "question": "Thiếu đầu tư cho nghiên cứu văn hóa làm Việt Nam khó làm gì?",
+    "options": [
+      "Tăng xuất khẩu nông sản",
+      "Giảm nhập khẩu",
+      "Cải thiện công nghiệp",
+      "Hiểu rõ giá trị để quảng bá"
     ],
     "correct": 3,
-    "explanation": "Hành vi \"làm hàng giả\" (thiếu chữ tín) là lừa dối khách hàng/đối tác. Hành vi \"làm báo cáo đẹp\" (bệnh thành tích) là lừa dối nội bộ/cấp trên."
+    "explanation": "Không định vị thế mạnh"
   },
   {
-    "question": "Vì sao \"tác phong tùy tiện, giờ cao su\" lại là biểu hiện của \"tư duy tiểu nông\" trong môi trường công nghiệp?",
+    "question": "Giáo dục nghệ thuật yếu làm Việt Nam thiếu gì?",
     "options": [
-      "Sản xuất tiểu nông (theo mùa vụ) vốn không bị ràng buộc bởi thời gian công nghiệp chính xác, tạo thói quen tùy tiện.",
-      "Tư duy tiểu nông \"ngắn hạn\".",
-      "\"Giờ cao su\" là sản phẩm của thời bao cấp.",
-      "\"Tác phong tùy tiện\" là biểu hiện của \"quan liêu\"."
-    ],
-    "correct": 0,
-    "explanation": "Sản xuất nông nghiệp (tiểu nông) làm việc theo mùa vụ, thời tiết, mang tính tùy tiện. Khi mang tư duy đó vào sản xuất công nghiệp (đòi hỏi chính xác), nó trở thành \"kỷ luật lỏng lẻo\"."
-  },
-  {
-    "question": "Yếu tố nào là nguyên nhân trực tiếp nhất gây \"lãng phí nhân tài\"?",
-    "options": [
-      "\"Tư duy tiểu nông\".",
-      "\"Tư duy COCC\".",
-      "\"Kỷ luật lỏng lẻo\".",
-      "\"Tệ quan liêu, hành chính hóa\"."
-    ],
-    "correct": 1,
-    "explanation": "Tư duy \"COCC\" (bổ nhiệm không dựa trên năng lực mà dựa trên quan hệ) dẫn đến hệ quả trực tiếp là \"Lãng phí nhân tài\"."
-  },
-  {
-    "question": "Công cuộc \"đốt lò\" (chống tham nhũng) góp phần giải quyết \"Tư duy COCC\" (bổ nhiệm người nhà) như thế nào?",
-    "options": [
-      "\"Đốt lò\" làm tăng \"văn hóa phong bì\".",
-      "\"Đốt lò\" chỉ chống tham nhũng, không liên quan.",
-      "\"Đốt lò\" (không có vùng cấm) tạo ra sự răn đe, khiến việc bổ nhiệm theo \"quan hệ\" thay vì \"năng lực\" bị phanh phui, xử lý.",
-      "Giải pháp này không hiệu quả bằng \"Đổi mới giáo dục\"."
+      "Lao động sản xuất",
+      "Nông dân",
+      "Nhân lực sáng tạo cho công nghiệp văn hóa",
+      "Công nhân"
     ],
     "correct": 2,
-    "explanation": "Công cuộc \"đốt lò\" (chống) và \"siết chặt công tác cán bộ\" (xây) là hai giải pháp song hành để giải quyết tệ phe cánh, COCC."
+    "explanation": "Ít nhà thiết kế, nghệ sĩ quốc tế"
   },
   {
-    "question": "Đâu là mối liên hệ giữa \"chủ nghĩa bình quân\" (bao cấp) và \"kỷ luật lao động lỏng lẻo\" (tùy tiện)?",
+    "question": "Thiếu nguồn lực cho bảo tồn di sản dẫn đến gì?",
     "options": [
-      "Cả hai đều là tàn dư của tư duy tiểu nông.",
-      "Khi kết quả bị \"cào bằng\" (bình quân), người lao động mất động lực, dẫn đến tác phong \"tùy tiện\" (lỏng lẻo).",
-      "\"Kỷ luật lỏng lẻo\" là nguyên nhân đẻ ra \"chủ nghĩa bình quân\".",
-      "Không có mối liên hệ nào."
+      "Tăng khách du lịch",
+      "Di sản bị xuống cấp, mất thu hút du lịch",
+      "Cải thiện hạ tầng",
+      "Giảm chi phí"
     ],
     "correct": 1,
-    "explanation": "Chủ nghĩa bình quân (triệt tiêu động lực) là gốc rễ tư duy dẫn đến tác phong tùy tiện, thiếu kỷ luật (kỷ luật lỏng lẻo)."
+    "explanation": "Giảm sức hút văn hóa"
   },
   {
-    "question": "Hàm ý của việc Đảng chuyển trọng tâm từ \"văn hóa là nền tảng\" (NQ TW 5) sang \"khơi dậy khát vọng\" (ĐH XIII) là gì?",
+    "question": "Giáo dục kỹ năng mềm yếu làm lao động Việt khó làm gì?",
     "options": [
-      "Chuyển từ vai trò phòng thủ (giữ gìn) sang vai trò tấn công (dùng văn hóa làm sức mạnh bứt phá kinh tế).",
-      "\"Nền tảng\" đã không còn phù hợp.",
-      "\"Khát vọng\" là để thay thế cho \"Kinh tế thị trường\".",
-      "\"Nền tảng\" là trừu tượng, \"Khát vọng\" là cụ thể hơn."
+      "Làm việc độc lập",
+      "Sản xuất đơn giản",
+      "Làm việc nhóm đa văn hóa",
+      "Tuân thủ quy trình"
     ],
-    "correct": 0,
-    "explanation": "Coi văn hóa là \"Nền tảng tinh thần\" mang tính giữ gìn, làm nền. Coi văn hóa là \"Khát vọng\" là chủ động dùng sức mạnh tinh thần đó làm động lực bứt phá."
+    "correct": 2,
+    "explanation": "Thiếu giao tiếp, thương lượng"
   },
   {
-    "question": "Đâu là nguy cơ lớn nhất khi \"Bệnh thành tích\" (số liệu đẹp) kết hợp với \"Tệ quan liêu\" (thủ tục rườm rà)?",
+    "question": "Thiếu chính sách hỗ trợ doanh nghiệp văn hóa làm gì?",
     "options": [
-      "Làm tăng \"chi phí tuân thủ\" lên gấp đôi.",
-      "Khiến \"siết chặt cán bộ\" không thể thực hiện được.",
-      "Khuyến khích \"tư duy COCC\" phát triển.",
-      "Tạo ra môi trường đầu tư \"giả tạo\", khiến đối tác quốc tế mất lòng tin và ra quyết định sai lầm do thông tin sai lệch."
+      "Tăng xuất khẩu",
+      "Giảm nhập khẩu",
+      "Khó phát triển công nghiệp sáng tạo",
+      "Cải thiện sản xuất"
+    ],
+    "correct": 2,
+    "explanation": "Thiếu nguồn vốn, thị trường"
+  },
+  {
+    "question": "Giáo dục công nghệ thông tin chậm dẫn đến gì?",
+    "options": [
+      "Dư thừa lập trình viên",
+      "Tăng startup",
+      "Thiếu nhân lực chuyển đổi số",
+      "Cải thiện kinh tế số"
+    ],
+    "correct": 2,
+    "explanation": "Không đáp ứng nhu cầu"
+  },
+  {
+    "question": "Thiếu đầu tư cho giáo dục nghề nghiệp ảnh hưởng đến gì?",
+    "options": [
+      "Tăng công nhân",
+      "Giảm thất nghiệp",
+      "Chất lượng lao động kỹ thuật",
+      "Cải thiện sản xuất"
+    ],
+    "correct": 2,
+    "explanation": "Không đạt chuẩn quốc tế"
+  },
+  {
+    "question": "Giáo dục thiếu liên kết doanh nghiệp dẫn đến gì?",
+    "options": [
+      "Tăng việc làm",
+      "Lao động không đáp ứng thực tế",
+      "Giảm thất nghiệp",
+      "Cải thiện kỹ năng"
+    ],
+    "correct": 1,
+    "explanation": "Học xa thực hành"
+  },
+  {
+    "question": "Thiếu nguồn lực cho đào tạo liên tục làm lao động khó gì?",
+    "options": [
+      "Giữ việc cũ",
+      "Tăng lương",
+      "Cập nhật kỹ năng mới",
+      "Giảm giờ làm"
+    ],
+    "correct": 2,
+    "explanation": "Kiến thức lỗi thời"
+  },
+  {
+    "question": "Giáo dục thiếu quốc tế hóa dẫn đến sinh viên Việt có gì?",
+    "options": [
+      "Tăng cơ hội",
+      "Giảm học phí",
+      "Khó thích nghi môi trường đa văn hóa",
+      "Cải thiện bằng cấp"
+    ],
+    "correct": 2,
+    "explanation": "Thiếu trải nghiệm quốc tế"
+  },
+  {
+    "question": "Thiếu đầu tư cho nghiên cứu khoa học làm Việt Nam khó gì?",
+    "options": [
+      "Tăng nhập khẩu",
+      "Giảm chi phí",
+      "Phát triển công nghệ nội địa",
+      "Cải thiện sản xuất"
+    ],
+    "correct": 2,
+    "explanation": "Phụ thuộc công nghệ nước ngoài"
+  },
+  {
+    "question": "Giáo dục thiếu khởi nghiệp dẫn đến sinh viên có tư duy gì?",
+    "options": [
+      "Sáng tạo cao",
+      "Mạo hiểm mạnh",
+      "Ưa ổn định, ngại rủi ro",
+      "Độc lập lớn"
+    ],
+    "correct": 2,
+    "explanation": "Thiếu tinh thần khởi nghiệp"
+  },
+  {
+    "question": "Thiếu nguồn lực cho thư viện, bảo tàng ảnh hưởng đến gì?",
+    "options": [
+      "Tăng khách tham quan",
+      "Giảm chi phí",
+      "Giáo dục văn hóa cho thế hệ trẻ",
+      "Cải thiện cơ sở vật chất"
+    ],
+    "correct": 2,
+    "explanation": "Thiếu nguồn học liệu"
+  },
+  {
+    "question": "Giáo dục thiếu định hướng nghề nghiệp dẫn đến gì?",
+    "options": [
+      "Tăng việc làm",
+      "Lãng phí nguồn nhân lực",
+      "Giảm thất nghiệp",
+      "Cải thiện thu nhập"
+    ],
+    "correct": 1,
+    "explanation": "Học không đúng ngành cần"
+  },
+  {
+    "question": "Nghị quyết nào của Đảng tập trung xây dựng con người phát triển toàn diện để khắc phục bảo thủ?",
+    "options": [
+      "Trung ương 9 khóa XII",
+      "33-NQ/TW",
+      "Trung ương 5 khóa VIII",
+      "13-NQ/TW"
+    ],
+    "correct": 2,
+    "explanation": "Đề ra 10 nhiệm vụ văn hóa"
+  },
+  {
+    "question": "Nghị quyết 5 khóa VIII có bao nhiêu quan điểm chỉ đạo về văn hóa?",
+    "options": [
+      "10",
+      "5",
+      "15",
+      "20"
+    ],
+    "correct": 1,
+    "explanation": "Tập trung khắc phục yếu kém"
+  },
+  {
+    "question": "Nghị quyết TW5 khóa VIII nhấn mạnh văn hóa là gì?",
+    "options": [
+      "Phụ thuộc kinh tế",
+      "Bổ trợ chính trị",
+      "Nền tảng tinh thần của xã hội",
+      "Công cụ quân sự"
+    ],
+    "correct": 2,
+    "explanation": "Ngang hàng kinh tế, chính trị"
+  },
+  {
+    "question": "Nghị quyết 5 khóa VIII đề ra xây dựng con người như thế nào?",
+    "options": [
+      "Chỉ về kinh tế",
+      "Toàn diện, hài hòa, sáng tạo",
+      "Tập trung quân sự",
+      "Ưu tiên chính trị"
+    ],
+    "correct": 1,
+    "explanation": "Khắc phục bảo thủ"
+  },
+  {
+    "question": "Nghị quyết TW5 khóa VIII đặt mục tiêu văn hóa phục vụ điều gì?",
+    "options": [
+      "Chiến tranh",
+      "Cách mạng",
+      "Công nghiệp hóa, hiện đại hóa",
+      "Nông nghiệp truyền thống"
+    ],
+    "correct": 2,
+    "explanation": "Hỗ trợ phát triển kinh tế"
+  },
+  {
+    "question": "Nghị quyết 5 khóa VIII yêu cầu khắc phục tình trạng gì trong văn hóa?",
+    "options": [
+      "Phát triển nhanh",
+      "Đổi mới mạnh",
+      "Trì trệ, lạc hậu, bảo thủ",
+      "Hội nhập sâu"
+    ],
+    "correct": 2,
+    "explanation": "Cản trở hội nhập"
+  },
+  {
+    "question": "Nghị quyết TW5 khóa VIII chủ trương phát triển văn hóa theo hướng nào?",
+    "options": [
+      "Chỉ truyền thống",
+      "Hoàn toàn nước ngoài",
+      "Bỏ bản sắc",
+      "Dân tộc, khoa học, đại chúng"
     ],
     "correct": 3,
-    "explanation": "Bệnh thành tích (thông tin sai lệch) cộng với quan liêu (quy trình chậm) khiến đối tác quốc tế mất lòng tin và ra quyết định kinh doanh sai lầm."
+    "explanation": "Định hướng Hồ Chí Minh"
   },
   {
-    "question": "\"Mẫu số chung\" của \"Tiểu nông\", \"Bao cấp\" và \"Bệnh thành tích\" là gì?",
+    "question": "Nghị quyết 5 khóa VIII đề ra bao nhiêu nhiệm vụ văn hóa chính?",
     "options": [
-      "Né tránh cạnh tranh thực chất.",
-      "Đều bắt nguồn từ \"tư duy COCC\".",
-      "Đều là nguyên nhân của \"văn hóa phong bì\".",
-      "Đều là tư duy \"manh mún, cục bộ\"."
-    ],
-    "correct": 0,
-    "explanation": "Tư duy tiểu nông (ngại rủi ro), tư duy bao cấp (ỷ lại, bình quân), và bệnh thành tích (đối phó) đều là các hình thức né tránh cạnh tranh bằng năng lực thật."
-  },
-  {
-    "question": "Giải pháp \"Chính phủ số\" và \"Kinh tế tư nhân\" (startup) phối hợp với nhau như thế nào?",
-    "options": [
-      "Chính phủ số sẽ \"đốt lò\" các startup gian dối.",
-      "Kinh tế tư nhân cung cấp công nghệ để xây dựng Chính phủ số.",
-      "Chính phủ số (minh bạch, nhanh chóng) tạo môi trường thuận lợi (giảm quan liêu) cho kinh tế tư nhân (startup) phát triển.",
-      "Hai giải pháp này không liên quan."
-    ],
-    "correct": 2,
-    "explanation": "Giải pháp \"Chính phủ số\" (thể chế) tạo môi trường thuận lợi, giảm quan liêu, tăng minh bạch, giúp \"Kinh tế tư nhân\" (kinh tế) phát triển."
-  },
-  {
-    "question": "Giải pháp \"Đổi mới căn bản giáo dục\" (thực học) là điều kiện tiên quyết để \"Siết chặt công tác cán bộ\" (chống COCC) vì sao?",
-    "options": [
-      "Vì giáo dục sẽ dạy con người không \"chạy chức\".",
-      "Vì phải có nguồn \"nhân tài thực học\" để thay thế những người được bổ nhiệm do \"quan hệ\" (COCC).",
-      "Vì \"đổi mới giáo dục\" sẽ làm giảm \"bệnh thành tích\".",
-      "Vì \"siết chặt cán bộ\" là giải pháp về thể chế."
-    ],
-    "correct": 1,
-    "explanation": "Không thể chống COCC (loại bỏ người yếu kém) nếu không có nguồn cung nhân lực chất lượng cao (từ giáo dục thực học) để thay thế và xây dựng bộ máy mới."
-  },
-  {
-    "question": "Trong bối cảnh hội nhập, tư duy \"ngại rủi ro\" (tiểu nông) là rào cản lớn nhất đối với lĩnh vực nào?",
-    "options": [
-      "Xây dựng chuỗi cung ứng (Just-in-time).",
-      "Tuân thủ các quy định về pháp quyền.",
-      "Xóa bỏ tệ quan liêu, hành chính hóa.",
-      "Đầu tư mạo hiểm cho công nghệ và R&D."
+      "5",
+      "15",
+      "20",
+      "10"
     ],
     "correct": 3,
-    "explanation": "Tư duy \"ngại rủi ro\" đối lập trực tiếp với yêu cầu \"chấp nhận đầu tư mạo hiểm cho công nghệ và R&D\" của kinh tế quốc tế."
+    "explanation": "Bao quát các lĩnh vực"
   },
   {
-    "question": "Yếu tố nào phá hoại \"Pháp quyền\" (Rule of Law) nghiêm trọng nhất?",
+    "question": "Nghị quyết TW5 khóa VIII nhấn mạnh xây dựng môi trường văn hóa như thế nào?",
     "options": [
-      "\"Thiếu chữ tín\" và \"Tham nhũng\".",
-      "\"Kỷ luật lỏng lẻo\".",
-      "\"Tư duy tiểu nông\".",
-      "\"Tư duy bao cấp\"."
-    ],
-    "correct": 0,
-    "explanation": "Pháp quyền (vận hành bằng luật) bị phá vỡ bởi Thiếu chữ tín (vi phạm luật - hợp đồng) và Tham nhũng (dùng tiền/quan hệ để bẻ cong luật)."
-  },
-  {
-    "question": "Sự khác biệt về *đối tượng* tác động chính giữa Nghị quyết TW 5 (1998) và Nghị quyết TW 9 (2014) là gì?",
-    "options": [
-      "NQ TW 5 tập trung \"kinh tế\"; NQ TW 9 tập trung \"chính trị\".",
-      "NQ TW 5 tập trung \"hội nhập\"; NQ TW 9 tập trung \"bảo tồn\".",
-      "NQ TW 5 tập trung vào \"hệ thống\" (nền văn hóa); NQ TW 9 tập trung vào \"cá nhân\" (con người).",
-      "NQ TW 5 \"chống COCC\"; NQ TW 9 \"chống bệnh thành tích\"."
+      "Cứng nhắc",
+      "Bảo thủ",
+      "Lành mạnh, nhân văn",
+      "Khép kín"
     ],
     "correct": 2,
-    "explanation": "NQ TW 5 (1998) đặt nền móng \"Xây dựng nền văn hóa\" (hệ thống). NQ TW 9 (2014) phát triển lên, tập trung vào \"Xây dựng... con người Việt Nam\" (cá nhân, chủ thể)."
+    "explanation": "Hỗ trợ phát triển con người"
   },
   {
-    "question": "\"Văn hóa phong bì\" (tham nhũng vặt) phá hoại mục tiêu \"phát triển kinh tế thị trường\" (cạnh tranh sòng phẳng) như thế nào?",
+    "question": "Nghị quyết 5 khóa VIII đặt văn hóa trong mối quan hệ nào?",
     "options": [
-      "Làm tăng chi phí nhà nước.",
-      "Làm \"méo mó môi trường cạnh tranh\", khiến doanh nghiệp thắng thầu vì \"lót tay\" chứ không phải vì năng lực.",
-      "Khiến doanh nghiệp \"thiếu chữ tín\" với nhau.",
-      "Khiến công chức có \"tư duy ỷ lại\" vào phong bì."
+      "Độc lập hoàn toàn",
+      "Phụ thuộc kinh tế",
+      "Thống nhất với kinh tế, chính trị, xã hội",
+      "Tách biệt xã hội"
     ],
-    "correct": 0,
-    "explanation": "Văn hóa phong bì làm tăng chi phí nhà nước do các khoản chi phí ngầm và không minh bạch."
+    "correct": 2,
+    "explanation": "Phát triển đồng bộ"
   },
   {
-    "question": "Sự khác biệt chính trong cản trở hội nhập giữa \"tư duy tiểu nông\" (ngại rủi ro) và \"tàn dư tư duy bao cấp\" (ỷ lại) là gì?",
+    "question": "Nghị quyết TW5 khóa VIII yêu cầu đổi mới gì trong quản lý văn hóa?",
     "options": [
-      "Tiểu nông làm \"tăng chi phí giao dịch\", bao cấp làm \"méo mó môi trường cạnh tranh\".",
-      "Tiểu nông (ngại rủi ro) làm *chậm* đổi mới công nghệ; Bao cấp (ỷ lại, bình quân) làm *triệt tiêu* động lực sáng tạo, cạnh tranh.",
-      "Tiểu nông gây ra \"bệnh thành tích\", bao cấp gây ra \"tư duy COCC\".",
-      "Tiểu nông chỉ ảnh hưởng nông nghiệp, bao cấp ảnh hưởng toàn bộ nền kinh tế."
-    ],
-    "correct": 1,
-    "explanation": "Tư duy tiểu nông (ngại rủi ro R&D) làm chậm quá trình đổi mới. Tư duy bao cấp (không khuyến khích vượt trội) làm triệt tiêu động lực sáng tạo."
-  },
-  {
-    "question": "Trong bối cảnh hội nhập, tại sao \"tệ quan liêu, hành chính hóa\" (thủ tục rườm rà) đôi khi còn nguy hiểm hơn \"tham nhũng vặt\" (phong bì)?",
-    "options": [
-      "Vì \"tham nhũng vặt\" chỉ làm tăng chi phí, có thể dự đoán được.",
-      "Vì \"quan liêu\" làm mất thời gian, tăng chi phí tuân thủ, gây nản lòng nhà đầu tư và làm giảm năng lực cạnh tranh quốc gia.",
-      "Vì \"quan liêu\" là nguồn gốc đẻ ra \"tham nhũng vặt\".",
-      "Vì \"quan liêu\" là biểu hiện của \"tư duy COCC\"."
+      "Tăng quan liêu",
+      "Cơ chế, chính sách",
+      "Giảm đầu tư",
+      "Bỏ quản lý"
     ],
     "correct": 1,
-    "explanation": "Quan liêu làm tăng chi phí giao dịch và chi phí tuân thủ một cách hệ thống, làm nản lòng nhà đầu tư, giảm năng lực cạnh tranh quốc gia."
+    "explanation": "Tạo động lực phát triển"
   },
   {
-    "question": "So với Nghị quyết TW 5 (1998) coi văn hóa là \"nền tảng, động lực\", tinh thần Đại hội XIII (2021) về \"khơi dậy khát vọng\" có bước phát triển gì?",
+    "question": "Nghị quyết 5 khóa VIII nhấn mạnh vai trò của ai trong xây dựng văn hóa?",
     "options": [
-      "Khẳng định lại vai trò của kinh tế thị trường.",
-      "Chuyển từ vai trò \"nền tảng\" sang vai trò \"công cụ\".",
-      "Bắt đầu tập trung vào xây dựng con người.",
-      "Chủ động biến \"động lực\" (tiềm năng) thành \"sức mạnh tinh thần\" (hành động) để tạo bứt phá."
+      "Chỉ Đảng",
+      "Chỉ Nhà nước",
+      "Chỉ trí thức",
+      "Toàn dân"
     ],
     "correct": 3,
-    "explanation": "NQ TW 5 đặt nền móng lý luận (động lực). ĐH XIII chủ động \"khơi dậy khát vọng\", tạo động lực tinh thần mới để vượt qua trì trệ."
+    "explanation": "Văn hóa của dân, do dân"
   },
   {
-    "question": "Mối liên hệ nào sau đây mô tả đúng nhất sự liên đới giữa \"Bệnh thành tích\" và \"Kỷ luật lỏng lẻo\"?",
+    "question": "Nghị quyết TW5 khóa VIII đề ra xây dựng hệ giá trị văn hóa như thế nào?",
     "options": [
-      "\"Bệnh thành tích\" là nguyên nhân của \"kỷ luật lỏng lẻo\".",
-      "Khi làm việc \"tùy tiện\" (kỷ luật lỏng lẻo), kết quả thực chất sẽ kém, buộc người ta phải \"làm báo cáo đẹp\" (thành tích) để bù đắp.",
-      "Cả hai đều là sản phẩm của \"tư duy COCC\".",
-      "Không có liên hệ, một là vấn đề tư duy, một là vấn đề tác phong."
-    ],
-    "correct": 1,
-    "explanation": "Làm việc lỏng lẻo (nguyên nhân) dẫn đến kết quả thực chất kém. Để che giấu, người ta phải tạo ra thành tích ảo (kết quả)."
-  },
-  {
-    "question": "Giải pháp \"Xây dựng Chính phủ số\" được coi là đòn bẩy để khắc phục \"tệ quan liêu\" vì nó tấn công vào cốt lõi của vấn đề là:",
-    "options": [
-      "Giảm tiếp xúc trực tiếp, minh bạch hóa quy trình, triệt tiêu môi trường \"ban phát\" cơ chế.",
-      "Tăng cường \"văn hóa phong bì\" trên môi trường trực tuyến.",
-      "Siết chặt công tác cán bộ, chống \"chạy chức\".",
-      "Đào tạo lại toàn bộ công chức."
-    ],
-    "correct": 0,
-    "explanation": "Chính phủ số thay đổi quy trình, giảm tiếp xúc trực tiếp giữa công chức và doanh nghiệp, làm tăng tính minh bạch, từ đó giảm tệ quan liêu."
-  },
-  {
-    "question": "Điểm chung cốt lõi nào khiến \"Tư duy COCC\" và \"Chủ nghĩa bình quân\" (bao cấp) đều là rào cản của hội nhập?",
-    "options": [
-      "Cả hai đều là tàn dư của tư duy tiểu nông.",
-      "Đều làm tăng \"văn hóa phong bì\".",
-      "Đều phủ nhận nguyên tắc \"Meritocracy\" (trọng dụng nhân tài) và cạnh tranh sòng phẳng dựa trên năng lực.",
-      "Đều làm tăng \"kỷ luật lao động lỏng lẻo\"."
+      "Bỏ truyền thống",
+      "Chỉ học nước ngoài",
+      "Kế thừa truyền thống, tiếp thu tinh hoa",
+      "Đóng cửa"
     ],
     "correct": 2,
-    "explanation": "Hội nhập đòi hỏi cạnh tranh sòng phẳng. Cả COCC (dùng quan hệ) và Chủ nghĩa bình quân (cào bằng) đều triệt tiêu động lực cạnh tranh dựa trên năng lực."
+    "explanation": "Cân bằng bản sắc và hội nhập"
   },
   {
-    "question": "Trong các \"trầm tích\", yếu tố nào là mối đe dọa *lớn nhất* đối với nền tảng \"Pháp quyền\" (Rule of Law) trong hội nhập?",
+    "question": "Nghị quyết 5 khóa VIII chủ trương phát triển văn hóa dân tộc để làm gì?",
     "options": [
-      "\"Tư duy tiểu nông\" (manh mún).",
-      "\"Kỷ luật lỏng lẻo\" (giờ cao su).",
-      "\"Tư duy bao cấp\" (ỷ lại).",
-      "\"Thiếu chữ tín\" (vi phạm cam kết, hàng giả) và \"Tham nhũng\" (dùng tiền/quan hệ thay luật)."
+      "Tách biệt thế giới",
+      "Chống lại nước ngoài",
+      "Bảo vệ bản sắc trong hội nhập",
+      "Bỏ hiện đại hóa"
+    ],
+    "correct": 2,
+    "explanation": "Hội nhập chủ động"
+  },
+  {
+    "question": "Nghị quyết TW5 khóa VIII yêu cầu đầu tư cho văn hóa như thế nào?",
+    "options": [
+      "Giảm đầu tư",
+      "Chỉ nhà nước",
+      "Bỏ qua văn hóa",
+      "Tăng ngân sách, huy động xã hội"
     ],
     "correct": 3,
-    "explanation": "Pháp quyền (vận hành bằng luật) bị phá vỡ bởi Thiếu chữ tín (vi phạm luật - hợp đồng) và Tham nhũng (dùng tiền/quan hệ để bẻ cong luật)."
+    "explanation": "Đảm bảo nguồn lực"
   },
   {
-    "question": "Giải pháp \"nhất quán thực hiện kinh tế thị trường\" giúp khắc phục \"tư duy cục bộ địa phương\" (tiểu nông) như thế nào?",
+    "question": "Nghị quyết 5 khóa VIII đề ra chống gì trong văn hóa?",
     "options": [
-      "Kinh tế thị trường khuyến khích các địa phương tự chủ, tự lo.",
-      "Kinh tế thị trường (vận hành theo quy luật cung cầu) buộc các địa phương phải \"liên kết chuỗi giá trị\" để cạnh tranh, thay vì \"cục bộ\".",
-      "Giải pháp này không liên quan đến \"tư duy cục bộ\".",
-      "Kinh tế thị trường làm tăng \"bệnh thành tích\" ở các địa phương."
+      "Đổi mới",
+      "Lạc hậu, lệch lạc, thoái hóa",
+      "Hội nhập",
+      "Hiện đại hóa"
     ],
     "correct": 1,
-    "explanation": "Thị trường là một sân chơi chung, buộc các địa phương (vốn cục bộ, manh mún) phải liên kết lại thành chuỗi giá trị để đủ sức cạnh tranh."
+    "explanation": "Bảo vệ văn hóa lành mạnh"
   },
   {
-    "question": "Giải pháp \"Đổi mới căn bản, toàn diện giáo dục\" được kỳ vọng sẽ khắc phục \"kỷ luật lao động lỏng lẻo\" thông qua cơ chế nào?",
+    "question": "Nghị quyết TW5 khóa VIII nhấn mạnh xây dựng đội ngũ văn hóa như thế nào?",
     "options": [
-      "Chỉ cần tăng cường dạy ngoại ngữ.",
-      "Tăng cường \"chủ nghĩa bình quân\" trong lớp học.",
-      "Chấn chỉnh \"thực học, thực nghiệp\", rèn luyện kỷ cương, tác phong công nghiệp ngay từ nhà trường.",
-      "Tăng học phí để sinh viên có trách nhiệm hơn."
+      "Chỉ chuyên môn",
+      "Chỉ chính trị",
+      "Vừa hồng vừa chuyên",
+      "Không cần đào tạo"
     ],
     "correct": 2,
-    "explanation": "Đổi mới giáo dục (thực học, thực nghiệp) và chấn chỉnh kỷ cương công vụ sẽ rèn luyện tác phong công nghiệp, thay đổi thói quen tùy tiện."
+    "explanation": "Đảm bảo chất lượng"
   },
   {
-    "question": "Đâu là khác biệt cốt lõi về bản chất giữa \"Chủ nghĩa bình quân\" (bao cấp) và \"Bệnh thành tích\"?",
+    "question": "Nghị quyết 5 khóa VIII chủ trương phát triển công nghiệp văn hóa để làm gì?",
     "options": [
-      "\"Bình quân\" là tư duy \"cào bằng\", \"Thành tích\" là tư duy \"báo cáo đẹp\".",
-      "\"Bình quân\" là tàn dư tiểu nông, \"Thành tích\" là tàn dư bao cấp.",
-      "\"Bình quân\" triệt tiêu sáng tạo, \"Thành tích\" khuyến khích sáng tạo (làm báo cáo đẹp).",
-      "\"Bình quân\" (không khuyến khích vượt trội) là tư duy *thụ động*, \"Thành tích\" (làm việc đối phó) là hành động *chủ động tiêu cực*."
+      "Giảm sản xuất",
+      "Bỏ thị trường",
+      "Tăng thu nhập, xuất khẩu văn hóa",
+      "Chỉ phục vụ nội địa"
+    ],
+    "correct": 2,
+    "explanation": "Kinh tế hóa văn hóa"
+  },
+  {
+    "question": "Nghị quyết TW5 khóa VIII yêu cầu văn hóa gắn với gì?",
+    "options": [
+      "Chỉ giải trí",
+      "Tách biệt kinh tế",
+      "Phát triển kinh tế-xã hội",
+      "Bỏ xã hội"
+    ],
+    "correct": 2,
+    "explanation": "Phát triển đồng bộ"
+  },
+  {
+    "question": "Nghị quyết 5 khóa VIII đặt mục tiêu xây dựng nền văn hóa như thế nào?",
+    "options": [
+      "Hoàn toàn nước ngoài",
+      "Bảo thủ truyền thống",
+      "Tách biệt thế giới",
+      "Tiên tiến, đậm đà bản sắc dân tộc"
     ],
     "correct": 3,
-    "explanation": "Bình quân là tâm lý ỷ lại, không muốn làm (thụ động). Bệnh thành tích là chủ động làm việc đối phó, tạo số liệu ảo (chủ động tiêu cực)."
+    "explanation": "Cân bằng hiện đại và truyền thống"
   },
   {
-    "question": "Nguồn gốc sâu xa của \"tư duy ban phát\" trong \"tệ quan liêu\" bắt nguồn từ đâu?",
+    "question": "Nghị quyết Trung ương 9 khóa XI hài hòa giữa bảo tồn và gì?",
     "options": [
-      "Cơ chế tập trung bao cấp, khi Nhà nước/tập thể nắm mọi nguồn lực và \"ban phát\" cho cá nhân.",
-      "Tư duy tiểu nông \"manh mún, cục bộ\".",
-      "Bệnh thành tích trong báo cáo.",
-      "Ảnh hưởng của \"văn hóa phong bì\"."
+      "Tăng đồng hóa",
+      "Phát triển kinh tế-xã hội",
+      "Giảm hội nhập",
+      "Bỏ lao động"
     ],
-    "correct": 0,
-    "explanation": "Thời bao cấp, mọi thứ đều do nhà nước/tập thể phân phối (ban phát), từ đó hình thành tư duy \"ban phát\" cơ chế của công chức."
+    "correct": 1,
+    "explanation": "Hỗ trợ kinh tế di sản"
   },
   {
-    "question": "Trọng tâm của Nghị quyết Trung ương 9 (Khóa XI - 2014) là gì?",
+    "question": "Nghị quyết 9 khóa XI đề cập hài hòa văn hóa với gì?",
     "options": [
-      "Khơi dậy \"khát vọng phát triển đất nước\".",
-      "Xây dựng \"Nhà nước pháp quyền XHCN\".",
-      "Chỉ tập trung vào \"chống tham nhũng\".",
-      "Đặt trọng tâm vào \"xây dựng con người\" (chủ thể) với các phẩm chất đáp ứng yêu cầu phát triển bền vững."
+      "Chiến tranh",
+      "Thể thao",
+      "Kinh tế thị trường và hội nhập",
+      "Giải trí"
+    ],
+    "correct": 2,
+    "explanation": "Bảo tồn và phát triển"
+  },
+  {
+    "question": "Nghị quyết TW9 khóa XI nhấn mạnh văn hóa là yếu tố gì của phát triển bền vững?",
+    "options": [
+      "Phụ thuộc",
+      "Thứ yếu",
+      "Nền tảng tinh thần",
+      "Không quan trọng"
+    ],
+    "correct": 2,
+    "explanation": "Trụ cột phát triển"
+  },
+  {
+    "question": "Nghị quyết 9 khóa XI đề ra phát triển con người theo hướng nào?",
+    "options": [
+      "Chỉ kinh tế",
+      "Chỉ chính trị",
+      "Toàn diện, bền vững",
+      "Chỉ quân sự"
+    ],
+    "correct": 2,
+    "explanation": "Khắc phục bảo thủ"
+  },
+  {
+    "question": "Nghị quyết TW9 khóa XI yêu cầu xây dựng môi trường văn hóa như thế nào?",
+    "options": [
+      "Tự do tuyệt đối",
+      "Không quản lý",
+      "Lành mạnh, an toàn",
+      "Bảo thủ"
+    ],
+    "correct": 2,
+    "explanation": "Bảo vệ thế hệ trẻ"
+  },
+  {
+    "question": "Nghị quyết 9 khóa XI chủ trương phát triển văn hóa trong doanh nghiệp để làm gì?",
+    "options": [
+      "Giảm lợi nhuận",
+      "Tăng xung đột",
+      "Nâng cao năng suất, đạo đức",
+      "Bỏ quản lý"
+    ],
+    "correct": 2,
+    "explanation": "Văn hóa doanh nghiệp"
+  },
+  {
+    "question": "Nghị quyết TW9 khóa XI nhấn mạnh vai trò của gia đình trong gì?",
+    "options": [
+      "Chỉ kinh tế",
+      "Chỉ chính trị",
+      "Không quan trọng",
+      "Giáo dục văn hóa, đạo đức"
     ],
     "correct": 3,
-    "explanation": "NQ TW 9 (2014) đặt trọng tâm vào xây dựng CON NGƯỜI (chủ thể của hội nhập) với các phẩm chất: nhân cách, lối sống tốt đẹp..."
+    "explanation": "Tế bào xã hội"
   },
   {
-    "question": "\"Văn hóa phong bì\" (tham nhũng vặt) phá hoại nguyên tắc \"Meritocracy\" (trọng dụng nhân tài) như thế nào?",
+    "question": "Nghị quyết 9 khóa XI đề ra xây dựng con người Việt Nam có phẩm chất gì?",
     "options": [
-      "Làm tăng \"bệnh thành tích\", khiến không ai biết đâu là nhân tài thật.",
-      "Khiến người có năng lực nhưng không \"lót tay\" bị thất bại, còn người yếu kém nhưng \"biết điều\" lại thắng.",
-      "Khiến nhân tài nản lòng và rời bỏ đất nước (chảy máu chất xám).",
-      "Chỉ \"Tư duy COCC\" mới phá hoại \"Meritocracy\"."
-    ],
-    "correct": 1,
-    "explanation": "Văn hóa phong bì làm méo mó môi trường cạnh tranh, khiến \"tiền\" thắng \"năng lực\", đi ngược lại nguyên tắc trọng dụng nhân tài (Meritocracy)."
-  },
-  {
-    "question": "Tư duy nào là nguồn gốc chung của tâm lý \"an phận\", \"ỷ lại\", \"cào bằng\" và \"ngại thay đổi\", tạo ra sức ì lớn nhất cản trở hội nhập?",
-    "options": [
-      "Chỉ tư duy tiểu nông.",
-      "Chỉ tư duy bao cấp.",
-      "Tư duy tiểu nông và tàn dư tư duy bao cấp.",
-      "Bệnh thành tích và hình thức chủ nghĩa."
+      "Bảo thủ",
+      "Ích kỷ",
+      "Yêu nước, nhân ái, đoàn kết",
+      "Thụ động"
     ],
     "correct": 2,
-    "explanation": "Tư duy tiểu nông (an phận, ngại thay đổi) và tư duy bao cấp (ỷ lại, cào bằng) là hai nguồn gốc chính tạo ra sức ì (thụ động) của xã hội."
+    "explanation": "Giá trị cốt lõi"
   },
   {
-    "question": "Tại sao \"Khát vọng phát triển\" (ĐH XIII) được coi là giải pháp tinh thần để khắc phục \"tư duy ngắn hạn, ăn xổi\" (tiểu nông)?",
+    "question": "Nghị quyết TW9 khóa XI yêu cầu phát triển văn hóa thiểu số để làm gì?",
     "options": [
-      "\"Khát vọng\" giúp tăng \"văn hóa phong bì\".",
-      "\"Khát vọng\" đòi hỏi tầm nhìn chiến lược, chấp nhận đầu tư dài hạn, đối lập với \"ăn xổi ở thì\".",
-      "\"Khát vọng\" là sản phẩm của \"Chính phủ số\".",
-      "\"Khát vọng\" chỉ là khẩu hiệu, không khắc phục được \"tư duy ngắn hạn\"."
+      "Đồng hóa",
+      "Xóa bỏ",
+      "Bảo tồn đa dạng, xóa đói giảm nghèo",
+      "Tách biệt"
+    ],
+    "correct": 2,
+    "explanation": "Đa dạng trong thống nhất"
+  },
+  {
+    "question": "Nghị quyết 9 khóa XI chủ trương phát triển thị trường văn hóa như thế nào?",
+    "options": [
+      "Tự do tuyệt đối",
+      "Lành mạnh, có quản lý",
+      "Không quản lý",
+      "Cấm hoàn toàn"
     ],
     "correct": 1,
-    "explanation": "Khát vọng phát triển (tầm nhìn 2030, 2045) là tư duy dài hạn, đối lập và là giải pháp cho tư duy \"ngắn hạn, ăn xổi\" của tiểu nông."
+    "explanation": "Cân bằng kinh tế và văn hóa"
   },
   {
-    "question": "Nhóm giải pháp nào của Đảng tập trung chủ yếu vào việc \"Xây\" (cải cách thể chế) thay vì \"Chống\" (xử lý vi phạm)?",
+    "question": "Hội nghị Văn hóa toàn quốc lần thứ nhất (1946) đặt nền móng cho chính sách văn hóa nào?",
     "options": [
-      "\"Công cuộc đốt lò\" và \"Siết chặt công tác cán bộ\".",
-      "\"Kinh tế thị trường\" và \"Đổi mới giáo dục\".",
-      "\"Khát vọng phát triển\" và \"Xây dựng hệ giá trị\".",
-      "\"Xây dựng Nhà nước pháp quyền\" và \"Đẩy mạnh Chính phủ số\"."
+      "Chỉ truyền thống",
+      "Hoàn toàn nước ngoài",
+      "Dân tộc, khoa học, đại chúng",
+      "Phong kiến"
+    ],
+    "correct": 2,
+    "explanation": "Định hướng Hồ Chí Minh"
+  },
+  {
+    "question": "Đại hội Đảng lần thứ VI (1986) khởi đầu chính sách gì với văn hóa?",
+    "options": [
+      "Đóng cửa",
+      "Bảo thủ",
+      "Đổi mới, mở cửa",
+      "Cách mạng"
+    ],
+    "correct": 2,
+    "explanation": "Đổi mới toàn diện"
+  },
+  {
+    "question": "Đại hội XI của Đảng (2011) nhấn mạnh văn hóa là gì?",
+    "options": [
+      "Phụ thuộc kinh tế",
+      "Nền tảng tinh thần, động lực phát triển",
+      "Thứ yếu",
+      "Không quan trọng"
+    ],
+    "correct": 1,
+    "explanation": "Vừa là mục tiêu vừa là động lực"
+  },
+  {
+    "question": "Đại hội XII của Đảng (2016) đặt mục tiêu văn hóa đến 2020 là gì?",
+    "options": [
+      "Giữ nguyên hiện trạng",
+      "Đóng cửa",
+      "Xây dựng nền văn hóa tiên tiến",
+      "Bỏ văn hóa"
+    ],
+    "correct": 2,
+    "explanation": "Đậm đà bản sắc dân tộc"
+  },
+  {
+    "question": "Đại hội XIII của Đảng (2021) nhấn mạnh văn hóa trong bối cảnh gì?",
+    "options": [
+      "Chiến tranh",
+      "Đóng cửa",
+      "Cách mạng công nghiệp 4.0 và hội nhập",
+      "Bảo thủ"
+    ],
+    "correct": 2,
+    "explanation": "Thích nghi thời đại mới"
+  },
+  {
+    "question": "Hội nghị Văn hóa toàn quốc 2021 đề ra xây dựng con người Việt Nam thời kỳ nào?",
+    "options": [
+      "Nông nghiệp",
+      "Phong kiến",
+      "Công nghiệp hóa, hiện đại hóa, hội nhập",
+      "Bao cấp"
+    ],
+    "correct": 2,
+    "explanation": "Thích nghi yêu cầu mới"
+  },
+  {
+    "question": "Các nghị quyết của Đảng về văn hóa đều nhấn mạnh nguyên tắc gì?",
+    "options": [
+      "Bỏ truyền thống",
+      "Chỉ học nước ngoài",
+      "Kế thừa và phát triển sáng tạo",
+      "Đóng cửa"
+    ],
+    "correct": 2,
+    "explanation": "Cân bằng bản sắc và hiện đại"
+  },
+  {
+    "question": "Đường lối văn hóa của Đảng qua các kỳ đại hội thể hiện tính gì?",
+    "options": [
+      "Thay đổi liên tục",
+      "Mâu thuẫn",
+      "Kế thừa, phát triển, nhất quán",
+      "Không rõ ràng"
+    ],
+    "correct": 2,
+    "explanation": "Phát triển theo giai đoạn"
+  },
+  {
+    "question": "Các nghị quyết về văn hóa của Đảng đều đặt văn hóa trong mối quan hệ nào?",
+    "options": [
+      "Độc lập hoàn toàn",
+      "Tách biệt",
+      "Hữu cơ với kinh tế, chính trị, xã hội",
+      "Không liên quan"
+    ],
+    "correct": 2,
+    "explanation": "Phát triển đồng bộ"
+  },
+  {
+    "question": "Đường lối văn hóa của Đảng nhằm xây dựng nền văn hóa Việt Nam như thế nào?",
+    "options": [
+      "Bảo thủ",
+      "Đóng cửa",
+      "Mất bản sắc",
+      "Tiên tiến, đậm đà bản sắc, hội nhập"
     ],
     "correct": 3,
-    "explanation": "Nhà nước pháp quyền và Chính phủ số là các giải pháp mang tính \"Xây\" (xây dựng thể chế, quy trình mới) để tăng minh bạch, giảm quan liêu."
+    "explanation": "Mục tiêu toàn diện"
   },
   {
-    "question": "Cơ chế nào giải thích mối liên hệ giữa \"Tư duy ỷ lại\" (bao cấp) và \"Tệ quan liêu, hành chính hóa\"?",
+    "question": "Nghị quyết 59-NQ/TW nhằm cải thiện gì để thu hút FDI?",
     "options": [
-      "Khi người dân/doanh nghiệp ỷ lại, trông chờ vào Nhà nước, cơ quan công quyền sẽ nảy sinh tư duy \"ban phát\" cơ chế, \"hành là chính\".",
-      "\"Tư duy ỷ lại\" khiến người dân không muốn đi làm thủ tục, tạo cơ hội cho \"quan liêu\".",
-      "Cả hai đều là sản phẩm của \"văn hóa phong bì\" và \"COCC\".",
-      "\"Quan liêu\" là nguyên nhân đẻ ra \"Tư duy ỷ lại\"."
+      "Tăng trưởng xuất khẩu",
+      "Giảm sáng tạo",
+      "Môi trường kinh doanh, giảm quan liêu",
+      "Tăng tham nhũng"
     ],
-    "correct": 0,
-    "explanation": "Tâm lý ỷ lại (thụ động) của xã hội là môi trường dung dưỡng cho tư duy \"ban phát\", hạch sách (chủ động tiêu cực) của bộ máy quan liêu."
+    "correct": 2,
+    "explanation": "Cơ cấu lại kinh tế"
   },
   {
-    "question": "So sánh rủi ro cho đối tác quốc tế giữa \"Tham nhũng vặt\" (phong bì) và \"Thiếu chữ tín\" (vi phạm hợp đồng)?",
+    "question": "Hoàn thiện môi trường kinh doanh minh bạch là nội dung của nghị quyết nào?",
     "options": [
-      "\"Phong bì\" là rủi ro về chi phí và pháp lý (FCPA); \"Thiếu chữ tín\" là rủi ro về vận hành và mất trắng vốn đầu tư (bị lừa).",
-      "Cả hai đều là rủi ro pháp lý như nhau.",
-      "\"Phong bì\" là rủi ro chấp nhận được; \"Thiếu chữ tín\" là rủi ro không thể chấp nhận.",
-      "\"Phong bì\" chỉ xảy ra ở cấp thấp; \"Thiếu chữ tín\" xảy ra ở cấp cao."
+      "Tăng thủ tục",
+      "Giảm FDI",
+      "Cải cách hành chính 59-NQ/TW",
+      "Bỏ cam kết"
     ],
-    "correct": 0,
-    "explanation": "Tham nhũng vặt (phong bì) là rủi ro về chi phí và pháp lý (vi phạm luật chống hối lộ). Thiếu chữ tín (hàng giả, vi phạm cam kết) là rủi ro lớn hơn, có thể làm sụp đổ dự án kinh doanh."
+    "correct": 2,
+    "explanation": "Giảm quan liêu"
   },
   {
-    "question": "Tác động tiêu cực nào của \"tư duy cục bộ địa phương\" (tiểu nông) cản trở trực tiếp nhất đến \"tầm nhìn chiến lược\"?",
+    "question": "Nghị quyết 59 nhấn mạnh đổi mới sáng tạo để giảm gì?",
     "options": [
-      "Khiến các địa phương không chịu tuân thủ kỷ luật lao động.",
-      "Tạo ra nạn \"văn hóa phong bì\" ở mỗi địa phương.",
-      "Khiến các địa phương báo cáo thành tích sai lệch để cạnh tranh.",
-      "Chỉ thấy lợi ích trước mắt của địa phương mình, không thấy lợi ích toàn cục, quy mô lớn của quốc gia hay chuỗi giá trị."
+      "Tăng trưởng",
+      "Bảo thủ tiểu nông",
+      "Dân số",
+      "Tài nguyên"
+    ],
+    "correct": 1,
+    "explanation": "Nâng cao cạnh tranh"
+  },
+  {
+    "question": "Nghị quyết 33-NQ/TW về xây dựng và phát triển văn hóa nhấn mạnh điều gì?",
+    "options": [
+      "Văn hóa không quan trọng",
+      "Chỉ tập trung kinh tế",
+      "Văn hóa là nền tảng tinh thần xã hội",
+      "Bỏ qua văn hóa"
+    ],
+    "correct": 2,
+    "explanation": "Động lực phát triển"
+  },
+  {
+    "question": "Nghị quyết 33 đề ra xây dựng hệ giá trị văn hóa Việt Nam gồm những giá trị nào?",
+    "options": [
+      "Chỉ kinh tế",
+      "Chỉ chính trị",
+      "Yêu nước, đoàn kết, nhân ái, trách nhiệm",
+      "Chỉ quân sự"
+    ],
+    "correct": 2,
+    "explanation": "Giá trị cốt lõi"
+  },
+  {
+    "question": "Nghị quyết 33-NQ/TW yêu cầu xây dựng con người Việt Nam có năng lực gì?",
+    "options": [
+      "Bảo thủ",
+      "Thụ động",
+      "Sáng tạo, thích nghi, hội nhập",
+      "Ích kỷ"
+    ],
+    "correct": 2,
+    "explanation": "Đáp ứng hội nhập"
+  },
+  {
+    "question": "Nghị quyết 33 chủ trương phát triển công nghiệp văn hóa để đạt mục tiêu gì?",
+    "options": [
+      "Giảm sản xuất",
+      "Bỏ thị trường",
+      "Đóng góp 7% GDP đến 2030",
+      "Chỉ phục vụ nội địa"
+    ],
+    "correct": 2,
+    "explanation": "Kinh tế hóa văn hóa"
+  },
+  {
+    "question": "Nghị quyết 33-NQ/TW nhấn mạnh phát triển văn hóa theo hướng nào?",
+    "options": [
+      "Đóng cửa",
+      "Bị động",
+      "Mất bản sắc",
+      "Chủ động hội nhập, bảo vệ bản sắc"
     ],
     "correct": 3,
-    "explanation": "Tư duy \"cục bộ địa phương\" (manh mún) đối lập với \"tầm nhìn chiến lược\" (quy mô lớn, liên kết toàn cầu) mà hội nhập đòi hỏi."
+    "explanation": "Hội nhập tích cực"
   },
   {
-    "question": "Tại sao \"chủ nghĩa bình quân\" (bao cấp) được coi là \"đồng minh\" của \"tư duy COCC\" (phe cánh)?",
+    "question": "Nghị quyết 33 yêu cầu đổi mới cơ chế quản lý văn hóa theo hướng nào?",
     "options": [
-      "Vì \"bình quân\" khiến mọi người nghèo như nhau, nên phải dùng \"COCC\" để vươn lên.",
-      "Vì \"COCC\" là cách để duy trì \"chủ nghĩa bình quân\" trong một tập thể.",
-      "Vì cả hai đều phủ nhận năng lực thực chất (Meritocracy); một bên cào bằng, một bên dùng quan hệ.",
-      "Cả hai đều là sản phẩm của tư duy tiểu nông, không phải bao cấp."
+      "Quản lý cứng nhắc",
+      "Nhà nước bao cấp",
+      "Xã hội hóa, thị trường có quản lý",
+      "Không quản lý"
     ],
     "correct": 2,
-    "explanation": "Cả hai đều là kẻ thù của cạnh tranh sòng phẳng. Chủ nghĩa bình quân (cào bằng năng lực) và COCC (dùng quan hệ thay năng lực) đều triệt tiêu động lực phấn đấu."
+    "explanation": "Huy động nguồn lực xã hội"
   },
   {
-    "question": "Mối quan hệ nào sau đây mô tả đúng nhất sự liên đới giữa \"Bệnh thành tích\" (làm báo cáo đẹp) và \"Tư duy COCC\" (bổ nhiệm người nhà)?",
+    "question": "Nghị quyết 33-NQ/TW đặt mục tiêu văn hóa trở thành động lực gì?",
     "options": [
-      "\"Bệnh thành tích\" là nguyên nhân đẻ ra \"Tư duy COCC\".",
-      "Khi bổ nhiệm vì \"COCC\" (thiếu năng lực), người đó có xu hướng tạo \"báo cáo đẹp\" (thành tích) để che đậy yếu kém.",
-      "Cả hai đều là sản phẩm của \"văn hóa phong bì\" và không liên quan.",
-      "\"Tư duy COCC\" làm lãng phí nhân tài, trong khi \"Bệnh thành tích\" thu hút nhân tài."
-    ],
-    "correct": 1,
-    "explanation": "Bổ nhiệm không dựa trên năng lực (COCC) dẫn đến hệ quả là người được bổ nhiệm phải làm việc đối phó, tạo báo cáo không thực chất (Bệnh thành tích) để bảo vệ vị trí."
-  },
-  {
-    "question": "Đâu là mối liên hệ logic giữa \"chủ nghĩa bình quân\" (thời bao cấp) và \"kỷ luật lao động lỏng lẻo\" (tác phong tùy tiện)?",
-    "options": [
-      "Cả hai đều là tàn dư của tư duy tiểu nông.",
-      "\"Kỷ luật lỏng lẻo\" là nguyên nhân đẻ ra \"chủ nghĩa bình quân\".",
-      "Khi kết quả bị \"cào bằng\" (bình quân), người lao động mất động lực phấn đấu, dẫn đến tác phong \"tùy tiện\", \"thiếu chuyên nghiệp\".",
-      "Không có mối liên hệ."
+      "Chỉ giải trí",
+      "Không quan trọng",
+      "Phát triển bền vững đất nước",
+      "Phụ thuộc kinh tế"
     ],
     "correct": 2,
-    "explanation": "Chủ nghĩa bình quân (triệt tiêu động lực) là gốc rễ tư duy dẫn đến tác phong tùy tiện, thiếu kỷ luật (kỷ luật lỏng lẻo)."
+    "explanation": "Trụ cột phát triển"
   },
   {
-    "question": "Giải pháp \"Xây dựng Chính phủ số\" (minh bạch) góp phần khắc phục \"Bệnh thành tích\" (số liệu ảo) như thế nào?",
+    "question": "Cải cách hành chính trong đường lối Đảng nhằm giảm gì?",
     "options": [
-      "Chính phủ số chỉ giúp giảm \"quan liêu\", không liên quan đến \"bệnh thành tích\".",
-      "Chính phủ số đòi hỏi người có năng lực công nghệ, tự động loại bỏ \"bệnh thành tích\".",
-      "\"Bệnh thành tích\" sẽ dùng \"Chính phủ số\" để làm báo cáo đẹp hơn.",
-      "Tăng cường minh bạch, chuẩn hóa dữ liệu khiến việc \"làm việc đối phó\" và \"làm sai lệch thông tin\" trở nên khó khăn hơn."
-    ],
-    "correct": 3,
-    "explanation": "Chính phủ số (công cụ) làm tăng tính minh bạch, khiến các quy trình và số liệu khó bị làm giả, từ đó hạn chế \"bệnh thành tích\"."
-  },
-  {
-    "question": "So sánh rào cản của \"Tệ quan liêu\" và \"Tư duy COCC\" đối với nhà đầu tư nước ngoài?",
-    "options": [
-      "\"Quan liêu\" làm tăng chi phí tuân thủ (thời gian, quy trình); \"COCC\" gây nghi ngờ về năng lực thực thi (chất lượng bộ máy).",
-      "Cả hai đều làm tăng \"văn hóa phong bì\" như nhau.",
-      "\"Quan liêu\" là do tiểu nông; \"COCC\" là do bao cấp.",
-      "\"COCC\" chỉ ảnh hưởng doanh nghiệp trong nước."
-    ],
-    "correct": 0,
-    "explanation": "Quan liêu (thủ tục) làm nản lòng nhà đầu tư về quy trình. COCC (con người) làm họ nghi ngờ về năng lực bộ máy và tính công bằng."
-  },
-  {
-    "question": "Giải pháp \"nhất quán thực hiện kinh tế thị trường\" giúp khắc phục \"tư duy cục bộ địa phương\" (tiểu nông) như thế nào?",
-    "options": [
-      "Kinh tế thị trường khuyến khích các địa phương tự chủ.",
-      "Kinh tế thị trường (vận hành theo chuỗi) buộc các địa phương phải \"liên kết\" để cạnh tranh, thay vì \"cục bộ\".",
-      "Giải pháp này không liên quan.",
-      "Kinh tế thị trường làm tăng \"bệnh thành tích\" ở các địa phương."
-    ],
-    "correct": 1,
-    "explanation": "Thị trường là một sân chơi chung, buộc các địa phương (vốn cục bộ, manh mún) phải liên kết lại thành chuỗi giá trị để đủ sức cạnh tranh."
-  },
-  {
-    "question": "Trong các \"trầm tích\", yếu tố nào là mối đe dọa *lớn nhất* đối với nền tảng \"Pháp quyền\" (Rule of Law) trong hội nhập?",
-    "options": [
-      "\"Tư duy tiểu nông\" (manh mún).",
-      "\"Kỷ luật lỏng lẻo\" (giờ cao su).",
-      "\"Tư duy bao cấp\" (ỷ lại).",
-      "\"Thiếu chữ tín\" (vi phạm cam kết, hàng giả) và \"Tham nhũng\" (dùng tiền/quan hệ thay luật)."
-    ],
-    "correct": 3,
-    "explanation": "Pháp quyền (vận hành bằng luật) bị phá vỡ bởi Thiếu chữ tín (vi phạm luật - hợp đồng) và Tham nhũng (dùng tiền/quan hệ để bẻ cong luật)."
-  },
-  {
-    "question": "Vì sao \"tư duy ỷ lại, thụ động\" (bao cấp) là kẻ thù của \"tinh thần khởi nghiệp, đổi mới sáng tạo\" (startup)?",
-    "options": [
-      "Startup đòi hỏi \"sự chủ động, sáng tạo, chấp nhận rủi ro\", hoàn toàn đối lập với \"tâm lý ỷ lại, trông chờ, bình quân\".",
-      "Startup đòi hỏi \"tầm nhìn chiến lược\", còn \"ỷ lại\" là \"tư duy ngắn hạn\".",
-      "Startup cần \"văn hóa phong bì\" để thành công.",
-      "Startup đòi hỏi \"báo cáo đẹp\" để gọi vốn."
-    ],
-    "correct": 0,
-    "explanation": "Môi trường startup (kinh tế thị trường) là cạnh tranh sòng phẳng, đòi hỏi chủ động, sáng tạo. Tư duy bao cấp (ỷ lại) là tư duy đối lập, sẽ dẫn đến thất bại."
-  },
-  {
-    "question": "Giải pháp \"Đổi mới căn bản giáo dục\" (thực học) là điều kiện tiên quyết để \"Siết chặt công tác cán bộ\" (chống COCC) vì sao?",
-    "options": [
-      "Vì giáo dục sẽ dạy con người không \"chạy chức\".",
-      "Vì phải có nguồn \"nhân tài thực học\" để thay thế những người được bổ nhiệm do \"quan hệ\" (COCC).",
-      "Vì \"đổi mới giáo dục\" sẽ làm giảm \"bệnh thành tích\".",
-      "Vì \"siết chặt cán bộ\" là giải pháp về thể chế."
-    ],
-    "correct": 1,
-    "explanation": "Không thể chống COCC (loại bỏ người yếu kém) nếu không có nguồn cung nhân lực chất lượng cao (từ giáo dục thực học) để thay thế và xây dựng bộ máy mới."
-  },
-  {
-    "question": "Đâu là khác biệt về *đối tượng* tác động chính giữa Nghị quyết TW 5 (1998) và Nghị quyết TW 9 (2014)?",
-    "options": [
-      "NQ TW 5 tập trung \"kinh tế\"; NQ TW 9 tập trung \"chính trị\".",
-      "NQ TW 5 tập trung \"hội nhập\"; NQ TW 9 tập trung \"bảo tồn\".",
-      "NQ TW 5 tập trung vào \"hệ thống\" (nền văn hóa); NQ TW 9 tập trung vào \"cá nhân\" (con người).",
-      "NQ TW 5 \"chống COCC\"; NQ TW 9 \"chống bệnh thành tích\"."
+      "Sáng tạo",
+      "Giáo dục",
+      "Thủ tục rườm rà",
+      "Hội nhập"
     ],
     "correct": 2,
-    "explanation": "NQ TW 5 (1998) đặt nền móng \"Xây dựng nền văn hóa\" (hệ thống). NQ TW 9 (2014) phát triển lên, tập trung vào \"Xây dựng... con người Việt Nam\" (cá nhân, chủ thể)."
+    "explanation": "Cải thiện môi trường kinh doanh"
   },
   {
-    "question": "Hàm ý của việc Đảng chuyển trọng tâm từ \"văn hóa là nền tảng\" (NQ TW 5) sang \"khơi dậy khát vọng\" (ĐH XIII) là gì?",
+    "question": "Chương trình cải cách hành chính giai đoạn 2021-2030 tập trung vào gì?",
     "options": [
-      "\"Nền tảng\" đã không còn phù hợp.",
-      "\"Khát vọng\" là để thay thế cho \"Kinh tế thị trường\".",
-      "\"Nền tảng\" là trừu tượng, \"Khát vọng\" là cụ thể hơn.",
-      "Chuyển từ vai trò phòng thủ (giữ gìn) sang vai trò tấn công (dùng văn hóa làm sức mạnh bứt phá kinh tế)."
-    ],
-    "correct": 3,
-    "explanation": "Coi văn hóa là \"Nền tảng tinh thần\" mang tính giữ gìn, làm nền. Coi văn hóa là \"Khát vọng\" là chủ động dùng sức mạnh tinh thần đó làm động lực bứt phá."
-  },
-  {
-    "question": "Mối quan hệ nào sau đây mô tả đúng nhất sự liên đới giữa \"Tư duy COCC\" và \"Tệ quan liêu\"?",
-    "options": [
-      "Bổ nhiệm người không đủ năng lực (COCC) khiến họ phải tạo ra thủ tục rườm rà (quan liêu) để che giấu yếu kém và bảo vệ vị trí.",
-      "\"Tệ quan liêu\" là nguyên nhân đẻ ra \"Tư duy COCC\".",
-      "Cả hai đều là sản phẩm của \"bệnh thành tích\".",
-      "Hai việc không liên quan."
-    ],
-    "correct": 0,
-    "explanation": "Người được bổ nhiệm do COCC (thiếu năng lực) thường có xu hướng hành chính hóa (quan liêu) quy trình để khẳng định quyền lực và bảo vệ bản thân."
-  },
-  {
-    "question": "Tại sao \"tư duy ngắn hạn, ăn xổi\" (tiểu nông) lại phá vỡ \"kỷ luật công nghiệp\" (tác phong)?",
-    "options": [
-      "Vì \"ăn xổi\" khiến công nhân đòi lương cao.",
-      "Vì \"kỷ luật công nghiệp\" (Just-in-time) đòi hỏi tuân thủ quy trình vì lợi ích dài hạn, còn \"ăn xổi\" thì sẵn sàng \"bỏ qua quy trình\".",
-      "Vì \"ăn xổi\" là biểu hiện của \"bệnh thành tích\".",
-      "Vì \"tư duy ngắn hạn\" chỉ có ở nông thôn."
+      "Tăng giấy tờ",
+      "Chính phủ điện tử, minh bạch",
+      "Giảm công khai",
+      "Tăng quan liêu"
     ],
     "correct": 1,
-    "explanation": "Kỷ luật công nghiệp (tác phong) đòi hỏi tuân thủ quy trình. Tư duy \"ăn xổi\" (tư duy) sẵn sàng phá vỡ quy trình để có lợi ích trước mắt."
+    "explanation": "Chuyển đổi số"
   },
   {
-    "question": "Đâu là nguồn gốc tư tưởng chung của \"Tư duy ỷ lại\" (bao cấp) và \"Tệ quan liêu\" (ban phát)?",
+    "question": "Cải cách tư pháp nhằm khắc phục hạn chế gì trong hội nhập?",
     "options": [
-      "Tư duy tiểu nông \"manh mún\".",
-      "\"Bệnh thành tích\".",
-      "\"Tư duy COCC\".",
-      "Cơ chế tập trung, bao cấp, nơi Nhà nước/tập thể quyết định và phân phối mọi thứ."
-    ],
-    "correct": 3,
-    "explanation": "Thời bao cấp, Nhà nước/tập thể lo hết (sinh ra tư duy ỷ lại) và cũng là người \"ban phát\" mọi thứ (sinh ra tệ quan liêu)."
-  },
-  {
-    "question": "Vì sao \"chủ nghĩa bình quân\" (bao cấp) được coi là \"đồng minh\" của \"tư duy COCC\" (phe cánh)?",
-    "options": [
-      "Vì \"bình quân\" khiến mọi người nghèo như nhau, nên phải dùng \"COCC\" để vươn lên.",
-      "Vì \"COCC\" là cách để duy trì \"chủ nghĩa bình quân\".",
-      "Vì cả hai đều phủ nhận năng lực thực chất (Meritocracy); một bên cào bằng, một bên dùng quan hệ.",
-      "Cả hai đều là sản phẩm của tư duy tiểu nông."
+      "Tăng tham nhũng",
+      "Giảm công bằng",
+      "Thiếu minh bạch, chậm giải quyết tranh chấp",
+      "Tăng thủ tục"
     ],
     "correct": 2,
-    "explanation": "Cả hai đều là kẻ thù của cạnh tranh sòng phẳng. Chủ nghĩa bình quân (cào bằng năng lực) và COCC (dùng quan hệ thay năng lực) đều triệt tiêu động lực phấn đấu."
+    "explanation": "Tăng niềm tin nhà đầu tư"
   },
   {
-    "question": "Tác động tiêu cực nào của \"tư duy cục bộ địa phương\" (tiểu nông) cản trở trực tiếp nhất đến \"tầm nhìn chiến lược\"?",
+    "question": "Đảng chủ trương cải cách thủ tục hành chính theo hướng nào?",
     "options": [
-      "Chỉ thấy lợi ích trước mắt của địa phương mình, không thấy lợi ích toàn cục, quy mô lớn của quốc gia hay chuỗi giá trị.",
-      "Khiến các địa phương không chịu tuân thủ kỷ luật lao động.",
-      "Tạo ra nạn \"văn hóa phong bì\" ở mỗi địa phương.",
-      "Khiến các địa phương báo cáo thành tích sai lệch."
-    ],
-    "correct": 0,
-    "explanation": "Tư duy \"cục bộ địa phương\" (manh mún) đối lập với \"tầm nhìn chiến lược\" (quy mô lớn, liên kết toàn cầu) mà hội nhập đòi hỏi."
-  },
-  {
-    "question": "Giải pháp nào trong Phần 2 là then chốt nhất để giải quyết vấn đề \"phá vỡ chuỗi cung ứng\" (do kỷ luật lỏng lẻo)?",
-    "options": [
-      "\"Công cuộc đốt lò\".",
-      "\"Xây dựng Chính phủ số\".",
-      "\"Đổi mới căn bản, toàn diện giáo dục và đào tạo\" (để rèn luyện tác phong công nghiệp, \"thực nghiệp\").",
-      "\"Khuyến khích startup\"."
+      "Phức tạp hóa",
+      "Chậm trễ",
+      "Đơn giản, nhanh chóng, minh bạch",
+      "Mờ ám"
     ],
     "correct": 2,
-    "explanation": "Kỷ luật lỏng lẻo (giờ cao su, tùy tiện) là vấn đề về tác phong, con người. Giải pháp gốc rễ là \"Đổi mới giáo dục\" để rèn luyện \"thực nghiệp\", kỷ cương công vụ."
+    "explanation": "Thuận lợi kinh doanh"
   },
   {
-    "question": "Tại sao \"Khát vọng phát triển\" (ĐH XIII) được coi là giải pháp tinh thần để khắc phục \"tư duy ngắn hạn, ăn xổi\" (tiểu nông)?",
+    "question": "Chống tham nhũng là nội dung quan trọng của đường lối nào?",
     "options": [
-      "\"Khát vọng\" giúp tăng \"văn hóa phong bì\".",
-      "\"Khát vọng\" đòi hỏi tầm nhìn chiến lược, chấp nhận đầu tư dài hạn, đối lập với \"ăn xổi ở thì\".",
-      "\"Khát vọng\" là sản phẩm của \"Chính phủ số\".",
-      "\"Khát vọng\" chỉ là khẩu hiệu."
-    ],
-    "correct": 1,
-    "explanation": "Khát vọng phát triển (tầm nhìn 2030, 2045) là tư duy dài hạn, đối lập và là giải pháp cho tư duy \"ngắn hạn, ăn xổi\" của tiểu nông."
-  },
-  {
-    "question": "Trong các \"trầm tích\", yếu tố nào là mối đe dọa *trực tiếp* nhất đến nền tảng *pháp lý* của các cam kết hội nhập (WTO, EVFTA...)?",
-    "options": [
-      "\"Tư duy tiểu nông\" (manh mún).",
-      "\"Kỷ luật lỏng lẻo\" (giờ cao su).",
-      "\"Thiếu chữ tín\" và \"vi phạm bản quyền, làm hàng giả\".",
-      "\"Tư duy COCC\" (bổ nhiệm người nhà)."
+      "Chỉ kinh tế",
+      "Chỉ quân sự",
+      "Xây dựng Đảng, Nhà nước trong sạch",
+      "Không quan trọng"
     ],
     "correct": 2,
-    "explanation": "Vi phạm cam kết, vi phạm bản quyền, và làm hàng giả là các hành vi vi phạm trực tiếp \"Pháp quyền\" (Rule of Law), vốn là nền tảng của mọi hiệp định thương mại."
+    "explanation": "Nghị quyết Trung ương 4"
   },
   {
-    "question": "Mối quan hệ nào sau đây mô tả đúng nhất sự liên đới giữa \"Bệnh thành tích\" (làm báo cáo đẹp) và \"Thiếu chữ tín\" (vi phạm hợp đồng)?",
+    "question": "Đảng yêu cầu cải cách quản lý nhà nước theo hướng nào?",
     "options": [
-      "\"Bệnh thành tích\" (báo cáo sai) dẫn đến việc \"vi phạm cam kết hợp đồng\" (thiếu chữ tín) để che giấu sự yếu kém thực chất.",
-      "\"Thiếu chữ tín\" là nguồn gốc của \"Bệnh thành tích\".",
-      "Cả hai đều là tàn dư của tư duy tiểu nông.",
-      "\"Bệnh thành tích\" chỉ ảnh hưởng trong nước."
-    ],
-    "correct": 0,
-    "explanation": "Để đạt được \"báo cáo đẹp\", doanh nghiệp có thể bất chấp \"bỏ qua quy trình\" hoặc \"vi phạm cam kết\", tạo ra sự thiếu thực chất và mất lòng tin."
-  },
-  {
-    "question": "Giải pháp \"Xây dựng Nhà nước pháp quyền\" và \"Đẩy mạnh Chính phủ số\" là các giải pháp tập trung vào việc gì?",
-    "options": [
-      "\"Chống\" (xử lý vi phạm).",
-      "\"Xây\" (cải cách thể chế, quy trình).",
-      "Tập trung vào tư duy con người.",
-      "Tập trung vào kinh tế."
-    ],
-    "correct": 1,
-    "explanation": "Nhà nước pháp quyền và Chính phủ số là các giải pháp mang tính \"Xây\" (xây dựng thể chế, quy trình mới) để tăng minh bạch, giảm quan liêu."
-  },
-  {
-    "question": "Mối quan hệ nào sau đây mô tả đúng nhất sự liên đới giữa \"Tư duy COCC\" (bổ nhiệm người nhà) và \"Bệnh thành tích\" (làm báo cáo đẹp)?",
-    "options": [
-      "\"Bệnh thành tích\" là nguyên nhân đẻ ra \"Tư duy COCC\".",
-      "Khi bổ nhiệm vì \"COCC\" (thiếu năng lực), người đó có xu hướng tạo \"báo cáo đẹp\" (thành tích) để che đậy yếu kém.",
-      "Cả hai đều là sản phẩm của \"văn hóa phong bì\" và không liên quan.",
-      "\"Tư duy COCC\" làm lãng phí nhân tài, trong khi \"Bệnh thành tích\" thu hút nhân tài."
-    ],
-    "correct": 1,
-    "explanation": "Bổ nhiệm không dựa trên năng lực (COCC) dẫn đến hệ quả là người được bổ nhiệm phải làm việc đối phó, tạo báo cáo không thực chất (Bệnh thành tích) để bảo vệ vị trí."
-  },
-  {
-    "question": "Đâu là mối liên hệ logic giữa \"chủ nghĩa bình quân\" (thời bao cấp) và \"kỷ luật lao động lỏng lẻo\" (tác phong tùy tiện)?",
-    "options": [
-      "Cả hai đều là tàn dư của tư duy tiểu nông.",
-      "\"Kỷ luật lỏng lẻo\" là nguyên nhân đẻ ra \"chủ nghĩa bình quân\".",
-      "Khi kết quả bị \"cào bằng\" (bình quân), người lao động mất động lực phấn đấu, dẫn đến tác phong \"tùy tiện\", \"thiếu chuyên nghiệp\".",
-      "Không có mối liên hệ."
+      "Nghiệp dư",
+      "Lạc hậu",
+      "Chuyên nghiệp, hiện đại, hiệu quả",
+      "Kém hiệu quả"
     ],
     "correct": 2,
-    "explanation": "Chủ nghĩa bình quân (triệt tiêu động lực) là gốc rễ tư duy dẫn đến tác phong tùy tiện, thiếu kỷ luật (kỷ luật lỏng lẻo)."
+    "explanation": "Đáp ứng hội nhập"
   },
   {
-    "question": "Giải pháp \"Xây dựng Chính phủ số\" (minh bạch) góp phần khắc phục \"Bệnh thành tích\" (số liệu ảo) như thế nào?",
+    "question": "Cải cách chế độ công chức nhằm xây dựng đội ngũ như thế nào?",
     "options": [
-      "Chính phủ số chỉ giúp giảm \"quan liêu\", không liên quan đến \"bệnh thành tích\".",
-      "Chính phủ số đòi hỏi người có năng lực công nghệ, tự động loại bỏ \"bệnh thành tích\".",
-      "\"Bệnh thành tích\" sẽ dùng \"Chính phủ số\" để làm báo cáo đẹp hơn.",
-      "Tăng cường minh bạch, chuẩn hóa dữ liệu khiến việc \"làm việc đối phó\" và \"làm sai lệch thông tin\" trở nên khó khăn hơn."
-    ],
-    "correct": 3,
-    "explanation": "Chính phủ số (công cụ) làm tăng tính minh bạch, khiến các quy trình và số liệu khó bị làm giả, từ đó hạn chế \"bệnh thành tích\"."
-  },
-  {
-    "question": "So sánh rào cản của \"Tệ quan liêu\" và \"Tư duy COCC\" đối với nhà đầu tư nước ngoài?",
-    "options": [
-      "\"Quan liêu\" làm tăng chi phí tuân thủ (thời gian, quy trình); \"COCC\" gây nghi ngờ về năng lực thực thi (chất lượng bộ máy).",
-      "Cả hai đều làm tăng \"văn hóa phong bì\" như nhau.",
-      "\"Quan liêu\" là do tiểu nông; \"COCC\" là do bao cấp.",
-      "\"COCC\" chỉ ảnh hưởng doanh nghiệp trong nước."
-    ],
-    "correct": 0,
-    "explanation": "Quan liêu (thủ tục) làm nản lòng nhà đầu tư về quy trình. COCC (con người) làm họ nghi ngờ về năng lực bộ máy và tính công bằng."
-  },
-  {
-    "question": "Giải pháp \"nhất quán thực hiện kinh tế thị trường\" giúp khắc phục \"tư duy cục bộ địa phương\" (tiểu nông) như thế nào?",
-    "options": [
-      "Kinh tế thị trường khuyến khích các địa phương tự chủ.",
-      "Kinh tế thị trường (vận hành theo chuỗi) buộc các địa phương phải \"liên kết\" để cạnh tranh, thay vì \"cục bộ\".",
-      "Giải pháp này không liên quan.",
-      "Kinh tế thị trường làm tăng \"bệnh thành tích\" ở các địa phương."
-    ],
-    "correct": 1,
-    "explanation": "Thị trường là một sân chơi chung, buộc các địa phương (vốn cục bộ, manh mún) phải liên kết lại thành chuỗi giá trị để đủ sức cạnh tranh."
-  },
-  {
-    "question": "Trong các \"trầm tích\", yếu tố nào là mối đe dọa *lớn nhất* đối với nền tảng \"Pháp quyền\" (Rule of Law) trong hội nhập?",
-    "options": [
-      "\"Tư duy tiểu nông\" (manh mún).",
-      "\"Kỷ luật lỏng lẻo\" (giờ cao su).",
-      "\"Tư duy bao cấp\" (ỷ lại).",
-      "\"Thiếu chữ tín\" (vi phạm cam kết, hàng giả) và \"Tham nhũng\" (dùng tiền/quan hệ thay luật)."
-    ],
-    "correct": 3,
-    "explanation": "Pháp quyền (vận hành bằng luật) bị phá vỡ bởi Thiếu chữ tín (vi phạm luật - hợp đồng) và Tham nhũng (dùng tiền/quan hệ để bẻ cong luật)."
-  },
-  {
-    "question": "Vì sao \"tư duy ỷ lại, thụ động\" (bao cấp) là kẻ thù của \"tinh thần khởi nghiệp, đổi mới sáng tạo\" (startup)?",
-    "options": [
-      "Startup đòi hỏi \"sự chủ động, sáng tạo, chấp nhận rủi ro\", hoàn toàn đối lập với \"tâm lý ỷ lại, trông chờ, bình quân\".",
-      "Startup đòi hỏi \"tầm nhìn chiến lược\", còn \"ỷ lại\" là \"tư duy ngắn hạn\".",
-      "Startup cần \"văn hóa phong bì\" để thành công.",
-      "Startup đòi hỏi \"báo cáo đẹp\" để gọi vốn."
-    ],
-    "correct": 0,
-    "explanation": "Môi trường startup (kinh tế thị trường) là cạnh tranh sòng phẳng, đòi hỏi chủ động, sáng tạo. Tư duy bao cấp (ỷ lại) là tư duy đối lập, sẽ dẫn đến thất bại."
-  },
-  {
-    "question": "Giải pháp \"Đổi mới căn bản giáo dục\" (thực học) là điều kiện tiên quyết để \"Siết chặt công tác cán bộ\" (chống COCC) vì sao?",
-    "options": [
-      "Vì giáo dục sẽ dạy con người không \"chạy chức\".",
-      "Vì phải có nguồn \"nhân tài thực học\" để thay thế những người được bổ nhiệm do \"quan hệ\" (COCC).",
-      "Vì \"đổi mới giáo dục\" sẽ làm giảm \"bệnh thành tích\".",
-      "Vì \"siết chặt cán bộ\" là giải pháp về thể chế."
-    ],
-    "correct": 1,
-    "explanation": "Không thể chống COCC (loại bỏ người yếu kém) nếu không có nguồn cung nhân lực chất lượng cao (từ giáo dục thực học) để thay thế và xây dựng bộ máy mới."
-  },
-  {
-    "question": "Đâu là khác biệt về *đối tượng* tác động chính giữa Nghị quyết TW 5 (1998) và Nghị quyết TW 9 (2014)?",
-    "options": [
-      "NQ TW 5 tập trung \"kinh tế\"; NQ TW 9 tập trung \"chính trị\".",
-      "NQ TW 5 tập trung \"hội nhập\"; NQ TW 9 tập trung \"bảo tồn\".",
-      "NQ TW 5 tập trung vào \"hệ thống\" (nền văn hóa); NQ TW 9 tập trung vào \"cá nhân\" (con người).",
-      "NQ TW 5 \"chống COCC\"; NQ TW 9 \"chống bệnh thành tích\"."
+      "Tham nhũng",
+      "Kém năng lực",
+      "Liêm khiết, năng lực cao",
+      "Quan liêu"
     ],
     "correct": 2,
-    "explanation": "NQ TW 5 (1998) đặt nền móng \"Xây dựng nền văn hóa\" (hệ thống). NQ TW 9 (2014) phát triển lên, tập trung vào \"Xây dựng... con người Việt Nam\" (cá nhân, chủ thể)."
+    "explanation": "Phục vụ tốt dân và doanh nghiệp"
   },
   {
-    "question": "Hàm ý của việc Đảng chuyển trọng tâm từ \"văn hóa là nền tảng\" (NQ TW 5) sang \"khơi dậy khát vọng\" (ĐH XIII) là gì?",
+    "question": "Đảng chủ trương xây dựng chính phủ điện tử để làm gì?",
     "options": [
-      "\"Nền tảng\" đã không còn phù hợp.",
-      "\"Khát vọng\" là để thay thế cho \"Kinh tế thị trường\".",
-      "\"Nền tảng\" là trừu tượng, \"Khát vọng\" là cụ thể hơn.",
-      "Chuyển từ vai trò phòng thủ (giữ gìn) sang vai trò tấn công (dùng văn hóa làm sức mạnh bứt phá kinh tế)."
-    ],
-    "correct": 3,
-    "explanation": "Coi văn hóa là \"Nền tảng tinh thần\" mang tính giữ gìn, làm nền. Coi văn hóa là \"Khát vọng\" là chủ động dùng sức mạnh tinh thần đó làm động lực bứt phá."
-  },
-  {
-    "question": "Mối quan hệ nào sau đây mô tả đúng nhất sự liên đới giữa \"Tư duy COCC\" và \"Tệ quan liêu\"?",
-    "options": [
-      "Bổ nhiệm người không đủ năng lực (COCC) khiến họ phải tạo ra thủ tục rườm rà (quan liêu) để che giấu yếu kém và bảo vệ vị trí.",
-      "\"Tệ quan liêu\" là nguyên nhân đẻ ra \"Tư duy COCC\".",
-      "Cả hai đều là sản phẩm của \"bệnh thành tích\".",
-      "Hai việc không liên quan."
-    ],
-    "correct": 0,
-    "explanation": "Người được bổ nhiệm do COCC (thiếu năng lực) thường có xu hướng hành chính hóa (quan liêu) quy trình để khẳng định quyền lực và bảo vệ bản thân."
-  },
-  {
-    "question": "Tại sao \"tư duy ngắn hạn, ăn xổi\" (tiểu nông) lại phá vỡ \"kỷ luật công nghiệp\" (tác phong)?",
-    "options": [
-      "Vì \"ăn xổi\" khiến công nhân đòi lương cao.",
-      "Vì \"kỷ luật công nghiệp\" (Just-in-time) đòi hỏi tuân thủ quy trình vì lợi ích dài hạn, còn \"ăn xổi\" thì sẵn sàng \"bỏ qua quy trình\".",
-      "Vì \"ăn xổi\" là biểu hiện của \"bệnh thành tích\".",
-      "Vì \"tư duy ngắn hạn\" chỉ có ở nông thôn."
+      "Tăng giấy tờ",
+      "Giảm thời gian, chi phí, tăng minh bạch",
+      "Giảm công khai",
+      "Tăng tham nhũng"
     ],
     "correct": 1,
-    "explanation": "Kỷ luật công nghiệp (tác phong) đòi hỏi tuân thủ quy trình. Tư duy \"ăn xổi\" (tư duy) sẵn sàng phá vỡ quy trình để có lợi ích trước mắt."
+    "explanation": "Chuyển đổi số"
   },
   {
-    "question": "Đâu là nguồn gốc tư tưởng chung của \"Tư duy ỷ lại\" (bao cấp) và \"Tệ quan liêu\" (ban phát)?",
+    "question": "Cải cách pháp luật nhằm đảm bảo gì cho hoạt động kinh tế?",
     "options": [
-      "Tư duy tiểu nông \"manh mún\".",
-      "\"Bệnh thành tích\".",
-      "\"Tư duy COCC\".",
-      "Cơ chế tập trung, bao cấp, nơi Nhà nước/tập thể quyết định và phân phối mọi thứ."
-    ],
-    "correct": 3,
-    "explanation": "Thời bao cấp, Nhà nước/tập thể lo hết (sinh ra tư duy ỷ lại) và cũng là người \"ban phát\" mọi thứ (sinh ra tệ quan liêu)."
-  },
-  {
-    "question": "Vì sao \"chủ nghĩa bình quân\" (bao cấp) được coi là \"đồng minh\" của \"tư duy COCC\" (phe cánh)?",
-    "options": [
-      "Vì \"bình quân\" khiến mọi người nghèo như nhau, nên phải dùng \"COCC\" để vươn lên.",
-      "Vì \"COCC\" là cách để duy trì \"chủ nghĩa bình quân\".",
-      "Vì cả hai đều phủ nhận năng lực thực chất (Meritocracy); một bên cào bằng, một bên dùng quan hệ.",
-      "Cả hai đều là sản phẩm của tư duy tiểu nông."
+      "Mâu thuẫn",
+      "Mờ ám",
+      "Đồng bộ, minh bạch, khả thi",
+      "Khó thực thi"
     ],
     "correct": 2,
-    "explanation": "Cả hai đều là kẻ thù của cạnh tranh sòng phẳng. Chủ nghĩa bình quân (cào bằng năng lực) và COCC (dùng quan hệ thay năng lực) đều triệt tiêu động lực phấn đấu."
+    "explanation": "Môi trường pháp lý lành mạnh"
   },
   {
-    "question": "Tác động tiêu cực nào của \"tư duy cục bộ địa phương\" (tiểu nông) cản trở trực tiếp nhất đến \"tầm nhìn chiến lược\"?",
+    "question": "Đảng yêu cầu cải cách hệ thống thanh tra, kiểm tra theo hướng nào?",
     "options": [
-      "Chỉ thấy lợi ích trước mắt của địa phương mình, không thấy lợi ích toàn cục, quy mô lớn của quốc gia hay chuỗi giá trị.",
-      "Khiến các địa phương không chịu tuân thủ kỷ luật lao động.",
-      "Tạo ra nạn \"văn hóa phong bì\" ở mỗi địa phương.",
-      "Khiến các địa phương báo cáo thành tích sai lệch."
-    ],
-    "correct": 0,
-    "explanation": "Tư duy \"cục bộ địa phương\" (manh mún) đối lập với \"tầm nhìn chiến lược\" (quy mô lớn, liên kết toàn cầu) mà hội nhập đòi hỏi."
-  },
-  {
-    "question": "Giải pháp nào trong Phần 2 là then chốt nhất để giải quyết vấn đề \"phá vỡ chuỗi cung ứng\" (do kỷ luật lỏng lẻo)?",
-    "options": [
-      "\"Công cuộc đốt lò\".",
-      "\"Xây dựng Chính phủ số\".",
-      "\"Đổi mới căn bản, toàn diện giáo dục và đào tạo\" (để rèn luyện tác phong công nghiệp, \"thực nghiệp\").",
-      "\"Khuyến khích startup\"."
+      "Phụ thuộc",
+      "Kín đáo",
+      "Độc lập, công khai, hiệu quả",
+      "Kém hiệu quả"
     ],
     "correct": 2,
-    "explanation": "Kỷ luật lỏng lẻo (giờ cao su, tùy tiện) là vấn đề về tác phong, con người. Giải pháp gốc rễ là \"Đổi mới giáo dục\" để rèn luyện \"thực nghiệp\", kỷ cương công vụ."
+    "explanation": "Chống tham nhũng"
   },
   {
-    "question": "Tại sao \"Khát vọng phát triển\" (ĐH XIII) được coi là giải pháp tinh thần để khắc phục \"tư duy ngắn hạn, ăn xổi\" (tiểu nông)?",
+    "question": "Để khắc phục bị động hội nhập, Đảng đề ra ngoại giao văn hóa như thế nào?",
     "options": [
-      "\"Khát vọng\" giúp tăng \"văn hóa phong bì\".",
-      "\"Khát vọng\" đòi hỏi tầm nhìn chiến lược, chấp nhận đầu tư dài hạn, đối lập với \"ăn xổi ở thì\".",
-      "\"Khát vọng\" là sản phẩm của \"Chính phủ số\".",
-      "\"Khát vọng\" chỉ là khẩu hiệu."
+      "Giảm quảng bá",
+      "Tăng quan liêu",
+      "Xây dựng trung tâm Việt Nam ở nước ngoài",
+      "Bỏ di sản"
+    ],
+    "correct": 2,
+    "explanation": "Tăng sức mạnh mềm"
+  },
+  {
+    "question": "Chiến lược hội nhập của Đảng nhấn mạnh điều gì?",
+    "options": [
+      "Bị động đón nhận",
+      "Giảm hội nhập",
+      "Chủ động, sáng tạo bảo vệ chủ quyền",
+      "Bỏ văn hóa"
+    ],
+    "correct": 2,
+    "explanation": "Củng cố vị thế"
+  },
+  {
+    "question": "Đường lối hội nhập chủ động giúp khắc phục hạn chế nào?",
+    "options": [
+      "Tăng quan liêu",
+      "Giảm sáng tạo",
+      "Bị động văn hóa",
+      "Tăng tham nhũng"
+    ],
+    "correct": 2,
+    "explanation": "Chủ động xuất khẩu giá trị"
+  },
+  {
+    "question": "Ngoại giao văn hóa trong 40 năm Đổi Mới nhằm thúc đẩy gì?",
+    "options": [
+      "Giảm hội nhập",
+      "Tăng đồng hóa",
+      "Phát triển kinh tế qua giá trị dân tộc",
+      "Bỏ quảng bá"
+    ],
+    "correct": 2,
+    "explanation": "Trụ cột ngoại giao"
+  },
+  {
+    "question": "Văn hóa là trụ cột trong đường lối nào của Đảng?",
+    "options": [
+      "Quân sự",
+      "Ngoại giao và hội nhập",
+      "Thể thao",
+      "Nông nghiệp"
     ],
     "correct": 1,
-    "explanation": "Khát vọng phát triển (tầm nhìn 2030, 2045) là tư duy dài hạn, đối lập và là giải pháp cho tư duy \"ngắn hạn, ăn xổi\" của tiểu nông."
+    "explanation": "Hỗ trợ kinh tế"
   },
   {
-    "question": "Trong các \"trầm tích\", yếu tố nào là mối đe dọa *trực tiếp* nhất đến nền tảng *pháp lý* của các cam kết hội nhập (WTO, EVFTA...)?",
+    "question": "Đảng chủ trương xây dựng hình ảnh Việt Nam trên trường quốc tế như thế nào?",
     "options": [
-      "\"Tư duy tiểu nông\" (manh mún).",
-      "\"Kỷ luật lỏng lẻo\" (giờ cao su).",
-      "\"Thiếu chữ tín\" và \"vi phạm bản quyền, làm hàng giả\".",
-      "\"Tư duy COCC\" (bổ nhiệm người nhà)."
+      "Bảo thủ",
+      "Đóng cửa",
+      "Thân thiện, năng động, sáng tạo",
+      "Thụ động"
     ],
     "correct": 2,
-    "explanation": "Vi phạm cam kết, vi phạm bản quyền, và làm hàng giả là các hành vi vi phạm trực tiếp \"Pháp quyền\" (Rule of Law), vốn là nền tảng của mọi hiệp định thương mại."
+    "explanation": "Soft power"
   },
   {
-    "question": "Mối quan hệ nào sau đây mô tả đúng nhất sự liên đới giữa \"Bệnh thành tích\" (làm báo cáo đẹp) và \"Thiếu chữ tín\" (vi phạm hợp đồng)?",
+    "question": "Để khắc phục thiếu nguồn lực, Đảng chủ trương xây dựng gì?",
     "options": [
-      "\"Bệnh thành tích\" (báo cáo sai) dẫn đến việc \"vi phạm cam kết hợp đồng\" (thiếu chữ tín) để che giấu sự yếu kém thực chất.",
-      "\"Thiếu chữ tín\" là nguồn gốc của \"Bệnh thành tích\".",
-      "Cả hai đều là tàn dư của tư duy tiểu nông.",
-      "\"Bệnh thành tích\" chỉ ảnh hưởng trong nước."
+      "Giảm ngân sách",
+      "Tăng bị động",
+      "Trung tâm quảng bá văn hóa quốc tế",
+      "Bỏ ngoại giao"
     ],
-    "correct": 0,
-    "explanation": "Để đạt được \"báo cáo đẹp\", doanh nghiệp có thể bất chấp \"bỏ qua quy trình\" hoặc \"vi phạm cam kết\", tạo ra sự thiếu thực chất và mất lòng tin."
+    "correct": 2,
+    "explanation": "Tăng hỗ trợ thương mại"
   },
   {
-    "question": "Giải pháp \"Xây dựng Nhà nước pháp quyền\" và \"Đẩy mạnh Chính phủ số\" là các giải pháp tập trung vào việc gì?",
+    "question": "Chiến lược quảng bá văn hóa ra nước ngoài giúp tăng gì?",
     "options": [
-      "\"Chống\" (xử lý vi phạm).",
-      "\"Xây\" (cải cách thể chế, quy trình).",
-      "Tập trung vào tư duy con người.",
-      "Tập trung vào kinh tế."
+      "Bảo thủ",
+      "Quan liêu",
+      "Du lịch và thương mại",
+      "Bị động"
+    ],
+    "correct": 2,
+    "explanation": "Sức mạnh mềm"
+  },
+  {
+    "question": "Đảng chủ trương phát triển văn hóa người Việt ở nước ngoài để làm gì?",
+    "options": [
+      "Tách biệt",
+      "Quên gốc",
+      "Kết nối kiều bào, tăng đầu tư",
+      "Giảm liên hệ"
+    ],
+    "correct": 2,
+    "explanation": "Cầu nối kinh tế"
+  },
+  {
+    "question": "Ngoại giao văn hóa giúp Việt Nam khắc phục hạn chế nào trong FTA?",
+    "options": [
+      "Tăng xuất khẩu nông sản",
+      "Giảm nhập khẩu",
+      "Thiếu uy tín quốc tế",
+      "Cải thiện công nghiệp"
+    ],
+    "correct": 2,
+    "explanation": "Tăng niềm tin đối tác"
+  },
+  {
+    "question": "Đảng chủ trương tổ chức các sự kiện văn hóa quốc tế tại Việt Nam để làm gì?",
+    "options": [
+      "Giảm khách",
+      "Tăng chi phí",
+      "Quảng bá đất nước, thu hút đầu tư",
+      "Bỏ du lịch"
+    ],
+    "correct": 2,
+    "explanation": "Marketing quốc gia"
+  },
+  {
+    "question": "Chiến lược hội nhập văn hóa của Đảng nhấn mạnh nguyên tắc gì?",
+    "options": [
+      "Bị động",
+      "Đón nhận tất cả",
+      "Chủ động, chọn lọc, bảo vệ bản sắc",
+      "Đóng cửa"
+    ],
+    "correct": 2,
+    "explanation": "Hội nhập có chọn lọc"
+  },
+  {
+    "question": "Đảng chủ trương phát triển ngành công nghiệp văn hóa nào có tiềm năng xuất khẩu?",
+    "options": [
+      "Chỉ nông nghiệp",
+      "Chỉ công nghiệp nặng",
+      "Phim ảnh, âm nhạc, ẩm thực",
+      "Chỉ khai khoáng"
+    ],
+    "correct": 2,
+    "explanation": "Sức mạnh mềm"
+  },
+  {
+    "question": "Ngoại giao văn hóa giúp Việt Nam tăng cường gì trong ASEAN?",
+    "options": [
+      "Tách biệt",
+      "Giảm hợp tác",
+      "Vị thế và ảnh hưởng",
+      "Bỏ hội nhập"
+    ],
+    "correct": 2,
+    "explanation": "Vai trò tích cực"
+  },
+  {
+    "question": "Đảng chủ trương xây dựng thương hiệu quốc gia qua gì?",
+    "options": [
+      "Chỉ giá rẻ",
+      "Giảm chất lượng",
+      "Văn hóa, du lịch, sản phẩm đặc trưng",
+      "Bỏ quảng bá"
+    ],
+    "correct": 2,
+    "explanation": "Nation branding"
+  },
+  {
+    "question": "Chiến lược hội nhập văn hóa giúp Việt Nam đối phó với gì?",
+    "options": [
+      "Tăng đổi mới",
+      "Giảm bảo thủ",
+      "Nguy cơ đồng hóa văn hóa",
+      "Cải thiện hợp tác"
+    ],
+    "correct": 2,
+    "explanation": "Bảo vệ bản sắc"
+  },
+  {
+    "question": "Đảng chủ trương hợp tác văn hóa quốc tế theo hướng nào?",
+    "options": [
+      "Một đối tác",
+      "Đóng cửa",
+      "Đa dạng hóa đối tác, đa phương hóa quan hệ",
+      "Phụ thuộc"
+    ],
+    "correct": 2,
+    "explanation": "Mở rộng quan hệ"
+  },
+  {
+    "question": "Ngoại giao văn hóa giúp Việt Nam thu hút gì từ quốc tế?",
+    "options": [
+      "Giảm liên hệ",
+      "Tách biệt",
+      "Đầu tư, du khách, hợp tác",
+      "Bỏ quan hệ"
+    ],
+    "correct": 2,
+    "explanation": "Hỗ trợ kinh tế"
+  },
+  {
+    "question": "Đảng chủ trương đào tạo đội ngũ ngoại giao văn hóa như thế nào?",
+    "options": [
+      "Nghiệp dư",
+      "Thiếu kiến thức",
+      "Chuyên nghiệp, am hiểu văn hóa",
+      "Không đào tạo"
+    ],
+    "correct": 2,
+    "explanation": "Nâng cao hiệu quả"
+  },
+  {
+    "question": "Chiến lược hội nhập văn hóa của Đảng gắn văn hóa với gì?",
+    "options": [
+      "Chỉ giải trí",
+      "Tách biệt kinh tế",
+      "Phát triển kinh tế-xã hội bền vững",
+      "Không liên quan"
+    ],
+    "correct": 2,
+    "explanation": "Phát triển đồng bộ"
+  },
+  {
+    "question": "Hệ giá trị văn hóa con người được Đảng đặt ngang hàng với gì?",
+    "options": [
+      "Quân sự",
+      "Kinh tế và chính trị",
+      "Thể thao",
+      "Giải trí"
     ],
     "correct": 1,
-    "explanation": "Nhà nước pháp quyền và Chính phủ số là các giải pháp mang tính \"Xây\" (xây dựng thể chế, quy trình mới) để tăng minh bạch, giảm quan liêu."
+    "explanation": "Chống tham nhũng, nâng kỹ năng"
+  },
+  {
+    "question": "Xây dựng hệ giá trị văn hóa nhằm nâng cao gì cho lao động?",
+    "options": [
+      "Giảm giáo dục",
+      "Tăng bảo thủ",
+      "Kỹ năng và đạo đức",
+      "Bỏ hội nhập"
+    ],
+    "correct": 2,
+    "explanation": "Phát triển con người"
+  },
+  {
+    "question": "Đảng chủ trương đầu tư giáo dục để khắc phục hạn chế nào?",
+    "options": [
+      "Tăng quan liêu",
+      "Giảm FDI",
+      "Thiếu kỹ năng mềm",
+      "Tăng tham nhũng"
+    ],
+    "correct": 2,
+    "explanation": "Cho lao động quốc tế"
   }
 ]
 
