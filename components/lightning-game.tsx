@@ -504,7 +504,7 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
                               ⚡ {t1Name} thắng vì hoàn thành nhanh hơn
                             </div>
                             <div className="text-xs mt-1">
-                              Thời gian còn lại: {t1Name} {Math.floor(team1TimeLeft / 60)}:{String(team1TimeLeft % 60).padStart(2, "0")} &gt; {t2Name} {Math.floor(team2TimeLeft / 60)}:{String(team2TimeLeft % 60).padStart(2, "0")}
+                              Thời gian còn lại: {t1Name} {Math.floor(team1TimeLeft / 60)}:{String(team1TimeLeft % 60).padStart(2, "0")} {'>'} {t2Name} {Math.floor(team2TimeLeft / 60)}:{String(team2TimeLeft % 60).padStart(2, "0")}
                             </div>
                           </div>
                         )
@@ -515,7 +515,7 @@ export default function LightningGame({ onBack, skipInternalIntro = false, prese
                               ⚡ {t2Name} thắng vì hoàn thành nhanh hơn
                             </div>
                             <div className="text-xs mt-1">
-                              Thời gian còn lại: {t2Name} {Math.floor(team2TimeLeft / 60)}:{String(team2TimeLeft % 60).padStart(2, "0")} &gt; {t1Name} {Math.floor(team1TimeLeft / 60)}:{String(team1TimeLeft % 60).padStart(2, "0")}
+                              Thời gian còn lại: {t2Name} {Math.floor(team2TimeLeft / 60)}:{String(team2TimeLeft % 60).padStart(2, "0")} {'>'} {t1Name} {Math.floor(team1TimeLeft / 60)}:{String(team1TimeLeft % 60).padStart(2, "0")}
                             </div>
                           </div>
                         )

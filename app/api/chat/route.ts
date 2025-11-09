@@ -18,101 +18,71 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Message is required" }, { status: 400 })
     }
 
-    const apiKey = process.env.GEMINI_API_KEY
+    const apiKey = process.env.GROQ_API_KEY
 
     if (!apiKey) {
       return NextResponse.json(
         {
-          error: "Gemini API key not configured",
-          message: "Vui lòng cấu hình GEMINI_API_KEY trong file .env.local",
+          error: "Groq API key not configured",
+          message: "Vui lòng cấu hình GROQ_API_KEY trong file .env.local",
         },
         { status: 500 }
       )
     }
 
-    // Kết hợp system prompt với message
-    const fullPrompt = `${SYSTEM_PROMPT}\n\nCâu hỏi của người dùng: ${message}\n\nHãy trả lời:`
+    // Sử dụng Groq API với model miễn phí và nhanh
+    // Các model có sẵn: llama-3.1-70b-versatile, mixtral-8x7b-32768, gemma-7b-it
+    const modelName = "llama-3.1-70b-versatile"
 
-    // Trước tiên, list các model available
-    let availableModels: string[] = []
     try {
-      const listResponse = await fetch(
-        `https://generativelanguage.googleapis.com/v1/models?key=${apiKey}`
+      const response = await fetch(
+        "https://api.groq.com/openai/v1/chat/completions",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model: modelName,
+            messages: [
+              {
+                role: "system",
+                content: SYSTEM_PROMPT,
+              },
+              {
+                role: "user",
+                content: message,
+              },
+            ],
+            temperature: 0.7,
+            max_tokens: 1024,
+            top_p: 1,
+            stream: false,
+          }),
+        }
       )
-      if (listResponse.ok) {
-        const listData = await listResponse.json()
-        availableModels = (listData.models || [])
-          .filter((m: any) => m.supportedGenerationMethods?.includes("generateContent"))
-          .map((m: any) => m.name.replace("models/", ""))
-        console.log("Available models:", availableModels)
+
+      if (!response.ok) {
+        const errorData = await response.text()
+        console.error("Groq API error:", errorData)
+        throw new Error(`API request failed: ${response.status} ${response.statusText}`)
       }
-    } catch (e) {
-      console.error("Failed to list models:", e)
-    }
 
-    // Thử các model theo thứ tự ưu tiên
-    const modelsToTry = availableModels.length > 0 
-      ? availableModels 
-      : [
-          "gemini-1.5-flash-latest",
-          "gemini-1.5-pro-latest", 
-          "gemini-pro",
-          "text-bison-001",
-          "chat-bison-001",
-        ]
+      const data = await response.json()
 
-    let lastError: any = null
-
-    for (const modelName of modelsToTry) {
-      try {
-        const response = await fetch(
-          `https://generativelanguage.googleapis.com/v1/models/${modelName}:generateContent?key=${apiKey}`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              contents: [
-                {
-                  parts: [
-                    {
-                      text: fullPrompt,
-                    },
-                  ],
-                },
-              ],
-            }),
-          }
-        )
-
-        if (!response.ok) {
-          const errorData = await response.text()
-          console.error(`Model ${modelName} failed:`, errorData)
-          lastError = new Error(`API request failed: ${response.status} ${response.statusText}`)
-          continue // Thử model tiếp theo
-        }
-
-        const data = await response.json()
-
-        if (!data.candidates || !data.candidates[0] || !data.candidates[0].content) {
-          lastError = new Error("Invalid response format from Gemini API")
-          continue
-        }
-
-        const text = data.candidates[0].content.parts[0].text
-        return NextResponse.json({ message: text })
-      } catch (error: any) {
-        console.error(`Error with model ${modelName}:`, error)
-        lastError = error
-        continue
+      if (!data.choices || !data.choices[0] || !data.choices[0].message) {
+        throw new Error("Invalid response format from Groq API")
       }
-    }
 
-    // Nếu tất cả model đều fail, throw error cuối cùng
-    throw lastError || new Error("Tất cả các model đều không khả dụng")
+      const text = data.choices[0].message.content
+      return NextResponse.json({ message: text })
+    } catch (error: any) {
+      console.error("Groq API error:", error)
+      throw error
+    }
   } catch (error: any) {
-    console.error("Gemini API error:", error)
+    console.error("Chat API error:", error)
     return NextResponse.json(
       {
         error: "Failed to get response",
